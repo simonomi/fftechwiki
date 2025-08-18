@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<title>navigation</title>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- <base href="https://simonomi.dev"> -->
+		
+		<link rel="stylesheet" href="https://simonomi.dev/style/main.css">
+		<!-- <link rel="stylesheet" href="/style/main.css"> -->
+		
+		<style>
+			html {
+			}
+			
+			body {
+				margin: 0;
+				max-width: initial;
+			}
+			
+			details {
+				margin-bottom: 0.5rem;
+				background-color: #202020; /* TODO: dark mode */
+				border-radius: 0.5rem;
+				overflow: hidden; /* hides corners in summary */
+			}
+			
+			summary {
+				cursor: pointer;
+				padding: 0.5rem;
+				background-color: #2c2c2c; /* TODO: dark mode */
+				user-select: none;
+				-webkit-user-select: none;
+			}
+			
+			ul {
+				margin: 0.25rem 0;
+			}
+			
+			ul > li {
+				margin: 0.25em 0;
+			}
+		</style>
+</head>
+	<body>
+		<nav>
+			<details>
+				<summary><a href="https://example.com">overview? articles?</a></summary>
+			</details>
+			
+			<details>
+				<summary><a href="https://example.com">File Formats</a></summary>
+				<ul>
+					<li><a href="https://example.com">3CL</a></li>
+					<li><a href="https://example.com">MAR</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+					<li><a href="https://example.com">MM3</a></li>
+				</ul>
+			</details>
+			
+			<details open>
+				<summary><a href="https://example.com">look-up? references? appendix?</a></summary>
+				<ul>
+					<li><a href="https://example.com">vivosaur names</a></li>
+					<li><a href="https://example.com">fieldchar labels</a></li>
+					<li><a href="https://example.com">dialogue codes</a></li>
+					<li><a href="https://example.com">character numbers</a></li>
+					<li><a href="https://example.com">map numbers</a></li>
+				</ul>
+			</details>
+		</nav>
+	</body>
+</html>
