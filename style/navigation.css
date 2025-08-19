@@ -25,10 +25,6 @@ ul {
 	margin: 0.25rem 0;
 }
 
-ul > li {
-	margin: 0.25em 0;
-}
-
 .arranged-vertically {
 	display: flex;
 	flex-direction: column;
