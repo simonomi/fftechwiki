@@ -16,11 +16,12 @@
 				height: 100%;
 				overflow: hidden;
 				color-scheme: auto; /* THIS MADE IT WORK */
+				width: 100%;
 			}
 			
 			body {
-				display: grid;
-				grid-template-columns: 1fr min-content 1rem minmax(auto, 90rch) 1fr;
+				/* display: grid; */
+				/* grid-template-columns: 1fr min-content 1rem minmax(auto, 90rch) 1fr; */
 				
 				max-width: initial;
 				margin: 1rem;
@@ -31,6 +32,31 @@
 				grid-column: 2;
 			}
 			
+			#navigation-popup {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: calc(100% - 2rem);
+				height: calc(100% - 2rem);
+				margin: 1rem;
+			}
+			
+			#navigation-details > summary {
+				display: block;
+				position: fixed;
+				bottom: 1rem;
+				right: 1rem;
+				z-index: 1;
+				width: 4rem;
+				height: 4rem;
+				background-color: var(--button-color);
+				border-radius: 50%;
+			}
+			
+			#navigation-details > summary:active {
+				background-color: var(--button-pressed-color);
+			}
+			
 			#content {
 				grid-row: 1;
 				grid-column: 4;
@@ -39,6 +65,20 @@
 			footer {
 				grid-row: 2;
 				grid-column: 4;
+			}
+			
+			.navmenu {
+				width: 2rem;
+				height: 2rem;
+				margin: 1rem;
+			}
+			
+			#navigation-details[open] #open-navmenu {
+				display: none
+			}
+			
+			#navigation-details:not([open]) #close-navmenu {
+				display: none
 			}
 		</style>
 		
@@ -81,9 +121,16 @@
 			</ul>
 		</div>
 		
-		<div id="navigation-sidebar">
-			<iframe src="./navigation.html" onload="resizeIframe(this)"></iframe>
-		</div>
+		<details id="navigation-details">
+			<summary>
+				<img id="open-navmenu" class="navmenu" src="images/menu.svg">
+				<img id="close-navmenu" class="navmenu" src="images/close.svg">
+			</summary>
+			
+			<div id="navigation-popup">
+				<iframe src="./navigation.html" onload="resizeIframe(this)"></iframe>
+			</div>
+		</details>
 		
 		<footer>
 			<small>© <time>2025</time> alice pellerin</small>
