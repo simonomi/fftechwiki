@@ -47,13 +47,17 @@ iframe {
 		display: none;
 	}
 	
+	html {
+		position: relative; /* this allows the navigation-details to expand to full size, otherwise it doesn't have a proper container to be absolutely filling */
+	}
+	
 	#navigation-details {
 		position: absolute;
 		top: 0;
+		bottom: 0;
 		left: 0;
-		width: calc(100% - 2rem);
-		height: calc(100% - 2rem);
-		margin: 1rem;
+		right: 0;
+		padding: 1rem;
 		display: grid; /* i dont know why but this allows the iframe to take up the full height */
 	}
 	
@@ -61,6 +65,10 @@ iframe {
 		width: 100%;
 		height: 100%;
 		margin-bottom: 1rem; /* the parent margin isn't applied because it expands out of its frame */
+	}
+	
+	#navigation-details:not([open]) {
+		pointer-events: none;
 	}
 	
 	#navigation-details[open] {
@@ -77,6 +85,10 @@ iframe {
 		height: 4rem;
 		background-color: var(--button-color);
 		border-radius: 50%;
+	}
+	
+	#navigation-details:not([open]) > summary {
+		pointer-events: all;
 	}
 	
 	#navigation-details > summary:active {
