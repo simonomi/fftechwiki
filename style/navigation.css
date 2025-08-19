@@ -37,3 +37,7 @@ ul > li {
 .no-top-margin {
 	margin-top: 0;
 }
+
+.centered-text {
+	text-align: center;
+}
