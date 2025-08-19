@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	max-width: initial;
+}
+
+details {
+	background-color: light-dark(#f0f0f0, #202020);
+	border-radius: 0.5rem;
+	overflow: hidden; /* hides corners in summary */
+}
+
+details:not(:last-child) {
+	margin-bottom: 0.5rem;
+}
+
+summary {
+	cursor: pointer;
+	padding: 0.5rem;
+	background-color: light-dark(#e0e0e0, #2c2c2c);
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+ul {
+	margin: 0.25rem 0;
+}
+
+ul > li {
+	margin: 0.25em 0;
+}
