@@ -1,0 +1,10 @@
+url: "https://simonomi.dev"
+baseurl: "/fftechwiki"
+
+strict_front_matter: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - .jj
