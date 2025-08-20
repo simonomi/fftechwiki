@@ -16,25 +16,21 @@
 		<div id="content">
 			<h1>Index Files</h1>
 			
-			<p>Index files are used to store files with identical data while minimizing redundancy.</p>
+			<p>Index files are used to store files that share data without wasting space.</p>
 			
-			<p>Certain types of files are often very similar to each other. For example, the same 3D model may be used multiple times with different textures, animations, or other assets. Instead of storing each complete set of assets in its own file, an index file provides indexes into a separate lookup table. This allows multiple files to re-use the same assets.</p>
+			<p>Certain types of files are often very similar to each other, like two characters sharing a 3D model, but with different textures and animations. Instead of storing copies of the shared data in each file, index files just have a list of indices, which point to where the actual data is stored.</p>
 			
-			<p>In the Fossil Fighters ROM, index files have two parts per index: the index number, and the table file name. The table file name indicates a <a href="/fftechwiki/file-formats/MAR">MAR</a> archive (in the same directory) to be used as a table, and the index number indicates a specific child of that archive.</p>
+			<p>These indices include a file name and a number (or list of numbers). The file name refers to a <a>MAR</a> file, and the number(s) refer to files within that archive. Usually, each index file uses the same table file for all indices.</p>
 			
-			<p>Specifically, each index contains an index number and an offset to a table file name, which is stored as a null-terminated UTF-8 string later in the file.</p>
-			
-			<h2>Additional notes</h2>
-			
-			<p>Usually, each index file uses the same table file for all indexes.</p>
-			
-			<p>An example of MM3 files reusing indexes is in the models for Hunter (<code class="inline-code">model/fieldchar/cha01*</code>). For instance, T-Rex and Maiasaura Hunter's idle animations share the same Index 1 and 2, but differ for Index 3.</p>
+			<p>Index files save a ton of space, but they're pretty annoying to work with, since you have to jump between mulitple files to see all the data.</p>
 			
 			<h2>Examples</h2>
 			
 			<ul>
-				<li><a href="/fftechwiki/file-formats/MM3">MM3</a></li>
-				<li><a href="/fftechwiki/file-formats/MPM">MPM</a></li>
+				<li><a>3CL</a> (vivosaur 3D models)</li>
+				<li><a>MM3</a> (3D models)</li>
+				<li><a>MMS</a> (sprites)</li>
+				<li><a>MPM</a> (images)</li>
 			</ul>
 		</div>
 		
