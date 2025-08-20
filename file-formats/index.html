@@ -16,7 +16,11 @@
 		<div id="content">
 			<h1>File Formats</h1>
 			
-			<p>some stuff here</p>
+			<p>Lots of Nintendo DS games use <a href="https://wiki.vg-resource.com/Nintendo_DS#Common_File_Formats">the same file formats</a> to store their data, but not Fossil Fighters! It has its own set of completely unique file formats that it uses to store all kinds of data, from cutscenes to 3D models to dialogue.</p>
+			
+			<p>On one hand, this is a huge pain, because we can't use existing tools to export and edit these files. On the other hand, Fossil Fighters's strange data files are really powerful! An incredible amount of the game's logic is encoded in files that can be easily<sup><a class="footnote-link" id="footnote-return:1" href="#footnote:1">1</a></sup> read and modified.</p>
+			
+			<p>Most (but not all!) Fossil Fighters file formats start with <a href="https://en.wikipedia.org/wiki/List_of_file_signatures">a short code</a> that's used to refer to that format.</p>
 			
 			<table>
 				<thead>
@@ -27,77 +31,77 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><a class="disabled">3CL</a></td>
+						<td><a>3CL</a></td>
 						<td><a href="/fftechwiki/file-formats/index-files">Index file</a> used for vivosaur 3D models</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">BBG</a></td>
+						<td><a>BBG</a></td>
 						<td>Kasekiums (fossil battle arenas)</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">CHR</a></td>
+						<td><a>CHR</a></td>
 						<td>Characters</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">DBS</a></td>
+						<td><a>DBS</a></td>
 						<td>Battles</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">DEP</a></td>
+						<td><a>DEP</a></td>
 						<td>Cutscene triggers</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">DEX</a></td>
+						<td><a>DEX</a></td>
 						<td>Cutscenes</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">DMG</a></td>
+						<td><a>DMG</a></td>
 						<td>Dialogue</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">DMS</a></td>
+						<td><a>DMS</a></td>
 						<td>Max IDs</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">DTX</a></td>
+						<td><a>DTX</a></td>
 						<td>Lists of strings</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">ECS</a></td>
-						<td><code class="inline-code">excavate_defs</code></td>
+						<td><a>ECS</a></td>
+						<td>Miscellaneous data in the <code>excavate_defs</code> file</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">HML</a></td>
+						<td><a>HML</a></td>
 						<td>Masks</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">MAR, MCM</a></td>
+						<td><a>MAR, MCM</a></td>
 						<td>Archive format</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">MM3</a></td>
+						<td><a>MM3</a></td>
 						<td><a href="/fftechwiki/file-formats/index-files">Index files</a> used for 3D models</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">MMS</a></td>
-						<td>Sprites</td>
+						<td><a>MMS</a></td>
+						<td><a href="/fftechwiki/file-formats/index-files">Index files</a> used for sprites</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">MPM</a></td>
+						<td><a>MPM</a></td>
 						<td><a href="/fftechwiki/file-formats/index-files">Index files</a> used for images</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">RLS</a></td>
+						<td><a>RLS</a></td>
 						<td>List of fossils</td>
 					</tr>
 					<tr>
-						<td><a class="disabled">SHP</a></td>
+						<td><a>SHP</a></td>
 						<td>Shop data</td>
 					</tr>
 				</tbody>
 			</table>
 			
-			<p>Other file formats to add:</p>
+			<p>Other file formats to be documented:</p>
 			
 			<ul>
 				<li>3BA</li>
@@ -119,6 +123,12 @@
 				<li>KPS</li>
 				<li>MAP</li>
 			</ul>
+			
+			<hr>
+			
+			<ol id="footnotes">
+				<li id="footnote:1">Well, "easily" compared to modifying the game's code, which is basically impossible right now <a class="footnote-return-link" href="#footnote-return:1">⏎</a></li>
+			</ol>
 		</div>
 		
 		<div id="navigation-sidebar">
