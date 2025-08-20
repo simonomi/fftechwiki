@@ -8,6 +8,10 @@ window.onload = () => {
 		.forEach(frame => {
 			resizeIframe(frame);
 			
+			frame.onload = () => {
+				resizeIframe(frame);
+			};
+			
 			Array.from(frame.contentDocument.getElementsByTagName("details"))
 				.forEach(x => x.addEventListener("toggle", event => {
 					resizeIframe(frame);

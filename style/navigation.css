@@ -7,6 +7,7 @@ details {
 	background-color: light-dark(#f0f0f0, #202020);
 	border-radius: 0.5rem;
 	overflow: hidden; /* hides corners in summary */
+	padding-bottom: 0.25rem;
 }
 
 details:not(:last-child) {
@@ -21,7 +22,7 @@ summary {
 	-webkit-user-select: none;
 }
 
-ul {
+ul:not(ul ul) {
 	margin: 0.25rem 0;
 }
 
@@ -36,4 +37,10 @@ ul {
 
 .centered-text {
 	text-align: center;
+}
+
+hr {
+	/* 20px is half of a ul's padding-inline-start */
+	margin-left: 20px;
+	margin-right: 20px;
 }
