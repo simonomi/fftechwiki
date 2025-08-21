@@ -331,6 +331,7 @@ table {
 
 table.scrollable {
 	display: block;
+	width: fit-content; /* TODO: should this have a min to make sure it doesnt overflow? */
 	overflow-x: scroll;
 	text-wrap: nowrap;
 }
@@ -352,10 +353,6 @@ table td.larger-cell {
 	}
 }
 
-table.first-column-centered td:first-child {
-	text-align: center;
-}
-
 .text-align-start {
 	text-align: start;
 }
@@ -373,6 +370,14 @@ th {
 	background-color: var(--table-header-background-color);
 }
 
+th:first-child {
+	border-top-left-radius: 0.5rem;
+}
+
+th:last-child {
+	border-top-right-radius: 0.5rem;
+}
+
 tbody tr:not(:last-child) td {
 	border-bottom: 1px solid var(--table-border-color);
 }
@@ -381,3 +386,10 @@ summary {
 	cursor: pointer;
 }
 
+img {
+	width: 100%;
+}
+
+.ds-screenshot {
+	max-width: 384px; /* 1.5x the size of the DS screen (256px) */
+}

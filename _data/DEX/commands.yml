@@ -1,0 +1,147 @@
+- id: 1
+  command: 'dialogue <span class="not-bold foreign-type">&lt;dialogue&gt;</span>'
+  notes: '
+<details>
+	<summary>show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue.png">
+</details>'
+- id: 2
+  command: 'centered dialogue <span class="not-bold foreign-type">&lt;dialogue&gt;</span>'
+  notes: '
+<details>
+	<summary>show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/centered-dialogue.png">
+</details>'
+- id: 4
+  command: 'memory 4 <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 5
+  command: 'memory 5 <span class="not-bold foreign-type">&lt;memory location&gt;</span>'
+- id: 6
+  command: 'memory 6 <span class="not-bold foreign-type">&lt;memory location&gt;</span>'
+- id: 7
+  command: 'spawn <span class="not-bold foreign-type">&lt;character&gt;</span> in <span class="not-bold foreign-type">&lt;map&gt;</span> at <span class="not-bold foreign-type">&lt;vector&gt;</span> facing <span class="not-bold foreign-type">&lt;degrees&gt;</span>'
+- id: 9
+  command: 'ambiguous spawn/move/teleport <span class="not-bold foreign-type">&lt;character&gt;</span> <span class="not-bold foreign-type">&lt;unknown&gt;</span> <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 10
+  command: 'teleport <span class="not-bold foreign-type">&lt;character&gt;</span> to <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 14
+  command: 'despawn <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 20
+  command: 'fade out <span class="not-bold foreign-type">&lt;frames&gt;</span>'
+- id: 21
+  command: 'fade in <span class="not-bold foreign-type">&lt;frames&gt;</span>'
+- id: 22
+  command: 'fade out to white <span class="not-bold foreign-type">&lt;frames&gt;</span>'
+- id: 23
+  command: 'fade in from white <span class="not-bold foreign-type">&lt;frames&gt;</span>'
+- id: 32
+  command: 'unowned dialogue <span class="not-bold foreign-type">&lt;dialogue&gt;</span>'
+  notes: '
+<details>
+	<summary>show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/unowned-dialogue.png">
+</details>'
+- id: 33
+  command: 'dialogue with choice <span class="not-bold foreign-type">&lt;dialogue&gt;</span>, storing result at <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+  notes: '
+<details>
+	<summary>show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-33-with-choice.png">
+</details>'
+- id: 34
+  command: 'turn <span class="not-bold foreign-type">&lt;character&gt;</span> to <span class="not-bold foreign-type">&lt;degrees&gt;</span>'
+- id: 35
+  command: 'turn1 <span class="not-bold foreign-type">&lt;character&gt;</span> to <span class="not-bold foreign-type">&lt;degrees&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 36
+  command: 'turn <span class="not-bold foreign-type">&lt;character&gt;</span> towards <span class="not-bold foreign-type">&lt;character&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 37
+  command: 'turn2 <span class="not-bold foreign-type">&lt;character&gt;</span> to <span class="not-bold foreign-type">&lt;degrees&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 38
+  command: 'turn <span class="not-bold foreign-type">&lt;character&gt;</span> towards <span class="not-bold foreign-type">&lt;character&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknowns: <span class="not-bold foreign-type">&lt;unknown&gt;</span> <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 39
+  command: 'move <span class="not-bold foreign-type">&lt;character&gt;</span> to <span class="not-bold foreign-type">&lt;character&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 43
+  command: 'move <span class="not-bold foreign-type">&lt;character&gt;</span> to position <span class="not-bold foreign-type">&lt;vector&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 44
+  command: 'unknown 44: <span class="not-bold foreign-type">&lt;character&gt;</span> <span class="not-bold foreign-type">&lt;vector&gt;</span> <span class="not-bold foreign-type">&lt;frames&gt;</span> <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 45
+  command: 'move <span class="not-bold foreign-type">&lt;character&gt;</span> by <span class="not-bold foreign-type">&lt;vector&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 50
+  command: 'smoothes out movement or  for <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 51
+  command: 'control <span class="not-bold foreign-type">&lt;character&gt;</span>'
+  notes: 'Causes the player to control a different character!!! Normally this is used during cutscenes to move the camera''s focus without moving Hunter, but it still works when not in a cutscene >:)'
+- id: 56
+  command: 'delay <span class="not-bold foreign-type">&lt;frames&gt;</span>'
+  notes: 'Simply does nothing for a number of frames. Fossil Fighters runs at 60fps, so delay <span class="not-bold local-value">&lt;<span class="number">60</span> frames&gt;</span> delays for one second.'
+- id: 57
+  command: 'battle <span class="not-bold foreign-type">&lt;unknown&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 58
+  command: 'clean1 <span class="not-bold foreign-type">&lt;fossil&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 59
+  command: 'clean2 <span class="not-bold foreign-type">&lt;fossil&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 60
+  command: 'clean3 <span class="not-bold foreign-type">&lt;fossil&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 61
+  command: 'angle camera from <span class="not-bold foreign-type">&lt;vector&gt;</span> at distance <span class="not-bold foreign-type">&lt;fixed-point&gt;</span> with fov: <span class="not-bold foreign-type">&lt;fixed-point&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 70
+  command: 'memory 70 <span class="not-bold foreign-type">&lt;memory location&gt;</span>, <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 80
+  command: 'make <span class="not-bold foreign-type">&lt;character&gt;</span> follow <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 90
+  command: 'set level for level-up animation <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 112
+  command: 'play animation <span class="not-bold foreign-type">&lt;unknown&gt;</span> on <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 114
+  command: 'set <span class="not-bold foreign-type">&lt;character&gt;</span> body model variant to <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 115
+  command: 'set <span class="not-bold foreign-type">&lt;character&gt;</span> head model variant to <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 117
+  command: 'start music <span class="not-bold foreign-type">&lt;music&gt;</span>'
+- id: 119
+  command: 'start music 2 <span class="not-bold foreign-type">&lt;music&gt;</span>'
+- id: 124
+  command: 'fade music <span class="not-bold foreign-type">&lt;frames&gt;</span>'
+- id: 125
+  command: 'play sound <span class="not-bold foreign-type">&lt;sound effect&gt;</span>'
+- id: 129
+  command: 'effect <span class="not-bold foreign-type">&lt;effect&gt;</span> on <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 131
+  command: 'clear effects on <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 135
+  command: 'movement <span class="not-bold foreign-type">&lt;movement&gt;</span> on <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 136
+  command: 'unknown 136: <span class="not-bold foreign-type">&lt;character&gt;</span> <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 138
+  command: 'shake screen for <span class="not-bold foreign-type">&lt;frames&gt;</span> with intensity: <span class="not-bold foreign-type">&lt;unknown&gt;</span>, gradual intensity: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 142
+  command: 'modify player name'
+- id: 143
+  command: 'set player name'
+- id: 144
+  command: 'dialogue <span class="not-bold foreign-type">&lt;dialogue&gt;</span> with choice <span class="not-bold foreign-type">&lt;dialogue&gt;</span>, storing result at <span class="not-bold foreign-type">&lt;memory location&gt;</span>'
+  notes: '
+<details>
+	<summary>show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-144-with-choice.png">
+</details>'
+- id: 150
+  command: 'level-up animation'
+- id: 153
+  command: 'fade in image <span class="not-bold foreign-type">&lt;image&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span> on bottom screen, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 154
+  command: 'fade out image over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 155
+  command: 'slide in image <span class="not-bold foreign-type">&lt;image&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknowns: <span class="not-bold foreign-type">&lt;unknown&gt;</span> <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 157
+  command: 'fade in image <span class="not-bold foreign-type">&lt;image&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span>, unknowns: <span class="not-bold foreign-type">&lt;fixed-point&gt;</span> <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 159
+  command: 'fade in image <span class="not-bold foreign-type">&lt;image&gt;</span> over <span class="not-bold foreign-type">&lt;frames&gt;</span> on top screen, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
+- id: 191
+  command: 'revive <span class="not-bold foreign-type">&lt;vivosaur&gt;</span>'
+- id: 194
+  command: 'unknown 194: <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 200
+  command: 'start turning <span class="not-bold foreign-type">&lt;character&gt;</span> to follow <span class="not-bold foreign-type">&lt;character&gt;</span>'
+- id: 201
+  command: 'stop turning <span class="not-bold foreign-type">&lt;character&gt;</span>'
