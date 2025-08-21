@@ -373,19 +373,19 @@ tr:not(:last-child) th {
 	border-bottom: 1px solid var(--table-border-color);
 }
 
-tr:first-child > th:first-child {
+*:first-child > tr:first-child > th:first-child {
 	border-top-left-radius: 0.5rem;
 }
 
-tr:first-child > th:last-child {
+*:first-child > tr:first-child > th:last-child {
 	border-top-right-radius: 0.5rem;
 }
 
-tr:last-child > th:first-child {
+*:last-child > tr:last-child > th:first-child {
 	border-bottom-left-radius: 0.5rem;
 }
 
-tr:last-child > th:last-child {
+*:last-child > tr:last-child > th:last-child {
 	border-bottom-right-radius: 0.5rem;
 }
 

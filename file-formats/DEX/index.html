@@ -30,19 +30,21 @@ layout: default
 <h2>Commands</h2>
 
 <table>
-	{%- for command in site.data.DEX.commands -%}
-		<tr>
-			<th>{{ command.id }}</th>
-			<th class="text-align-start"><code class="keyword">{{ command.command }}</code></th>
-		</tr>
-		{%- if command.notes -%}
-		<tr>
-			<td colspan="2">
-				{{ command.notes }}
-			</td>
-		</tr>
-		{%- endif -%}
-	{%- endfor -%}
+	<tbody>
+		{%- for command in site.data.DEX.commands -%}
+			<tr>
+				<th>{{ command.id }}</th>
+				<th class="text-align-start"><code class="keyword">{{ command.command }}</code></th>
+			</tr>
+			{%- if command.notes -%}
+			<tr>
+				<td colspan="2">
+					{{ command.notes }}
+				</td>
+			</tr>
+			{%- endif -%}
+		{%- endfor -%}
+	</tbody>
 </table>
 
 <hr>
