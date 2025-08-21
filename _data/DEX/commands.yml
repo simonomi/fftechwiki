@@ -73,7 +73,7 @@
   notes: 'Causes the player to control a different character!!! Normally this is used during cutscenes to move the camera''s focus without moving Hunter, but it still works when not in a cutscene >:)'
 - id: 56
   command: 'delay <span class="not-bold foreign-type">&lt;frames&gt;</span>'
-  notes: 'Simply does nothing for a number of frames. Fossil Fighters runs at 60fps, so delay <span class="not-bold local-value">&lt;<span class="number">60</span> frames&gt;</span> delays for one second.'
+  notes: 'Simply does nothing for a number of frames. Fossil Fighters runs at 60fps, so delay <code class="not-bold local-value">&lt;<span class="number">60</span> frames&gt;</code> delays for one second.'
 - id: 57
   command: 'battle <span class="not-bold foreign-type">&lt;unknown&gt;</span>, unknown: <span class="not-bold foreign-type">&lt;unknown&gt;</span>'
 - id: 58

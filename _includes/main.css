@@ -1,3 +1,4 @@
+/* TODO: split this into separate files */
 :root {
 	color-scheme: light dark;
 	--foreground-color: light-dark(black, #eee);
@@ -330,8 +331,7 @@ table {
 }
 
 table.scrollable {
-	display: block;
-	width: fit-content; /* TODO: should this have a min to make sure it doesnt overflow? */
+	display: block; /* right now this makes it always max-width, can that be fixed? */
 	overflow-x: scroll;
 	text-wrap: nowrap;
 }
@@ -366,16 +366,27 @@ th:not(:last-child), td:not(:last-child) {
 }
 
 th {
-	border-bottom: 1px solid var(--table-border-color);
 	background-color: var(--table-header-background-color);
 }
 
-th:first-child {
+tr:not(:last-child) th {
+	border-bottom: 1px solid var(--table-border-color);
+}
+
+tr:first-child > th:first-child {
 	border-top-left-radius: 0.5rem;
 }
 
-th:last-child {
+tr:first-child > th:last-child {
 	border-top-right-radius: 0.5rem;
+}
+
+tr:last-child > th:first-child {
+	border-bottom-left-radius: 0.5rem;
+}
+
+tr:last-child > th:last-child {
+	border-bottom-right-radius: 0.5rem;
 }
 
 tbody tr:not(:last-child) td {
