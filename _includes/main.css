@@ -402,5 +402,6 @@ img {
 }
 
 .ds-screenshot {
-	max-width: 384px; /* 1.5x the size of the DS screen (256px) */
+	max-width: 384px; /* 1.5x the size of the DS screen (256x192) */
+	aspect-ratio: 4 / 3;
 }
