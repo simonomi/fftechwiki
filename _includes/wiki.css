@@ -38,7 +38,14 @@ nav hr {
 	margin-right: 20px;
 }
 
-nav > p:first-child {
+nav > a > img:first-child {
+	width: 10ch;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav > a > p {
 	margin-top: 0;
 	text-align: center;
 }
