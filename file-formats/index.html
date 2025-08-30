@@ -13,105 +13,31 @@ layout: default
 		<tr>
 			<th>File Format</th>
 			<th>Description</th>
+			<th>Location</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td><a>3CL</a></td>
-			<td><a href="/fftechwiki/file-formats/index-files">Index file</a> used for vivosaur 3D models</td>
-		</tr>
-		<tr>
-			<td><a>BBG</a></td>
-			<td>Kasekiums (fossil battle arenas)</td>
-		</tr>
-		<tr>
-			<td><a>CHR</a></td>
-			<td>Characters</td>
-		</tr>
-		<tr>
-			<td><a>DBS</a></td>
-			<td>Battles</td>
-		</tr>
-		<tr>
-			<td><a>DEP</a></td>
-			<td>Cutscene triggers</td>
-		</tr>
-		<tr>
-			<td><a href="/fftechwiki/file-formats/DEX">DEX</a></td>
-			<td>Cutscenes</td>
-		</tr>
-		<tr>
-			<td><a>DMG</a></td>
-			<td>Dialogue</td>
-		</tr>
-		<tr>
-			<td><a>DMS</a></td>
-			<td>Max IDs</td>
-		</tr>
-		<tr>
-			<td><a>DTX</a></td>
-			<td>Lists of strings</td>
-		</tr>
-		<tr>
-			<td><a>ECS</a></td>
-			<td>Miscellaneous data in the <code>excavate_defs</code> file</td>
-		</tr>
-		<tr>
-			<td><a>HML</a></td>
-			<td>Masks</td>
-		</tr>
-		<tr>
-			<td><a>MAR, MCM</a></td>
-			<td>Archive format</td>
-		</tr>
-		<tr>
-			<td><a>MM3</a></td>
-			<td><a href="/fftechwiki/file-formats/index-files">Index files</a> used for 3D models</td>
-		</tr>
-		<tr>
-			<td><a>MMS</a></td>
-			<td><a href="/fftechwiki/file-formats/index-files">Index files</a> used for sprites</td>
-		</tr>
-		<tr>
-			<td><a>MPM</a></td>
-			<td><a href="/fftechwiki/file-formats/index-files">Index files</a> used for images</td>
-		</tr>
-		<tr>
-			<td><a>RLS</a></td>
-			<td>List of fossils</td>
-		</tr>
-		<tr>
-			<td><a>SHP</a></td>
-			<td>Shop data</td>
-		</tr>
+		{%- for fileFormat in site.data.fileFormats -%}
+			<tr>
+				<td>
+					<a {% if fileFormat.url -%}
+						href="{{ fileFormat.url }}"
+					{%- endif -%}>
+						{{ fileFormat.magicBytes }}
+					</a>
+				</td>
+				<td>{{ fileFormat.description }}</td>
+				{%- if fileFormat.filePath -%}
+					<td><code>{{ fileFormat.filePath }}</code></td>
+				{%- else if fileFormat.location -%}
+					<td>{{ fileFormat.location }}</td>
+				{%- else -%}
+					<td></td>
+				{%- endif -%}
+			</tr>
+		{%- endfor -%}
 	</tbody>
 </table>
-
-<p>Other file formats to be documented:</p>
-
-<ul>
-	<li>3BA</li>
-	<li>3BC</li>
-	<li>ACL</li>
-	<li>AIS</li>
-	<li>AST</li>
-	<li>BCO</li>
-	<li>DAB</li>
-	<li>DAL</li>
-	<li>DBA</li>
-	<li>DBG</li>
-	<li>DBT</li>
-	<li>DBTL</li>
-	<li>DCL</li>
-	<li>DML</li>
-	<li>DMSK</li>
-	<li>DNC</li>
-	<li>GRD</li>
-	<li>KIL</li>
-	<li>KPS</li>
-	<li>MAP</li>
-	<li>MFS</li>
-</ul>
 
 <hr>
 
