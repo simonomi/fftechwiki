@@ -43,14 +43,10 @@ nav {
 	}
 	
 	/* TODO: unify these with non-nav */
-	ul:not(ul ul) {
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
-	}
-	
-	ul ul:not(:last-child) {
-		margin-bottom: 0.25rem;
-	}
+	/* ul:not(ul ul) { */
+	/* 	margin-top: 0.25rem; */
+	/* 	margin-bottom: 0.25rem; */
+	/* } */
 }
 
 @media screen and (width > 700px) {
