@@ -41,12 +41,6 @@ nav {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-	
-	/* TODO: unify these with non-nav */
-	/* ul:not(ul ul) { */
-	/* 	margin-top: 0.25rem; */
-	/* 	margin-bottom: 0.25rem; */
-	/* } */
 }
 
 @media screen and (width > 700px) {

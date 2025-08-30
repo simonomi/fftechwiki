@@ -1,0 +1,1030 @@
+- id: 0
+- id: 1
+  name: "T-Rex Head"
+- id: 2
+  name: "T-Rex Body"
+- id: 3
+  name: "T-Rex Arms"
+- id: 4
+  name: "T-Rex Legs"
+- id: 5
+  name: "Daspleto Head"
+- id: 6
+  name: "Daspleto Body"
+- id: 7
+  name: "Daspleto Arms"
+- id: 8
+  name: "Daspleto Legs"
+- id: 9
+  name: "Gorgo Head"
+- id: 10
+  name: "Gorgo Body"
+- id: 11
+  name: "Gorgo Arms"
+- id: 12
+  name: "Gorgo Legs"
+- id: 13
+  name: "Tarbo Head"
+- id: 14
+  name: "Tarbo Body"
+- id: 15
+  name: "Tarbo Arms"
+- id: 16
+  name: "Tarbo Legs"
+- id: 17
+  name: "Alio Head"
+- id: 18
+  name: "Alio Body"
+- id: 19
+  name: "Alio Arms"
+- id: 20
+  name: "Alio Legs"
+- id: 21
+  name: "Siamo Head"
+- id: 22
+  name: "Siamo Body"
+- id: 23
+  name: "Siamo Arms"
+- id: 24
+  name: "Siamo Legs"
+- id: 25
+  name: "Alectro Head"
+- id: 26
+  name: "Alectro Body"
+- id: 27
+  name: "Alectro Arms"
+- id: 28
+  name: "Alectro Legs"
+- id: 29
+  name: "Guan Head"
+- id: 30
+  name: "Guan Body"
+- id: 31
+  name: "Guan Arms"
+- id: 32
+  name: "Guan Legs"
+- id: 33
+  name: "Shanshan Head"
+- id: 34
+  name: "Shanshan Body"
+- id: 35
+  name: "Shanshan Arms"
+- id: 36
+  name: "Shanshan Legs"
+- id: 37
+  name: "Allo Head"
+- id: 38
+  name: "Allo Body"
+- id: 39
+  name: "Allo Arms"
+- id: 40
+  name: "Allo Legs"
+- id: 41
+  name: "Metria Head"
+- id: 42
+  name: "Metria Body"
+- id: 43
+  name: "Metria Arms"
+- id: 44
+  name: "Metria Legs"
+- id: 45
+  name: "Megalo Head"
+- id: 46
+  name: "Megalo Body"
+- id: 47
+  name: "Megalo Arms"
+- id: 48
+  name: "Megalo Legs"
+- id: 49
+  name: "Venator Head"
+- id: 50
+  name: "Venator Body"
+- id: 51
+  name: "Venator Arms"
+- id: 52
+  name: "Venator Legs"
+- id: 53
+  name: "S-Raptor Head"
+- id: 54
+  name: "S-Raptor Body"
+- id: 55
+  name: "S-Raptor Arms"
+- id: 56
+  name: "S-Raptor Legs"
+- id: 57
+  name: "Giganto Head"
+- id: 58
+  name: "Giganto Body"
+- id: 59
+  name: "Giganto Arms"
+- id: 60
+  name: "Giganto Legs"
+- id: 61
+  name: "Cryo Head"
+- id: 62
+  name: "Cryo Body"
+- id: 63
+  name: "Cryo Arms"
+- id: 64
+  name: "Cryo Legs"
+- id: 65
+  name: "Carchar Head"
+- id: 66
+  name: "Carchar Body"
+- id: 67
+  name: "Carchar Arms"
+- id: 68
+  name: "Carchar Legs"
+- id: 69
+  name: "Acro Head"
+- id: 70
+  name: "Acro Body"
+- id: 71
+  name: "Acro Arms"
+- id: 72
+  name: "Acro Legs"
+- id: 73
+  name: "F-Raptor Head"
+- id: 74
+  name: "F-Raptor Body"
+- id: 75
+  name: "F-Raptor Arms"
+- id: 76
+  name: "F-Raptor Legs"
+- id: 77
+  name: "Spinax Head"
+- id: 78
+  name: "Spinax Body"
+- id: 79
+  name: "Spinax Arms"
+- id: 80
+  name: "Spinax Legs"
+- id: 81
+  name: "Neo Head"
+- id: 82
+  name: "Neo Body"
+- id: 83
+  name: "Neo Arms"
+- id: 84
+  name: "Neo Legs"
+- id: 85
+  name: "Compso Head"
+- id: 86
+  name: "Compso Body"
+- id: 87
+  name: "Compso Arms"
+- id: 88
+  name: "Compso Legs"
+- id: 89
+  name: "Sopteryx Head"
+- id: 90
+  name: "Sopteryx Body"
+- id: 91
+  name: "Sopteryx Arms"
+- id: 92
+  name: "Sopteryx Legs"
+- id: 93
+  name: "Delta Head"
+- id: 94
+  name: "Delta Body"
+- id: 95
+  name: "Delta Arms"
+- id: 96
+  name: "Delta Legs"
+- id: 97
+  name: "Tro Head"
+- id: 98
+  name: "Tro Body"
+- id: 99
+  name: "Tro Arms"
+- id: 100
+  name: "Tro Legs"
+- id: 101
+  name: "Nychus Head"
+- id: 102
+  name: "Nychus Body"
+- id: 103
+  name: "Nychus Arms"
+- id: 104
+  name: "Nychus Legs"
+- id: 105
+  name: "M-Raptor Head"
+- id: 106
+  name: "M-Raptor Body"
+- id: 107
+  name: "M-Raptor Arms"
+- id: 108
+  name: "M-Raptor Legs"
+- id: 109
+  name: "U-Raptor Head"
+- id: 110
+  name: "U-Raptor Body"
+- id: 111
+  name: "U-Raptor Arms"
+- id: 112
+  name: "U-Raptor Legs"
+- id: 113
+  name: "V-Raptor Head"
+- id: 114
+  name: "V-Raptor Body"
+- id: 115
+  name: "V-Raptor Arms"
+- id: 116
+  name: "V-Raptor Legs"
+- id: 117
+  name: "Breme Head"
+- id: 118
+  name: "Breme Body"
+- id: 119
+  name: "Breme Arms"
+- id: 120
+  name: "Breme Legs"
+- id: 121
+  name: "Aopteryx Head"
+- id: 122
+  name: "Aopteryx Body"
+- id: 123
+  name: "Aopteryx Arms"
+- id: 124
+  name: "Aopteryx Legs"
+- id: 125
+  name: "Coelo Head"
+- id: 126
+  name: "Coelo Body"
+- id: 127
+  name: "Coelo Arms"
+- id: 128
+  name: "Coelo Legs"
+- id: 129
+  name: "Dilopho Head"
+- id: 130
+  name: "Dilopho Body"
+- id: 131
+  name: "Dilopho Arms"
+- id: 132
+  name: "Dilopho Legs"
+- id: 133
+  name: "Spino Head"
+- id: 134
+  name: "Spino Body"
+- id: 135
+  name: "Spino Arms"
+- id: 136
+  name: "Spino Legs"
+- id: 137
+  name: "Angato Head"
+- id: 138
+  name: "Angato Body"
+- id: 139
+  name: "Angato Arms"
+- id: 140
+  name: "Angato Legs"
+- id: 141
+  name: "Sucho Head"
+- id: 142
+  name: "Sucho Body"
+- id: 143
+  name: "Sucho Arms"
+- id: 144
+  name: "Sucho Legs"
+- id: 145
+  name: "Onyx Head"
+- id: 146
+  name: "Onyx Body"
+- id: 147
+  name: "Onyx Arms"
+- id: 148
+  name: "Onyx Legs"
+- id: 149
+  name: "Cerato Head"
+- id: 150
+  name: "Cerato Body"
+- id: 151
+  name: "Cerato Arms"
+- id: 152
+  name: "Cerato Legs"
+- id: 153
+  name: "Carno Head"
+- id: 154
+  name: "Carno Body"
+- id: 155
+  name: "Carno Arms"
+- id: 156
+  name: "Carno Legs"
+- id: 157
+  name: "Orno Head"
+- id: 158
+  name: "Orno Body"
+- id: 159
+  name: "Orno Arms"
+- id: 160
+  name: "Orno Legs"
+- id: 161
+  name: "Cheirus Head"
+- id: 162
+  name: "Cheirus Body"
+- id: 163
+  name: "Cheirus Arms"
+- id: 164
+  name: "Cheirus Legs"
+- id: 165
+  name: "O-Raptor Head"
+- id: 166
+  name: "O-Raptor Body"
+- id: 167
+  name: "O-Raptor Arms"
+- id: 168
+  name: "O-Raptor Legs"
+- id: 169
+  name: "Zino Head"
+- id: 170
+  name: "Zino Body"
+- id: 171
+  name: "Zino Arms"
+- id: 172
+  name: "Zino Legs"
+- id: 173
+  name: "Brachio Head"
+- id: 174
+  name: "Brachio Body"
+- id: 175
+  name: "Brachio Arms"
+- id: 176
+  name: "Brachio Legs"
+- id: 177
+  name: "Salto Head"
+- id: 178
+  name: "Salto Body"
+- id: 179
+  name: "Salto Arms"
+- id: 180
+  name: "Salto Legs"
+- id: 181
+  name: "Shuno Head"
+- id: 182
+  name: "Shuno Body"
+- id: 183
+  name: "Shuno Arms"
+- id: 184
+  name: "Shuno Legs"
+- id: 185
+  name: "Perso Head"
+- id: 186
+  name: "Perso Body"
+- id: 187
+  name: "Perso Arms"
+- id: 188
+  name: "Perso Legs"
+- id: 189
+  name: "Seismo Head"
+- id: 190
+  name: "Seismo Body"
+- id: 191
+  name: "Seismo Arms"
+- id: 192
+  name: "Seismo Legs"
+- id: 193
+  name: "Apato Head"
+- id: 194
+  name: "Apato Body"
+- id: 195
+  name: "Apato Arms"
+- id: 196
+  name: "Apato Legs"
+- id: 197
+  name: "Amargo Head"
+- id: 198
+  name: "Amargo Body"
+- id: 199
+  name: "Amargo Arms"
+- id: 200
+  name: "Amargo Legs"
+- id: 201
+  name: "Stego Head"
+- id: 202
+  name: "Stego Body"
+- id: 203
+  name: "Stego Arms"
+- id: 204
+  name: "Stego Legs"
+- id: 205
+  name: "Yango Head"
+- id: 206
+  name: "Yango Body"
+- id: 207
+  name: "Yango Arms"
+- id: 208
+  name: "Yango Legs"
+- id: 209
+  name: "Jiango Head"
+- id: 210
+  name: "Jiango Body"
+- id: 211
+  name: "Jiango Arms"
+- id: 212
+  name: "Jiango Legs"
+- id: 213
+  name: "Kentro Head"
+- id: 214
+  name: "Kentro Body"
+- id: 215
+  name: "Kentro Arms"
+- id: 216
+  name: "Kentro Legs"
+- id: 217
+  name: "Lexo Head"
+- id: 218
+  name: "Lexo Body"
+- id: 219
+  name: "Lexo Arms"
+- id: 220
+  name: "Lexo Legs"
+- id: 221
+  name: "Nodo Head"
+- id: 222
+  name: "Nodo Body"
+- id: 223
+  name: "Nodo Arms"
+- id: 224
+  name: "Nodo Legs"
+- id: 225
+  name: "Ankylo Head"
+- id: 226
+  name: "Ankylo Body"
+- id: 227
+  name: "Ankylo Arms"
+- id: 228
+  name: "Ankylo Legs"
+- id: 229
+  name: "Saichan Head"
+- id: 230
+  name: "Saichan Body"
+- id: 231
+  name: "Saichan Arms"
+- id: 232
+  name: "Saichan Legs"
+- id: 233
+  name: "Goyle Head"
+- id: 234
+  name: "Goyle Body"
+- id: 235
+  name: "Goyle Arms"
+- id: 236
+  name: "Goyle Legs"
+- id: 237
+  name: "Pelto Head"
+- id: 238
+  name: "Pelto Body"
+- id: 239
+  name: "Pelto Arms"
+- id: 240
+  name: "Pelto Legs"
+- id: 241
+  name: "Hypsi Head"
+- id: 242
+  name: "Hypsi Body"
+- id: 243
+  name: "Hypsi Arms"
+- id: 244
+  name: "Hypsi Legs"
+- id: 245
+  name: "Nasaur Head"
+- id: 246
+  name: "Nasaur Body"
+- id: 247
+  name: "Nasaur Arms"
+- id: 248
+  name: "Nasaur Legs"
+- id: 249
+  name: "Igua Head"
+- id: 250
+  name: "Igua Body"
+- id: 251
+  name: "Igua Arms"
+- id: 252
+  name: "Igua Legs"
+- id: 253
+  name: "Ourano Head"
+- id: 254
+  name: "Ourano Body"
+- id: 255
+  name: "Ourano Arms"
+- id: 256
+  name: "Ourano Legs"
+- id: 257
+  name: "Lambeo Head"
+- id: 258
+  name: "Lambeo Body"
+- id: 259
+  name: "Lambeo Arms"
+- id: 260
+  name: "Lambeo Legs"
+- id: 261
+  name: "Maia Head"
+- id: 262
+  name: "Maia Body"
+- id: 263
+  name: "Maia Arms"
+- id: 264
+  name: "Maia Legs"
+- id: 265
+  name: "Anato Head"
+- id: 266
+  name: "Anato Body"
+- id: 267
+  name: "Anato Arms"
+- id: 268
+  name: "Anato Legs"
+- id: 269
+  name: "Paraloph Head"
+- id: 270
+  name: "Paraloph Body"
+- id: 271
+  name: "Paraloph Arms"
+- id: 272
+  name: "Paraloph Legs"
+- id: 273
+  name: "Pachy Head"
+- id: 274
+  name: "Pachy Body"
+- id: 275
+  name: "Pachy Arms"
+- id: 276
+  name: "Pachy Legs"
+- id: 277
+  name: "Stygi Head"
+- id: 278
+  name: "Stygi Body"
+- id: 279
+  name: "Stygi Arms"
+- id: 280
+  name: "Stygi Legs"
+- id: 281
+  name: "Goyo Head"
+- id: 282
+  name: "Goyo Body"
+- id: 283
+  name: "Goyo Arms"
+- id: 284
+  name: "Goyo Legs"
+- id: 285
+  name: "Proto Head"
+- id: 286
+  name: "Proto Body"
+- id: 287
+  name: "Proto Arms"
+- id: 288
+  name: "Proto Legs"
+- id: 289
+  name: "Tricera Head"
+- id: 290
+  name: "Tricera Body"
+- id: 291
+  name: "Tricera Arms"
+- id: 292
+  name: "Tricera Legs"
+- id: 293
+  name: "Styraco Head"
+- id: 294
+  name: "Styraco Body"
+- id: 295
+  name: "Styraco Arms"
+- id: 296
+  name: "Styraco Legs"
+- id: 297
+  name: "Einio Head"
+- id: 298
+  name: "Einio Body"
+- id: 299
+  name: "Einio Arms"
+- id: 300
+  name: "Einio Legs"
+- id: 301
+  name: "Centro Head"
+- id: 302
+  name: "Centro Body"
+- id: 303
+  name: "Centro Arms"
+- id: 304
+  name: "Centro Legs"
+- id: 305
+  name: "Penta Head"
+- id: 306
+  name: "Penta Body"
+- id: 307
+  name: "Penta Arms"
+- id: 308
+  name: "Penta Legs"
+- id: 309
+  name: "Pachrino Head"
+- id: 310
+  name: "Pachrino Body"
+- id: 311
+  name: "Pachrino Arms"
+- id: 312
+  name: "Pachrino Legs"
+- id: 313
+  name: "Mihu Head"
+- id: 314
+  name: "Mihu Body"
+- id: 315
+  name: "Mihu Arms"
+- id: 316
+  name: "Mihu Legs"
+- id: 317
+  name: "Ptera Head"
+- id: 318
+  name: "Ptera Body"
+- id: 319
+  name: "Ptera Arms"
+- id: 320
+  name: "Ptera Legs"
+- id: 321
+  name: "Coatlus Head"
+- id: 322
+  name: "Coatlus Body"
+- id: 323
+  name: "Coatlus Arms"
+- id: 324
+  name: "Coatlus Legs"
+- id: 325
+  name: "Jara Head"
+- id: 326
+  name: "Jara Body"
+- id: 327
+  name: "Jara Arms"
+- id: 328
+  name: "Jara Legs"
+- id: 329
+  name: "Dimorph Head"
+- id: 330
+  name: "Dimorph Body"
+- id: 331
+  name: "Dimorph Arms"
+- id: 332
+  name: "Dimorph Legs"
+- id: 333
+  name: "Guera Head"
+- id: 334
+  name: "Guera Body"
+- id: 335
+  name: "Guera Arms"
+- id: 336
+  name: "Guera Legs"
+- id: 337
+  name: "Krona Head"
+- id: 338
+  name: "Krona Body"
+- id: 339
+  name: "Krona Arms"
+- id: 340
+  name: "Krona Legs"
+- id: 341
+  name: "Futabi Head"
+- id: 342
+  name: "Futabi Body"
+- id: 343
+  name: "Futabi Arms"
+- id: 344
+  name: "Futabi Legs"
+- id: 345
+  name: "Elasmo Head"
+- id: 346
+  name: "Elasmo Body"
+- id: 347
+  name: "Elasmo Arms"
+- id: 348
+  name: "Elasmo Legs"
+- id: 349
+  name: "Plesio Head"
+- id: 350
+  name: "Plesio Body"
+- id: 351
+  name: "Plesio Arms"
+- id: 352
+  name: "Plesio Legs"
+- id: 353
+  name: "Shoni Head"
+- id: 354
+  name: "Shoni Body"
+- id: 355
+  name: "Shoni Arms"
+- id: 356
+  name: "Shoni Legs"
+- id: 357
+  name: "Arsith Head"
+- id: 358
+  name: "Arsith Body"
+- id: 359
+  name: "Arsith Arms"
+- id: 360
+  name: "Arsith Legs"
+- id: 361
+  name: "Brontoth Head"
+- id: 362
+  name: "Brontoth Body"
+- id: 363
+  name: "Brontoth Arms"
+- id: 364
+  name: "Brontoth Legs"
+- id: 365
+  name: "Elasmoth Head"
+- id: 366
+  name: "Elasmoth Body"
+- id: 367
+  name: "Elasmoth Arms"
+- id: 368
+  name: "Elasmoth Legs"
+- id: 369
+  name: "Hoplo Head"
+- id: 370
+  name: "Hoplo Body"
+- id: 371
+  name: "Hoplo Arms"
+- id: 372
+  name: "Hoplo Legs"
+- id: 373
+  name: "Andrarch Head"
+- id: 374
+  name: "Andrarch Body"
+- id: 375
+  name: "Andrarch Arms"
+- id: 376
+  name: "Andrarch Legs"
+- id: 377
+  name: "Paki Head"
+- id: 378
+  name: "Paki Body"
+- id: 379
+  name: "Paki Arms"
+- id: 380
+  name: "Paki Legs"
+- id: 381
+  name: "Smilo Head"
+- id: 382
+  name: "Smilo Body"
+- id: 383
+  name: "Smilo Arms"
+- id: 384
+  name: "Smilo Legs"
+- id: 385
+  name: "Mammoth Head"
+- id: 386
+  name: "Mammoth Body"
+- id: 387
+  name: "Mammoth Arms"
+- id: 388
+  name: "Mammoth Legs"
+- id: 389
+  name: "Tryma Head"
+- id: 390
+  name: "Tryma Body"
+- id: 391
+  name: "Tryma Arms"
+- id: 392
+  name: "Tryma Legs"
+- id: 393
+  name: "Megath Head"
+- id: 394
+  name: "Megath Body"
+- id: 395
+  name: "Megath Arms"
+- id: 396
+  name: "Megath Legs"
+- id: 397
+  name: "Chelon Head"
+- id: 398
+  name: "Chelon Body"
+- id: 399
+  name: "Chelon Arms"
+- id: 400
+  name: "Chelon Legs"
+- id: 401
+  name: "Dinomaton"
+- id: "402–404"
+- id: 405
+  name: "Duna"
+- id: "406–408"
+- id: 409
+  name: "Raptin"
+- id: "410–412"
+- id: 413
+  name: "Dynal"
+- id: "414–416"
+- id: 417
+  name: "Frigi"
+- id: "418–420"
+- id: 421
+  name: "Igno"
+- id: "422–424"
+- id: 425
+  name: "Squik"
+- id: "426–428"
+- id: 429
+  name: "Squirk"
+- id: "430–432"
+- id: 433
+  name: "Squirth"
+- id: "434–436"
+- id: 437
+  name: "Squilk"
+- id: "438–440"
+- id: 441
+  name: "Squiro"
+- id: "442–444"
+- id: 445
+  name: "Guhweep"
+- id: "446–448"
+- id: 449
+  name: "Guhvorn"
+- id: "450–452"
+- id: 453
+  name: "Guhlith"
+- id: "454–456"
+- id: 457
+  name: "OP Frigi"
+- id: "458–460"
+- id: 461
+  name: "OP Igno"
+- id: "462–500"
+- id: 501
+  name: "Small Pearl"
+- id: 502
+  name: "Small Pearl"
+- id: 503
+  name: "Small Pearl"
+- id: 504
+  name: "Emerald"
+- id: 505
+  name: "Emerald"
+- id: 506
+  name: "Emerald"
+- id: 507
+  name: "Diamond"
+- id: 508
+  name: "Diamond"
+- id: 509
+  name: "Diamond"
+- id: 510
+  name: "Double Pearl"
+- id: 511
+  name: "Double Pearl"
+- id: 512
+  name: "Double Pearl"
+- id: 513
+  name: "Sapphire"
+- id: 514
+  name: "Sapphire"
+- id: 515
+  name: "Sapphire"
+- id: 516
+  name: "Double Diamond"
+- id: 517
+  name: "Double Diamond"
+- id: 518
+  name: "Double Diamond"
+- id: 519
+  name: "Giant Pearl"
+- id: 520
+  name: "Giant Pearl"
+- id: 521
+  name: "Giant Pearl"
+- id: 522
+  name: "Ruby"
+- id: 523
+  name: "Ruby"
+- id: 524
+  name: "Ruby"
+- id: 525
+  name: "Quad Diamond"
+- id: 526
+  name: "Quad Diamond"
+- id: 527
+  name: "Quad Diamond"
+- id: 528
+  name: "Colossal Diamond"
+- id: 529
+  name: "Colossal Diamond"
+- id: 530
+  name: "Colossal Diamond"
+- id: "531–600"
+- id: 601
+  name: "Large Dropping Fossil"
+- id: 602
+  name: "Large Dropping Fossil"
+- id: 603
+  name: "Large Dropping Fossil"
+- id: 604
+  name: "Large Double Dropping Fossil"
+- id: 605
+  name: "Large Double Dropping Fossil"
+- id: 606
+  name: "Large Double Dropping Fossil"
+- id: 607
+  name: "Small Dropping Fossil - center"
+- id: 608
+  name: "Small Dropping Fossil - center"
+- id: 609
+  name: "Small Dropping Fossil - center"
+- id: 610
+  name: "Small Dropping Fossil - bottom right"
+- id: 611
+  name: "Small Dropping Fossil - bottom right"
+- id: 612
+  name: "Small Dropping Fossil - bottom right"
+- id: 613
+  name: "Small Dropping Fossil - top right"
+- id: 614
+  name: "Small Dropping Fossil - top right"
+- id: 615
+  name: "Small Dropping Fossil - top right"
+- id: 616
+  name: "Small Dropping Fossil - center bottom"
+- id: 617
+  name: "Small Dropping Fossil - center bottom"
+- id: 618
+  name: "Small Dropping Fossil - center bottom"
+- id: 619
+  name: "Small Dropping Fossil - center top"
+- id: 620
+  name: "Small Dropping Fossil - center top"
+- id: 621
+  name: "Small Dropping Fossil - center top"
+- id: 622
+  name: "Triple Dropping Fossil - down up down"
+- id: 623
+  name: "Triple Dropping Fossil - down up down"
+- id: 624
+  name: "Triple Dropping Fossil - down up down"
+- id: 625
+  name: "Triple Dropping Fossil - diagonal line"
+- id: 626
+  name: "Triple Dropping Fossil - diagonal line"
+- id: 627
+  name: "Triple Dropping Fossil - diagonal line"
+- id: 628
+  name: "Small Double Dropping Fossil"
+- id: 629
+  name: "Small Double Dropping Fossil"
+- id: 630
+  name: "Small Double Dropping Fossil"
+- id: "631–700"
+- id: 701
+  name: "Egg"
+- id: 702
+  name: "Keymonite"
+- id: 703
+  name: "Shark Dentures"
+- id: 704
+  name: "Mt. Lavaflow N Rock"
+  notes: "The rock you break to save Duna"
+- id: 705
+  name: "Mt. Lavaflow NE Puzzle 1"
+- id: 706
+  name: "Mt. Lavaflow NE Puzzle 2"
+- id: 707
+  name: "Mt. Lavaflow NE Puzzle 3"
+- id: 708
+  name: "Unhardened Igno"
+- id: 709
+  name: "Stone Sleep Dr. Diggins"
+- id: 710
+  name: "Hardened Igno"
+- id: 711
+  name: "Staff Quest 1 Round 1"
+- id: 712
+  name: "Staff Quest 1 Round 2"
+- id: 713
+  name: "Staff Quest 1 Round 3"
+- id: 714
+  name: "Staff Quest 2 Round 1"
+- id: 715
+  name: "Staff Quest 2 Round 2"
+- id: 716
+  name: "Staff Quest 2 Round 3"
+- id: 717
+  name: "Staff Quest 3 Round 1"
+- id: 718
+  name: "Staff Quest 3 Round 2"
+- id: 719
+  name: "Staff Quest 3 Round 3"
+- id: 720
+  name: "Tools"
+- id: 721
+  name: "Electrominite"
+- id: 722
+  name: "Chapter 1 Fossil Level-Up Battle"
+- id: 723
+  name: "Chapter 2 Fossil Level-Up Battle"
+- id: 724
+  name: "Chapter 3 Fossil Level-Up Battle"
+- id: 725
+  name: "Chapter 4 Fossil Level-Up Battle"
+- id: 726
+  name: "Chapter 5 Fossil Level-Up Battle"
+- id: 727
+  name: "Chapter 6 Fossil Level-Up Battle"
+- id: 728
+  name: "Cleaning Practice"
+- id: 729
+  name: "Pre-Chapter Level-Up Battle"

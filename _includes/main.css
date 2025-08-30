@@ -140,6 +140,10 @@ sup {
 	text-align: start;
 }
 
+.text-align-center {
+	text-align: center;
+}
+
 summary {
 	cursor: pointer;
 }
@@ -185,7 +189,7 @@ button {
 	}
 }
 
-.icon-links {
+icon-links {
 	display: flex;
 	gap: var(--icon-link-spacing);
 	float: right;
