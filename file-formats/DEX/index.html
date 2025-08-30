@@ -20,7 +20,7 @@ layout: default
 	<tbody>
 		{%- for argument in site.data.DEX.arguments -%}
 			<tr>
-				<td><code class="foreign-type">&lt;{{ argument.type }}&gt;</code></td>
+				<td><code><foreign-type>&lt;{{ argument.type }}&gt;</foreign-type></code></td>
 				<td>{{ argument.description }}</td>
 			</tr>
 		{%- endfor -%}
@@ -34,7 +34,7 @@ layout: default
 		{%- for command in site.data.DEX.commands -%}
 			<tr>
 				<th>{{ command.id }}</th>
-				<th class="text-align-start"><code class="keyword">{{ command.command }}</code></th>
+				<th class="text-align-start"><code><code-keyword>{{ command.command }}</code-keyword></code></th>
 			</tr>
 			{%- if command.notes -%}
 			<tr>

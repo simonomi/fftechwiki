@@ -37,22 +37,22 @@
 		{%- endif -%}
 	</head>
 	<body>
-		<div id="content">
+		<page-content>
 			<hgroup>
 				<h1>{{ page.title }}</h1>
 			</hgroup>
 			
 			{{- content -}}
-		</div>
+		</page-content>
 		
-		<div id="navigation-sidebar">
+		<navigation-sidebar>
 			{%- include navigation.html -%}
-		</div>
+		</navigation-sidebar>
 		
 		<details id="navigation-details">
 			<summary>
-				<img class="navigation-menu" id="open-navigation-menu" src="/fftechwiki/images/menu.svg">
-				<img class="navigation-menu" id="close-navigation-menu" src="/fftechwiki/images/close.svg">
+				<img id="open-navigation-menu" src="/fftechwiki/images/menu.svg">
+				<img id="close-navigation-menu" src="/fftechwiki/images/close.svg">
 			</summary>
 			
 			{%- include navigation.html -%}

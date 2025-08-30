@@ -1,53 +1,56 @@
 nav {
 	min-width: 20ch;
-}
-
-nav details {
-	background-color: light-dark(#f0f0f0, #202020);
-	border-radius: 0.5rem;
-	overflow: hidden; /* hides corners in summary */
-}
-
-nav details[open] {
-	padding-bottom: 0.25rem;
-}
-
-nav details:not(:last-child) {
-	margin-bottom: 0.5rem;
-}
-
-nav summary {
-	padding: 0.5rem;
-	background-color: light-dark(#e0e0e0, #2c2c2c);
-	user-select: none;
-	-webkit-user-select: none;
-}
-
-nav ul:not(ul ul) {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-}
-
-nav ul ul:not(:last-child) {
-	margin-bottom: 0.25rem;
-}
-
-nav hr {
-	/* 20px is half of a ul's padding-inline-start */
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-nav > a > img:first-child {
-	width: 10ch;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-nav > a > p {
-	margin-top: 0;
-	text-align: center;
+	
+	& > a:first-child {
+		img {
+			width: 10ch;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		p {
+			margin-top: 0;
+			text-align: center;
+		}
+	}
+	
+	details {
+		background-color: light-dark(#f0f0f0, #202020);
+		border-radius: 0.5rem;
+		overflow: hidden; /* hides corners in summary */
+		
+		summary {
+			padding: 0.5rem;
+			background-color: light-dark(#e0e0e0, #2c2c2c);
+			user-select: none;
+			-webkit-user-select: none;
+		}
+		
+		&[open] {
+			padding-bottom: 0.25rem;
+		}
+		
+		&:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+	
+	hr {
+		/* 20px is half of a ul's padding-inline-start */
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	/* TODO: unify these with non-nav */
+	ul:not(ul ul) {
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+	}
+	
+	ul ul:not(:last-child) {
+		margin-bottom: 0.25rem;
+	}
 }
 
 @media screen and (width > 700px) {
@@ -59,7 +62,7 @@ nav > a > p {
 		margin: 1rem;
 	}
 	
-	#navigation-sidebar {
+	navigation-sidebar {
 		grid-row: 1 / 4;
 		grid-column: 2;
 	}
@@ -68,13 +71,13 @@ nav > a > p {
 		display: none;
 	}
 	
-	#content {
+	page-content {
 		grid-row: 1;
 		grid-column: 4;
-	}
-	
-	#content > *:first-child {
-		margin-top: 0; /* don't duplicate the body margin */
+		
+		& > *:first-child {
+			margin-top: 0; /* don't duplicate the body margin */
+		}
 	}
 	
 	footer {
@@ -88,59 +91,59 @@ nav > a > p {
 		position: relative; /* this allows the navigation-details to expand to full size, otherwise it doesn't have a proper container to be absolutely filling */
 	}
 	
-	#navigation-sidebar {
+	navigation-sidebar {
 		display: none;
 	}
 	
 	#navigation-details {
 		position: absolute;
 		inset: 0;
-	}
-	
-	#navigation-details nav {
-		padding: 1rem; /* margin doesn't show up in overflow */
-	}
-	
-	#navigation-details:not([open]) {
-		pointer-events: none;
-	}
-	
-	#navigation-details[open] {
-		background-color: var(--background-color);
-	}
-	
-	#navigation-details > summary {
-		display: block;
-		position: fixed;
-		bottom: 1rem;
-		right: 1rem;
-		z-index: 1;
-		width: 4rem;
-		height: 4rem;
-		background-color: var(--button-color);
-		border-radius: 50%;
-	}
-	
-	#navigation-details:not([open]) > summary {
-		pointer-events: all;
-	}
-	
-	#navigation-details > summary:active {
-		background-color: var(--button-pressed-color);
-	}
-	
-	.navigation-menu {
-		width: 2rem;
-		height: 2rem;
-		margin: 1rem;
-	}
-	
-	#navigation-details[open] #open-navigation-menu {
-		display: none
-	}
-	
-	#navigation-details:not([open]) #close-navigation-menu {
-		display: none
+		
+		& > summary {
+			display: block;
+			position: fixed;
+			bottom: 1rem;
+			right: 1rem;
+			z-index: 1;
+			width: 4rem;
+			height: 4rem;
+			background-color: var(--button-color);
+			border-radius: 50%;
+			
+			&:active {
+				background-color: var(--button-pressed-color);
+			}
+			
+			img {
+				width: 2rem;
+				height: 2rem;
+				margin: 1rem;
+			}
+		}
+		
+		nav {
+			padding: 1rem; /* margin doesn't show up in overflow */
+		}
+		
+		&[open] {
+			background-color: var(--background-color);
+			
+			#open-navigation-menu {
+				display: none
+			}
+		}
+		
+		&:not([open]) {
+			pointer-events: none;
+			
+			& > summary {
+				pointer-events: all;
+			}
+			
+			#close-navigation-menu {
+				display: none
+			}
+		}
 	}
 }
 
