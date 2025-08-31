@@ -1,0 +1,22 @@
+---
+title: DMS
+layout: default
+---
+<p>DMS files store only a single number, which is the maximum ID of some list. For example, <code>etc/kasekirock_maxid</code> has <code>999</code>, which is the number of entries in <code>etc/kaseki_defs</code>.</p>
+
+<p>All DMS files are found in <code>etc/</code>, with file names ending with <code>_maxid</code>.</p>
+
+<table>
+	<thead>
+		<th>File</th>
+		<th>Value</th>
+	</thead>
+	<tbody>
+		{%- for maxid in site.data.DMS.maxids -%}
+		<tr>
+			<td><code>{{ maxid.file }}</code></td>
+			<td>{{ maxid.number }}</td>
+		</tr>
+		{%- endfor -%}
+	</tbody>
+</table>
