@@ -9,7 +9,7 @@ layout: default
 
 <h2>Fossils</h2>
 
-<p>Also see C0qu1-Man's amazing spreadsheets for <a href="https://docs.google.com/spreadsheets/d/11e0zfQhXBfRCfsE3pWGxw3btl8RlOOJanYeWKzipZ4A/edit">FF1</a> and <a href="https://docs.google.com/spreadsheets/d/1uQMZp4dRy345JuXV4eG4BYB6dMRFy1zmbq__zTOKrnQ/edit">FFC</a>.</p>
+<p>Also see C0qu1-Man's fantastic spreadsheets for <a href="https://docs.google.com/spreadsheets/d/11e0zfQhXBfRCfsE3pWGxw3btl8RlOOJanYeWKzipZ4A/edit">FF1</a> and <a href="https://docs.google.com/spreadsheets/d/1uQMZp4dRy345JuXV4eG4BYB6dMRFy1zmbq__zTOKrnQ/edit">FFC</a>.</p>
 
 <table class="scrollable">
 	<thead>
@@ -25,6 +25,8 @@ layout: default
 		
 		<th>Rock hardness</th>
 		<th>Fossil hardness</th>
+		
+		<th>Completion appearance</th>
 		
 		<th>Buy price</th>
 		<th>Sell price</th>
@@ -67,6 +69,8 @@ layout: default
 				<td>{{ fossil["rock hardness"] | round: 3 }}</td>
 				<td>{{ fossil["fossil hardness"] | round: 3 }}</td>
 				
+				<td>{{ fossil["completion foreground"] }}</td>
+				
 				<td>{{ fossil["buy price"] }}&nbsp;G</td>
 				<td>{{ fossil["sell price"] }}&nbsp;G</td>
 				<td>{{ fossil["sell price before cleaning"] }}&nbsp;G</td>
@@ -82,7 +86,7 @@ layout: default
 			</tr>
 			{%- elsif forloop.first or previousFossil -%}
 				<tr>
-					<td class="bold text-align-center">
+					<td class="bold text-align-center nowrap">
 						{%- assign nilCount = 0 -%}
 						{%- for nilFossil in fossils offset:forloop.index -%}
 							{%- if nilFossil -%}
@@ -99,6 +103,7 @@ layout: default
 							{{ forloop.index0 }}–{{ endNilsIndex}}
 						{%- endif -%}
 					</td>
+					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>

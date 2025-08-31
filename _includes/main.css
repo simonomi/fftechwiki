@@ -144,6 +144,10 @@ sup {
 	text-align: center;
 }
 
+.nowrap {
+	text-wrap: nowrap;
+}
+
 summary {
 	cursor: pointer;
 }

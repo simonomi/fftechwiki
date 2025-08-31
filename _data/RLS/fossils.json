@@ -10113,7 +10113,7 @@
   null,
   null,
   {
-    "_label" : "Frigi",
+    "_label" : "OP Frigi",
     "buy price" : 0,
     "completion background" : "mystery",
     "completion foreground" : "mystery",
@@ -10141,7 +10141,7 @@
   null,
   null,
   {
-    "_label" : "Igno",
+    "_label" : "OP Igno",
     "buy price" : 0,
     "completion background" : "headOnly",
     "completion foreground" : "headOnly",
@@ -10393,7 +10393,7 @@
   null,
   null,
   {
-    "_label" : "OP Frigi",
+    "_label" : "Frigi",
     "buy price" : 0,
     "completion background" : "mystery",
     "completion foreground" : "mystery",
@@ -10421,7 +10421,7 @@
   null,
   null,
   {
-    "_label" : "OP Igno",
+    "_label" : "Igno",
     "buy price" : 0,
     "completion background" : "mystery",
     "completion foreground" : "mystery",
