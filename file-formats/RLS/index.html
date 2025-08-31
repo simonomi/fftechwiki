@@ -15,17 +15,29 @@ layout: default
 	<thead>
 		<th>ID</th>
 		<th>Name</th>
+		
 		<th>Rock image</th>
 		<th>Fossil image</th>
+		
 		<th>Unbreakable</th>
 		<th>Destroyable</th>
+		<th>Show score</th>
+		
 		<th>Rock hardness</th>
 		<th>Fossil hardness</th>
+		
 		<th>Buy price</th>
 		<th>Sell price</th>
+		<th>Sell price before cleaning</th>
+		
+		<th>KL-33N dialogue type</th>
 		<th>In‑game name</th>
+		
 		<th>Cleaning time</th>
 		<th>Passing score</th>
+		
+		<th>Hammer shockwave resistance</th>
+		<th>Drill shockwave resistance</th>
 	</thead>
 	<tbody>
 		{%- assign fossils = site.data.RLS.fossils -%}
@@ -42,7 +54,7 @@ layout: default
 				
 				<td><img loading="lazy" src="/fftechwiki/images/RLS/rock-{{ rockImageNumber }}.png"></td>
 				
-				{%- if fossil["fossil image flipped"] -%}
+				{%- if fossil["flipped horizontally"] -%}
 					<td><img loading="lazy" class="flipped" src="/fftechwiki/images/RLS/fossil-{{ fossilImageNumber }}.png"></td>
 				{%- else -%}
 					<td><img loading="lazy" src="/fftechwiki/images/RLS/fossil-{{ fossilImageNumber }}.png"></td>
@@ -50,14 +62,23 @@ layout: default
 				
 				<td class="{{ fossil.unbreakable }} text-align-center">{{ fossil.unbreakable }}</td>
 				<td class="{{ fossil.destroyable }} text-align-center">{{ fossil.destroyable }}</td>
+				<td class="{{ fossil["show score"] }} text-align-center">{{ fossil["show score"] }}</td>
 				
 				<td>{{ fossil["rock hardness"] | round: 3 }}</td>
 				<td>{{ fossil["fossil hardness"] | round: 3 }}</td>
+				
 				<td>{{ fossil["buy price"] }}&nbsp;G</td>
 				<td>{{ fossil["sell price"] }}&nbsp;G</td>
+				<td>{{ fossil["sell price before cleaning"] }}&nbsp;G</td>
+				
+				<td>{{ fossil["kl-33n dialogue"] }}</td>
 				<td>{{ fossil["fossil name"] }}</td>
+				
 				<td>{{ fossil.time }}</td>
 				<td>{{ fossil["passing score"] }}</td>
+				
+				<td>{{ fossil["shockwave resistances"][0] | round: 3 }}</td>
+				<td>{{ fossil["shockwave resistances"][1] | round: 3 }}</td>
 			</tr>
 			{%- elsif forloop.first or previousFossil -%}
 				<tr>
@@ -78,6 +99,11 @@ layout: default
 							{{ forloop.index0 }}–{{ endNilsIndex}}
 						{%- endif -%}
 					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
