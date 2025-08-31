@@ -101,6 +101,7 @@
   description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for images'
   filePath: "image/"
 - magicBytes: "RLS"
+  url: "/fftechwiki/file-formats/RLS"
   description: "Fossils"
   filePath: "etc/kaseki_defs"
 - magicBytes: "SHP"

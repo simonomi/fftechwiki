@@ -9,7 +9,7 @@
 - type: 'fixed-point'
   description: 'a <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">fixed-point</a> number, which can have a fractional component'
 - type: 'fossil'
-  description: 'a particular fossil (see <a>RLS</a>)'
+  description: 'a particular fossil (see <a href="/fftechwiki/file-formats/RLS">RLS</a>)'
 - type: 'frames'
   description: 'a number of frames'
 - type: 'image'
