@@ -1,22 +1,93 @@
 ---
 title: RLS
+style: RLS
 layout: default
 ---
 <p>There is only one RLS file, <code>etc/kaseki_defs</code>. It stores the data for every fossil rock in the game. Technically, there are 999 fossil rocks in the game, but 494 of them are blank, so there are really only 505.</p>
 
-<table>
+<div>
+<table class="scrollable">
 	<thead>
 		<th>ID</th>
 		<th>Name</th>
-		<th>Notes</th>
+		<th>Rock image</th>
+		<th>Fossil image</th>
+		<th>Unbreakable</th>
+		<th>Destroyable</th>
+		<th>Rock hardness</th>
+		<th>Fossil hardness</th>
+		<th>Buy price</th>
+		<th>Sell price</th>
+		<th>In‑game name</th>
+		<th>Cleaning time</th>
+		<th>Passing score</th>
 	</thead>
 	<tbody>
-		{%- for fossil in site.data.RLS.fossils -%}
+		{%- assign fossils = site.data.RLS.fossils -%}
+		{%- for fossil in fossils -%}
+			{%- assign previousIndex = forloop.index0 | minus: 1 -%}
+			{%- assign previousFossil = fossils[previousIndex] -%}
+			{%- if fossil -%}
 			<tr>
-				<td class="bold text-align-center">{{ fossil.id }}</td>
-				<td>{{ fossil.name }}</td>
-				<td>{{ fossil.notes }}</td>
+				<td class="bold text-align-center">{{ forloop.index0 }}</td>
+				<td>{{ fossil._label }}</td>
+				
+				{%- assign rockImageNumber = fossil["rock image"] | prepend: "00" | slice: -3, 3 -%}
+				{%- assign fossilImageNumber = fossil["fossil image"] | prepend: "00" | slice: -3, 3 -%}
+				
+				<td><img loading="lazy" src="/fftechwiki/images/RLS/rock-{{ rockImageNumber }}.png"></td>
+				
+				{%- if fossil["fossil image flipped"] -%}
+					<td><img loading="lazy" class="flipped" src="/fftechwiki/images/RLS/fossil-{{ fossilImageNumber }}.png"></td>
+				{%- else -%}
+					<td><img loading="lazy" src="/fftechwiki/images/RLS/fossil-{{ fossilImageNumber }}.png"></td>
+				{%- endif -%}
+				
+				<td class="{{ fossil.unbreakable }} text-align-center">{{ fossil.unbreakable }}</td>
+				<td class="{{ fossil.destroyable }} text-align-center">{{ fossil.destroyable }}</td>
+				
+				<td>{{ fossil["rock hardness"] | round: 3 }}</td>
+				<td>{{ fossil["fossil hardness"] | round: 3 }}</td>
+				<td>{{ fossil["buy price"] }}&nbsp;G</td>
+				<td>{{ fossil["sell price"] }}&nbsp;G</td>
+				<td>{{ fossil["fossil name"] }}</td>
+				<td>{{ fossil.time }}</td>
+				<td>{{ fossil["passing score"] }}</td>
 			</tr>
+			{%- elsif forloop.first or previousFossil -%}
+				<tr>
+					<td class="bold text-align-center">
+						{%- assign nilCount = 0 -%}
+						{%- for nilFossil in fossils offset:forloop.index -%}
+							{%- if nilFossil -%}
+								{%- break -%}
+							{%- endif -%}
+							{%- assign nilCount = nilCount | plus: 1 -%}
+						{% endfor -%}
+						
+						{%- assign endNilsIndex = forloop.index0 | plus: nilCount -%}
+						
+						{%- if forloop.index0 == endNilsIndex -%}
+							{{ forloop.index0 }}
+						{%- else -%}
+							{{ forloop.index0 }}–{{ endNilsIndex}}
+						{%- endif -%}
+					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			{%- endif -%}
 		{%- endfor -%}
 	</tbody>
 </table>
+</div>

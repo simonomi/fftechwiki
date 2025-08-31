@@ -4,6 +4,7 @@ nav {
 	& > a:first-child {
 		img {
 			width: 10ch;
+			height: 10ch;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;

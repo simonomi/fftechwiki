@@ -1,0 +1,36 @@
+:root {
+	--true-color: light-dark(#50c878, #50c878);
+	--false-color: #f27464;
+}
+
+page-content {
+	/* TODO: someday, when it's possible to make a sticky header actually work, try again */
+	/* thead { */
+	/* 	position: sticky; */
+	/* 	top: 0; */
+	/* 	z-index: 1; */
+	/* } */
+	
+	img { /* 1/2 their full size (256x192) */
+		width: 128px;
+		height: 96px;
+		
+		&.flipped {
+			transform: scaleX(-1);
+		}
+	}
+	
+	td {
+		&:has(img) {
+			padding: 0;
+		}
+		
+		&.true {
+			color: var(--true-color);
+		}
+		
+		&.false {
+			color: var(--false-color);
+		}
+	}
+}
