@@ -29,10 +29,8 @@ layout: default
 				<td>{{ fileFormat.description }}</td>
 				{%- if fileFormat.filePath -%}
 					<td><code>{{ fileFormat.filePath }}</code></td>
-				{%- else if fileFormat.location -%}
-					<td>{{ fileFormat.location }}</td>
 				{%- else -%}
-					<td></td>
+					<td>{{ fileFormat.location }}</td>
 				{%- endif -%}
 			</tr>
 		{%- endfor -%}
