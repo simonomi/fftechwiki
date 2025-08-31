@@ -59,6 +59,9 @@
 - magicBytes: "DNC"
   description: ""
   filePath: "dance/"
+- magicBytes: "DSL"
+  description: "Haiku"
+  filePath: "etc/senryu_defs"
 - magicBytes: "DTX"
   description: "Text"
   filePath: "text/"
@@ -86,6 +89,8 @@
 - magicBytes: "MFS"
   description: "Fonts"
   filePath: "font/"
+- magicBytes: "MKL"
+  filePath: "etc/timemask"
 - magicBytes: "MM3"
   description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for 3D models'
   filePath: "model/"
