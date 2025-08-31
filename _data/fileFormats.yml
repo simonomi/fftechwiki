@@ -87,13 +87,13 @@
   description: "Fonts"
   filePath: "font/"
 - magicBytes: "MM3"
-  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> used for 3D models'
+  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for 3D models'
   filePath: "model/"
 - magicBytes: "MMS"
-  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> used for sprites'
+  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for sprites'
   filePath: "motion/"
 - magicBytes: "MPM"
-  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> used for images'
+  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for images'
   filePath: "image/"
 - magicBytes: "RLS"
   description: "Fossils"

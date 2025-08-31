@@ -6,7 +6,9 @@ table {
 	margin-block-end: 1rem;
 	
 	&.scrollable {
-		display: block; /* right now this makes it always max-width, can that be fixed? */
+		display: block;
+		width: fit-content;
+		max-width: 100%;
 		overflow-x: scroll;
 		text-wrap: nowrap;
 	}
