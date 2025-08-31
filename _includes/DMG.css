@@ -1,0 +1,25 @@
+dialogue-color-code {
+	color: black;
+	opacity: 25%;
+}
+
+dialogue-black { color: black; }
+dialogue-green { color: #009500; }
+dialogue-red { color: #ff0000; }
+dialogue-brown { color: #c35700; }
+dialogue-blue { color: #5588dd; }
+dialogue-pink { color: #ff66cc; }
+dialogue-hot-pink { color: #e70066; }
+dialogue-faded-blue { color: #487ec3; }
+dialogue-orange { color: #ff9300; }
+dialogue-white { color: white; }
+
+/* TODO: at some point, use the fossil fighters font! */
+td pre {
+	background-color: #ffd582;
+	color: black;
+	
+	/* TODO: detect character and render border color!! */
+	/* border: 3px solid skyblue; */
+	/* box-shadow: inset 0 0 10px; */
+}

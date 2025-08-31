@@ -19,6 +19,11 @@ table {
 		&:first-child {
 			border-left: 1px solid var(--table-border-color);
 		}
+		
+		& > pre,
+		& > p {
+			margin: 0;
+		}
 	}
 	
 	/* top row */

@@ -1,0 +1,45 @@
+---
+title: DMG
+style: DMG
+layout: default
+---
+<p>A DMG file is a list of text strings, each of which has an index number. Together, all DMG files make up one big list of strings. They can be found in the <code>msg/</code> folder.</p>
+
+<p>Usually, these text strings are lines of dialogue, but many are UI or status text ("The shop is now open", "You got 100 G"). They can contain special codes like <code>$c2</code> or <code>%s</code> that control formatting, text replacement, or other fun effects.</p>
+
+<!-- TODO: more about dialogue box format: speaker name -->
+
+<h2>Formatting codes</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>All strings</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>Index</th>
+			<th>Dialogue</th> <!-- TODO: rename? -->
+		</tr>
+	</thead>
+	<tbody>
+		{%- for dialogue in site.data.DMG.dialogue -%}
+		<tr>
+			<td class="bold text-align-center">{{ dialogue.index }}</td>
+			<td><pre>{{ dialogue.string }}</pre></td>
+		</tr>
+		{%- endfor -%}
+	</tbody>
+</table>

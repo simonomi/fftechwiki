@@ -48,6 +48,7 @@
   description: "Cutscenes"
   filePath: "episode/e*"
 - magicBytes: "DMG"
+  url: "/fftechwiki/file-formats/DMG"
   description: "Dialogue"
   filePath: "msg/"
 - magicBytes: "DML"
