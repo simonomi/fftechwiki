@@ -94,8 +94,14 @@
   command: 'make <foreign-type>&lt;character&gt;</foreign-type> chase player, detection range <foreign-type>&lt;fixed-point&gt;</foreign-type>, run distance <foreign-type>&lt;fixed-point&gt;</foreign-type>, chasing speed <foreign-type>&lt;fixed-point&gt;</foreign-type>, returning speed <foreign-type>&lt;fixed-point&gt;</foreign-type>, cooldown <foreign-type>&lt;fixed-point&gt;</foreign-type>'
 - id: 90
   command: 'set level for level-up animation <foreign-type>&lt;unknown&gt;</foreign-type>'
+- id: 97
+  command: 'set <foreign-type>&lt;vivosaur&gt;</foreign-type> fossil scores to <foreign-type>&lt;unknown&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type>'
+- id: 107
+  command: 'give <foreign-type>&lt;fossil&gt;</foreign-type>, dark: <foreign-type>&lt;unknown&gt;</foreign-type>, red: <foreign-type>&lt;unknown&gt;</foreign-type>'
+  notes: "Fossil rocks given by this command have their names shown in the case"
 - id: 108
-  command: 'give <foreign-type>&lt;fossil&gt;</foreign-type>, unknowns: <foreign-type>&lt;unknown&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'give <foreign-type>&lt;fossil&gt;</foreign-type> without message, dark: <foreign-type>&lt;unknown&gt;</foreign-type>, red: <foreign-type>&lt;unknown&gt;</foreign-type>'
+  notes: 'Fossil rocks given by this command are called "New Fossil Rock" in the case'
 - id: 112
   command: 'play animation <foreign-type>&lt;unknown&gt;</foreign-type> on <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 114
@@ -144,10 +150,12 @@
 - id: 159
   command: 'fade in image <foreign-type>&lt;image&gt;</foreign-type> over <foreign-type>&lt;frames&gt;</foreign-type> on top screen, unknown: <foreign-type>&lt;unknown&gt;</foreign-type>'
 - id: 191
-  command: 'revive <foreign-type>&lt;vivosaur&gt;</foreign-type>'
+  command: 'show revival screen for <foreign-type>&lt;vivosaur&gt;</foreign-type>'
 - id: 194
   command: 'unknown 194: <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 200
   command: 'start turning <foreign-type>&lt;character&gt;</foreign-type> to follow <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 201
   command: 'stop turning <foreign-type>&lt;character&gt;</foreign-type>'
+- id: 206
+  command: 'set <foreign-type>&lt;vivosaur&gt;</foreign-type> battle points to <foreign-type>&lt;unknown&gt;</foreign-type>'
