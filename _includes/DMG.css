@@ -13,10 +13,32 @@ dialogue-hot-pink { color: #e70066; }
 dialogue-faded-blue { color: #487ec3; }
 dialogue-orange { color: #ff9300; }
 dialogue-white { color: white; }
+dialogue-grey { color: #888888; }
+dialogue-light-pink { color: #ff93a6; }
+dialogue-black { color: black; }
+dialogue-light-blue { color: #5ED1EA; }
+dialogue-cyan { color: #00E2E0; }
+
+#broken-image {
+	display: block;
+	
+	/* copy stuff from pre so em and lh are the right size */
+	font-family: ui-monospace, monospace;
+	font-size: 13px;
+	-webkit-text-size-adjust: 100%;
+	
+	height: calc(1lh + 0.5em * 2); /* 0.5em is pre's padding */
+	                               /* this still isn't right :( but whatever */
+	width: auto;
+	aspect-ratio: 740 / 76;
+	
+	border-radius: 0.5em;
+}
 
 /* TODO: at some point, use the fossil fighters font! */
 td pre {
-	background-color: #ffd582;
+	/* background-color: #ffd582; */
+	background-color: #ffe693;
 	color: black;
 	
 	/* TODO: detect character and render border color!! */

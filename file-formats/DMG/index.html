@@ -5,40 +5,84 @@ layout: default
 ---
 <p>A DMG file is a list of text strings, each of which has an index number. Together, all DMG files make up one big list of strings. They can be found in the <code>msg/</code> folder.</p>
 
-<p>Usually, these text strings are lines of dialogue, but many are UI or status text ("The shop is now open", "You got 100 G"). They can contain special codes like <code>$c2</code> or <code>%s</code> that control formatting, text replacement, or other fun effects.</p>
+<p>Usually, the text strings are lines of dialogue, but many are UI or status text ("The shop is now open", "You got 100 G"). For simplicity, this page always refers to them as "dialogue".</p>
 
 <!-- TODO: more about dialogue box format: speaker name -->
 
 <h2>Formatting codes</h2>
+
+<p>Dialogue can contain special codes that control formatting, text replacement, or other fun effects. These codes start with a <code>$</code> or <code>%</code>, followed by a letter and possibly a number. They aren't rendered as part of the text when it's shown.</p>
+
 <table>
 	<thead>
 		<tr>
 			<th>Code</th>
 			<th>Description</th>
+			<th>Examples</th>
 		</tr>
 	</thead>
 	<tbody>
+		{%- for formatCode in site.data.DMG.formattingCodes -%}
 		<tr>
-			<td></td>
-			<td></td>
+			<td><code>{{ formatCode.code }}</code></td>
+			<td>{{ formatCode.description }}</td>
+			<td>
+				{%- for example in formatCode.examples -%}
+					<code>{{ example }}</code>
+					{%- unless forloop.last -%}
+						,
+					{%- endunless -%}
+				{%- endfor -%}
+			</td>
 		</tr>
+		{%- endfor -%}
 	</tbody>
 </table>
 
-<h2>All strings</h2>
+<h3 id="colors">Colors</h3>
+
+<p>These color codes change the color of the text until the next color code, or the dialogue ends. Only <code>0</code>–<code>4</code> and <code>6</code> are used, but many others exist, possibly unintentionally. <code>$ac</code> is black, which makes it a duplicate of <code>$c0</code>, and <code>$cd</code> and <code>$ce</code> are extremely similar. <code>$af</code> is also technically black, but creates strange glitchy errors in the text. <code>A</code>–<code>F</code> are the same as <code>5</code>–<code>a</code>, but any others not in this list are just black.</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Color</th>
+		</tr>
+	</thead>
+	<tbody>
+		{%- for color in site.data.DMG.colors -%}
+		<tr>
+			<td><code>$c{{ color.code }}</code></td>
+			<td>
+				{%- if color.rawName -%}
+					{{- color.rawName -}}
+				{%- else -%}
+					<pre><code><dialogue-{{ color.name | replace: " ", "-" }}>
+						{{- color.name -}}
+					</dialogue-{{ color.name | replace: " ", "-" }}></code></pre>
+				{%- endif -%}
+			</td>
+		</tr>
+		{%- endfor -%}
+	</tbody>
+</table>
+
+
+<h2>All Dialogue</h2>
 
 <table>
 	<thead>
 		<tr>
 			<th>Index</th>
-			<th>Dialogue</th> <!-- TODO: rename? -->
+			<th class="text-align-start">Dialogue</th>
 		</tr>
 	</thead>
 	<tbody>
 		{%- for dialogue in site.data.DMG.dialogue -%}
 		<tr>
 			<td class="bold text-align-center">{{ dialogue.index }}</td>
-			<td><pre>{{ dialogue.string }}</pre></td>
+			<td><pre><code>{{ dialogue.string }}</code></pre></td>
 		</tr>
 		{%- endfor -%}
 	</tbody>

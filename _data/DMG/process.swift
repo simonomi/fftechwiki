@@ -13,6 +13,12 @@ func color(_ num: Character) -> String? {
 		case "7": "faded-blue"
 		case "8": "orange"
 		case "9": "white"
+		case "a": "grey"
+		case "b": "light-pink"
+		case "c": "black"
+		case "d": "light-blue"
+		case "e": "cyan"
+		case "f": "broken"
 		default: nil
 	}
 }
