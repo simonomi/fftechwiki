@@ -13,7 +13,7 @@
 	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/centered-dialogue.png">
 </details>'
 - id: 4
-  command: 'flag 4 <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'flag 4 <foreign-type>&lt;flag&gt;</foreign-type>'
 - id: 5
   command: 'flag 5 <foreign-type>&lt;flag&gt;</foreign-type>'
 - id: 6
@@ -42,7 +42,7 @@
 	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/unowned-dialogue.png">
 </details>'
 - id: 33
-  command: 'dialogue with choice <foreign-type>&lt;dialogue&gt;</foreign-type>, storing result at <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'dialogue with choice <foreign-type>&lt;dialogue&gt;</foreign-type>, storing result at <foreign-type>&lt;flag&gt;</foreign-type>'
   notes: '
 <details>
 	<summary>show example</summary>
@@ -85,11 +85,11 @@
 - id: 61
   command: 'angle camera from <foreign-type>&lt;vector&gt;</foreign-type> at distance <foreign-type>&lt;fixed-point&gt;</foreign-type> with fov: <foreign-type>&lt;fixed-point&gt;</foreign-type> over <foreign-type>&lt;frames&gt;</foreign-type>, unknown: <foreign-type>&lt;unknown&gt;</foreign-type>'
 - id: 70
-  command: 'flag 70 <foreign-type>&lt;flag&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'flag 70 <foreign-type>&lt;flag&gt;</foreign-type> <foreign-type>&lt;integer&gt;</foreign-type>'
 - id: 71
-  command: 'add <foreign-type>&lt;unknown&gt;</foreign-type> to flag <foreign-type>&lt;flag&gt;</foreign-type>'
+  command: 'add <foreign-type>&lt;integer&gt;</foreign-type> to flag <foreign-type>&lt;flag&gt;</foreign-type>'
 - id: 72
-  command: 'subtract <foreign-type>&lt;unknown&gt;</foreign-type> from flag <foreign-type>&lt;flag&gt;</foreign-type>'
+  command: 'subtract <foreign-type>&lt;integer&gt;</foreign-type> from flag <foreign-type>&lt;flag&gt;</foreign-type>'
 - id: 80
   command: 'make <foreign-type>&lt;character&gt;</foreign-type> follow <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 82
@@ -97,21 +97,21 @@
 - id: 86
   command: 'make <foreign-type>&lt;character&gt;</foreign-type> chase player, detection range <foreign-type>&lt;fixed-point&gt;</foreign-type>, run distance <foreign-type>&lt;fixed-point&gt;</foreign-type>, chasing speed <foreign-type>&lt;fixed-point&gt;</foreign-type>, returning speed <foreign-type>&lt;fixed-point&gt;</foreign-type>, cooldown <foreign-type>&lt;fixed-point&gt;</foreign-type>'
 - id: 90
-  command: 'set level for level-up animation <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'set level for level-up animation <foreign-type>&lt;integer&gt;</foreign-type>'
 - id: 97
-  command: 'set <foreign-type>&lt;vivosaur&gt;</foreign-type> fossil scores to <foreign-type>&lt;unknown&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'set <foreign-type>&lt;vivosaur&gt;</foreign-type> fossil scores to <foreign-type>&lt;integer&gt;</foreign-type> <foreign-type>&lt;integer&gt;</foreign-type> <foreign-type>&lt;integer&gt;</foreign-type> <foreign-type>&lt;integer&gt;</foreign-type>'
 - id: 107
-  command: 'give <foreign-type>&lt;fossil&gt;</foreign-type>, dark: <foreign-type>&lt;unknown&gt;</foreign-type>, red: <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'give <foreign-type>&lt;fossil&gt;</foreign-type>, dark: <foreign-type>&lt;boolean&gt;</foreign-type>, red: <foreign-type>&lt;boolean&gt;</foreign-type>'
   notes: "Fossil rocks given by this command have their names shown in the case"
 - id: 108
-  command: 'give <foreign-type>&lt;fossil&gt;</foreign-type> without message, dark: <foreign-type>&lt;unknown&gt;</foreign-type>, red: <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'give <foreign-type>&lt;fossil&gt;</foreign-type> without message, dark: <foreign-type>&lt;boolean&gt;</foreign-type>, red: <foreign-type>&lt;boolean&gt;</foreign-type>'
   notes: 'Fossil rocks given by this command are called "New Fossil Rock" in the case'
 - id: 112
-  command: 'play animation <foreign-type>&lt;unknown&gt;</foreign-type> on <foreign-type>&lt;character&gt;</foreign-type>'
+  command: 'play animation <foreign-type>&lt;integer&gt;</foreign-type> on <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 114
-  command: 'set <foreign-type>&lt;character&gt;</foreign-type> body model variant to <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'set <foreign-type>&lt;character&gt;</foreign-type> body model variant to <foreign-type>&lt;integer&gt;</foreign-type>'
 - id: 115
-  command: 'set <foreign-type>&lt;character&gt;</foreign-type> head model variant to <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'set <foreign-type>&lt;character&gt;</foreign-type> head model variant to <foreign-type>&lt;integer&gt;</foreign-type>'
 - id: 117
   command: 'start music <foreign-type>&lt;music&gt;</foreign-type>'
 - id: 119
@@ -129,7 +129,7 @@
 - id: 136
   command: 'unknown 136: <foreign-type>&lt;character&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type>'
 - id: 138
-  command: 'shake screen for <foreign-type>&lt;frames&gt;</foreign-type> with intensity: <foreign-type>&lt;unknown&gt;</foreign-type>, gradual intensity: <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'shake screen for <foreign-type>&lt;frames&gt;</foreign-type> with intensity: <foreign-type>&lt;integer&gt;</foreign-type>, gradual intensity: <foreign-type>&lt;integer&gt;</foreign-type>'
 - id: 142
   command: 'modify player name'
 - id: 143
@@ -162,4 +162,4 @@
 - id: 201
   command: 'stop turning <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 206
-  command: 'set <foreign-type>&lt;vivosaur&gt;</foreign-type> battle points to <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'set <foreign-type>&lt;vivosaur&gt;</foreign-type> battle points to <foreign-type>&lt;integer&gt;</foreign-type>'
