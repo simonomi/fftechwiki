@@ -13,11 +13,11 @@
 	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/centered-dialogue.png">
 </details>'
 - id: 4
-  command: 'memory 4 <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'flag 4 <foreign-type>&lt;unknown&gt;</foreign-type>'
 - id: 5
-  command: 'memory 5 <foreign-type>&lt;memory location&gt;</foreign-type>'
+  command: 'flag 5 <foreign-type>&lt;flag&gt;</foreign-type>'
 - id: 6
-  command: 'memory 6 <foreign-type>&lt;memory location&gt;</foreign-type>'
+  command: 'flag 6 <foreign-type>&lt;flag&gt;</foreign-type>'
 - id: 7
   command: 'spawn <foreign-type>&lt;character&gt;</foreign-type> in <foreign-type>&lt;map&gt;</foreign-type> at <foreign-type>&lt;vector&gt;</foreign-type> facing <foreign-type>&lt;degrees&gt;</foreign-type>'
 - id: 9
@@ -85,7 +85,11 @@
 - id: 61
   command: 'angle camera from <foreign-type>&lt;vector&gt;</foreign-type> at distance <foreign-type>&lt;fixed-point&gt;</foreign-type> with fov: <foreign-type>&lt;fixed-point&gt;</foreign-type> over <foreign-type>&lt;frames&gt;</foreign-type>, unknown: <foreign-type>&lt;unknown&gt;</foreign-type>'
 - id: 70
-  command: 'memory 70 <foreign-type>&lt;memory location&gt;</foreign-type>, <foreign-type>&lt;unknown&gt;</foreign-type>'
+  command: 'flag 70 <foreign-type>&lt;flag&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type>'
+- id: 71
+  command: 'add <foreign-type>&lt;unknown&gt;</foreign-type> to flag <foreign-type>&lt;flag&gt;</foreign-type>'
+- id: 72
+  command: 'subtract <foreign-type>&lt;unknown&gt;</foreign-type> from flag <foreign-type>&lt;flag&gt;</foreign-type>'
 - id: 80
   command: 'make <foreign-type>&lt;character&gt;</foreign-type> follow <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 82
@@ -131,7 +135,7 @@
 - id: 143
   command: 'set player name'
 - id: 144
-  command: 'dialogue <foreign-type>&lt;dialogue&gt;</foreign-type> with choice <foreign-type>&lt;dialogue&gt;</foreign-type>, storing result at <foreign-type>&lt;memory location&gt;</foreign-type>'
+  command: 'dialogue <foreign-type>&lt;dialogue&gt;</foreign-type> with choice <foreign-type>&lt;dialogue&gt;</foreign-type>, storing result at <foreign-type>&lt;flag&gt;</foreign-type>'
   notes: '
 <details>
 	<summary>show example</summary>
