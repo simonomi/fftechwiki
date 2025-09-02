@@ -88,6 +88,10 @@
   command: 'memory 70 <foreign-type>&lt;memory location&gt;</foreign-type>, <foreign-type>&lt;unknown&gt;</foreign-type>'
 - id: 80
   command: 'make <foreign-type>&lt;character&gt;</foreign-type> follow <foreign-type>&lt;character&gt;</foreign-type>'
+- id: 82
+  command: 'make <foreign-type>&lt;character&gt;</foreign-type> wander randomly, waiting between <foreign-type>&lt;frames&gt;</foreign-type> and <foreign-type>&lt;frames&gt;</foreign-type>, walking speed <foreign-type>&lt;fixed-point&gt;</foreign-type>, distance up to <foreign-type>&lt;fixed-point&gt;</foreign-type>'
+- id: 86
+  command: 'make <foreign-type>&lt;character&gt;</foreign-type> chase player, detection range <foreign-type>&lt;fixed-point&gt;</foreign-type>, run distance <foreign-type>&lt;fixed-point&gt;</foreign-type>, chasing speed <foreign-type>&lt;fixed-point&gt;</foreign-type>, returning speed <foreign-type>&lt;fixed-point&gt;</foreign-type>, cooldown <foreign-type>&lt;fixed-point&gt;</foreign-type>'
 - id: 90
   command: 'set level for level-up animation <foreign-type>&lt;unknown&gt;</foreign-type>'
 - id: 108
