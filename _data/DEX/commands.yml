@@ -90,6 +90,8 @@
   command: 'make <foreign-type>&lt;character&gt;</foreign-type> follow <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 90
   command: 'set level for level-up animation <foreign-type>&lt;unknown&gt;</foreign-type>'
+- id: 108
+  command: 'give <foreign-type>&lt;fossil&gt;</foreign-type>, unknowns: <foreign-type>&lt;unknown&gt;</foreign-type> <foreign-type>&lt;unknown&gt;</foreign-type>'
 - id: 112
   command: 'play animation <foreign-type>&lt;unknown&gt;</foreign-type> on <foreign-type>&lt;character&gt;</foreign-type>'
 - id: 114
