@@ -9,53 +9,20 @@
 	<details open>
 		<summary><a href="/fftechwiki/file-formats">File Formats</a></summary>
 		<ul>
-			<li><a>Cutscene Triggers (DEP)</a></li>
-			<li><a href="/fftechwiki/file-formats/DEX">Cutscenes (DEX)</a></li>
-			<li><a href="/fftechwiki/file-formats/DMG">Dialogue (DMG)</a></li>
-			<li><a href="/fftechwiki/file-formats/DMS">Max IDs (DMS)</a></li>
-			<li><a href="/fftechwiki/file-formats/DTX">Text (DTX)</a></li>
-			<li><a>Archives (MAR, MCM)</a></li>
-			<li><a>3D Models (MM3)</a></li>
-			<li><a>Sprites (MPM)</a></li>
-			<li><a href="/fftechwiki/file-formats/RLS">Fossils (RLS)</a></li>
-			<li><a>Shop (SHP)</a></li>
+			{%- for fileFormat in site.data.fileFormats -%}
+				{%- if fileFormat.url -%}
+					<li><a href="{{ fileFormat.url }}">{{ fileFormat.name | default: fileFormat.description }} ({{ fileFormat.magicBytes }})</a></li>
+				{%- endif -%}
+			{%- endfor -%}
 		</ul>
-		
-		<hr>
-		
-		<ul>
-			<li><a href="/fftechwiki/file-formats/index-files">Index Files</a></li>
-			
-			<li>3D models</li>
-			<ul>
-				<li><a>Meshes</a></li>
-				<li><a>Animations</a></li>
-				<li><a>Textures</a></li>
-			</ul>
-			
-			<li>Images</li>
-			<ul>
-				<li><a>Palettes</a></li>
-				<li><a>Bitmaps</a></li>
-				<li><a>BG Maps</a></li>
-			</ul>
-			
-			<li>Sprites</li>
-			<ul>
-				<li><a>Animations</a></li>
-				<li><a>Palettes</a></li>
-				<li><a>Bitmaps</a></li>
-			</ul>
-		</ul>
-		
 	</details>
 	
 	<details open>
-		<summary>Reference tables</summary>
+		<summary>Other stuff</summary>
 		<ul>
-			<li><a>Vivosaurs</a></li>
-			<li><a>Fossils</a></li>
-			<li><a>Characters</a></li>
+			<li><a>Flags</a></li>
+			<li><a>Formatting Codes</a></li>
+			<li><a href="/fftechwiki/file-formats/index-files">Index Files</a></li>
 		</ul>
 	</details>
 </nav>

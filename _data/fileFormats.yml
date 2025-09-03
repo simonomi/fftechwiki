@@ -5,6 +5,7 @@
   description: ""
   filePath: "model/battle/arcscenecsv.mar/0000"
 - magicBytes: "3CL"
+  name: "Vivosaur 3D Models"
   description: '<a href="/fftechwiki/file-formats/index-files">Index file</a> for vivosaur 3D models'
   filePath: "model/battle/arcdin/0000"
 - magicBytes: "AIS"
@@ -14,6 +15,7 @@
   description: ""
   filePath: "btl_aiset/"
 - magicBytes: "BBG"
+  name: "Kasekiums"
   description: "Kasekiums (fossil battle arenas)"
   filePath: "etc/btl_bg_defs"
 - magicBytes: "BCO"
@@ -95,12 +97,15 @@
 - magicBytes: "MKL"
   filePath: "etc/timemask"
 - magicBytes: "MM3"
+  name: "3D Models"
   description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for 3D models'
   filePath: "model/"
 - magicBytes: "MMS"
+  name: "Sprites"
   description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for sprites'
   filePath: "motion/"
 - magicBytes: "MPM"
+  name: "Images"
   description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for images'
   filePath: "image/"
 - magicBytes: "RLS"
