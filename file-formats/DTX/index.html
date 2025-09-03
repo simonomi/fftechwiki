@@ -1,0 +1,55 @@
+---
+title: DTX
+layout: default
+---
+<p>DTX files each hold a list of text strings. They're in the <code>text/</code> folder, and there are only two of them: <code>english</code> and <code>japanese</code>. Naturally, <code>english</code> contains the Japanese text, and <code>japanese</code> contains the English text<sup><a class="footnote-link" id="footnote-return:1" href="#footnote:1">1</a></sup>.</p>
+
+<p>The strings use the same <a href="/fftechwiki/file-formats/DMG#formatting-codes">formatting codes as DMG files</a>, but only <code>$c#</code> and <code>$p</code>. They also use <a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions">C-style format specifiers</a> for substituting strings and numbers.</p>
+
+<details open>
+	<summary><h2>English</h2></summary>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Index</th>
+				<th class="text-align-start">Text</th>
+			</tr>
+		</thead>
+		<tbody>
+			{%- for text in site.data.DTX.englishText -%}
+			<tr>
+				<td class="bold text-align-center">{{ forloop.index0 }}</td>
+				<td><pre><code>{{ text }}</code></pre></td>
+			</tr>
+			{%- endfor -%}
+		</tbody>
+	</table>
+</details>
+
+<details>
+	<summary><h2>Japanese</h2></summary>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Index</th>
+				<th class="text-align-start">Text</th>
+			</tr>
+		</thead>
+		<tbody>
+			{%- for text in site.data.DTX.japaneseText -%}
+			<tr>
+				<td class="bold text-align-center">{{ forloop.index0 }}</td>
+				<td><pre><code>{{ text }}</code></pre></td>
+			</tr>
+			{%- endfor -%}
+		</tbody>
+	</table>
+</details>
+
+<hr>
+
+<ol id="footnotes">
+	<li tabindex="-1" id="footnote:1">Our guess is that rather than switching which file the game uses, the translators found it easier to simply edit the <code>japanese</code> file directly <a class="footnote-return-link" href="#footnote-return:1">⏎</a></li>
+</ol>

@@ -65,6 +65,7 @@
   description: "Haiku"
   filePath: "etc/senryu_defs"
 - magicBytes: "DTX"
+  url: "/fftechwiki/file-formats/DTX"
   description: "Text"
   filePath: "text/"
 - magicBytes: "ECS"
