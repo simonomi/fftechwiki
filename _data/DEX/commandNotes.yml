@@ -1,0 +1,51 @@
+- id: 1
+  notes: '
+<details>
+	<summary>Show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue.png">
+</details>'
+- id: 2
+  notes: '
+<details>
+	<summary>Show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/centered-dialogue.png">
+</details>'
+- id: 32
+  notes: '
+<details>
+	<summary>Show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/unowned-dialogue.png">
+</details>'
+- id: 33
+  notes: '
+<details>
+	<summary>Show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-33-with-choice.png">
+</details>'
+- id: 51
+  notes: 'Causes the player to control a different character!!! Normally this is used during cutscenes to move the camera''s focus without moving Hunter, but it still works when not in a cutscene >:)'
+- id: 55
+  notes: '
+<details>
+	<summary>Show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-55-with-choice.png">
+</details>'
+- id: 56
+  notes: 'Simply does nothing for a number of frames. Fossil Fighters runs at 60fps, so delay <code><local-value>&lt;<code-number>60</code-number> frames&gt;</local-value></code> delays for one second.'
+- id: 107
+  notes: "Fossil rocks given by this command have their names shown in the case"
+- id: 108
+  notes: 'Fossil rocks given by this command are called "New Fossil Rock" in the case'
+- id: 144
+  notes: '
+<details>
+	<summary>Show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-144-with-choice.png">
+</details>'
+- id: 145
+  notes: '
+<details>
+	<summary>Show example</summary>
+	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-145-with-choice.png">
+	<p>Note that the G banner in the corner is unrelated to this command, it''s controlled by commands <a href="#command-202">202</a> and <a href="#command-203">203</a>.</p>
+</details>'

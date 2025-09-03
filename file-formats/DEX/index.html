@@ -10,6 +10,8 @@ layout: default
 
 <h2>Argument types</h2>
 
+<!-- TODO: examples -->
+
 <table>
 	<thead>
 		<tr>
@@ -32,14 +34,15 @@ layout: default
 <table>
 	<tbody>
 		{%- for command in site.data.DEX.commands -%}
-			<tr>
+			<tr id="command-{{ command.id }}" tabindex="-1">
 				<th>{{ command.id }}</th>
 				<th class="text-align-start"><code><code-keyword>{{ command.command }}</code-keyword></code></th>
 			</tr>
-			{%- if command.notes -%}
+			{%- assign notes = site.data.DEX.commandNotes | where: "id", command.id | first -%}
+			{%- if notes -%}
 			<tr>
 				<td colspan="2">
-					{{ command.notes }}
+					{{- notes.notes -}}
 				</td>
 			</tr>
 			{%- endif -%}
