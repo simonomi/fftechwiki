@@ -37,14 +37,6 @@
 		{%- endif -%}
 	</head>
 	<body>
-		<page-content>
-			<hgroup>
-				<h1>{{ page.title }}</h1>
-			</hgroup>
-			
-			{{- content -}}
-		</page-content>
-		
 		<navigation-sidebar>
 			{%- include navigation.html -%}
 		</navigation-sidebar>
@@ -58,10 +50,18 @@
 			{%- include navigation.html -%}
 		</details>
 		
-		{%- unless page.nofooter -%}
-			<footer>
-				<small>© <time>{{ "now" | date: "%Y" }}</time> alice pellerin</small>
-			</footer>
-		{%- endunless -%}
+		<page-content>
+			<hgroup>
+				<h1>{{ page.title }}</h1>
+			</hgroup>
+			
+			{{- content -}}
+			
+			{%- unless page.nofooter -%}
+				<footer>
+					<small>© <time>{{ "now" | date: "%Y" }}</time> alice pellerin</small>
+				</footer>
+			{%- endunless -%}
+		</page-content>
 	</body>
 </html>

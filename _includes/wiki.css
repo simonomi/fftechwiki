@@ -47,14 +47,13 @@ nav {
 @media screen and (width > 700px) {
 	body {
 		display: grid;
-		grid-template-columns: 1fr min-content 1rem minmax(auto, 90rch) 1fr;
+		grid-template-columns: 1fr min-content 1rem auto 1fr;
 		
 		max-width: initial; /* we'll do our max-width ourself! */
 		margin: 1rem;
 	}
 	
 	navigation-sidebar {
-		grid-row: 1 / 4;
 		grid-column: 2;
 	}
 	
@@ -63,17 +62,18 @@ nav {
 	}
 	
 	page-content {
-		grid-row: 1;
 		grid-column: 4;
+		
+		overflow-x: auto; /* this fixes large tables stretching too far horizontally */
+		
+		& > *:not(.unlimited-width) {
+			box-sizing: border-box; /* include padding for things like ols */
+			max-width: 90rch;
+		}
 		
 		& > *:first-child {
 			margin-top: 0; /* don't duplicate the body margin */
 		}
-	}
-	
-	footer {
-		grid-row: 2;
-		grid-column: 4;
 	}
 }
 
