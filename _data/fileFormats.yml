@@ -113,5 +113,6 @@
   description: "Fossils"
   filePath: "etc/kaseki_defs"
 - magicBytes: "SHP"
+  url: "/fftechwiki/file-formats/SHP"
   description: "Shop"
   filePath: "shop/"
