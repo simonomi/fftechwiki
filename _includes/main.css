@@ -148,6 +148,10 @@ sup {
 	text-wrap: nowrap;
 }
 
+.scroll-margin-top {
+	scroll-margin-top: 30vh;
+}
+
 summary {
 	cursor: pointer;
 }

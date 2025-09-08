@@ -34,7 +34,7 @@ layout: default
 <table>
 	<tbody>
 		{%- for command in site.data.DEX.commands -%}
-			<tr id="command-{{ command.id }}" tabindex="-1">
+			<tr id="command-{{ command.id }}" class="scroll-margin-top" tabindex="-1">
 				<th>{{ command.id }}</th>
 				<th class="text-align-start"><code><code-keyword>{{ command.command }}</code-keyword></code></th>
 			</tr>
