@@ -1,8 +1,3 @@
-:root {
-	--true-color: light-dark(#50c878, #50c878);
-	--false-color: #f27464;
-}
-
 page-content {
 	/* TODO: someday, when it's possible to make a sticky header actually work, try again */
 	/* thead { */
@@ -23,14 +18,6 @@ page-content {
 	td {
 		&:has(img) {
 			padding: 0;
-		}
-		
-		&.true {
-			color: var(--true-color);
-		}
-		
-		&.false {
-			color: var(--false-color);
 		}
 	}
 }

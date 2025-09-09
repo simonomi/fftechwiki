@@ -1,118 +1,158 @@
+- magicBytes: "_match"
+  description: "Miscellaneous data"
+  filePath: "etc/*_match"
+  carbonizerSupport: true
 - magicBytes: "3BA"
   description: ""
   filePath: "etc/battle_attack_type"
+  carbonizerSupport: true
 - magicBytes: "3BC"
   description: ""
   filePath: "model/battle/arcscenecsv.mar/0000"
+  carbonizerSupport: false
 - magicBytes: "3CL"
   name: "Vivosaur 3D Models"
   description: '<a href="/fftechwiki/file-formats/index-files">Index file</a> for vivosaur 3D models'
   filePath: "model/battle/arcdin/0000"
+  carbonizerSupport: true
 - magicBytes: "AIS"
   description: ""
   filePath: "btl_ai/"
+  carbonizerSupport: false
 - magicBytes: "AST"
   description: ""
   filePath: "btl_aiset/"
+  carbonizerSupport: false
 - magicBytes: "BBG"
   name: "Kasekiums"
   description: "Kasekiums (fossil battle arenas)"
   filePath: "etc/btl_bg_defs"
+  carbonizerSupport: true
 - magicBytes: "BCO"
   description: "Unknown—all zeros"
   filePath: "etc/creature_offset_defs"
+  carbonizerSupport: true
 - magicBytes: "CHR"
   description: "Characters"
   filePath: "chara/"
+  carbonizerSupport: true
 - magicBytes: "DAB"
   description: ""
   filePath: "auto_battle/auto_battle"
+  carbonizerSupport: false
 - magicBytes: "DAL"
-  description: ""
+  description: "Attacks"
   filePath: "etc/attack_defs"
+  carbonizerSupport: true
 - magicBytes: "DBA"
   description: ""
   filePath: "etc/btl_adjust_defs"
+  carbonizerSupport: false
 - magicBytes: "DBS"
   description: "Battles"
   filePath: "battle/"
+  carbonizerSupport: true
 - magicBytes: "DBT"
   description: ""
   filePath: "btl_tutorial/"
+  carbonizerSupport: false
 - magicBytes: "DCL"
   description: "Vivosaurs"
   filePath: "etc/creature_defs"
+  carbonizerSupport: true
 - magicBytes: "DEP"
   description: "Cutscene triggers"
   filePath: "episode/"
+  carbonizerSupport: true
 - magicBytes: "DEX"
   url: "/fftechwiki/file-formats/DEX"
   description: "Cutscenes"
   filePath: "episode/e*"
+  carbonizerSupport: true
 - magicBytes: "DMG"
   url: "/fftechwiki/file-formats/DMG"
   description: "Dialogue"
   filePath: "msg/"
+  carbonizerSupport: true
 - magicBytes: "DML"
   description: ""
   filePath: "etc/museum_defs"
+  carbonizerSupport: false
 - magicBytes: "DMS"
   url: "/fftechwiki/file-formats/DMS"
   description: "Max IDs"
   filePath: "etc/*_maxid"
+  carbonizerSupport: true
 - magicBytes: "DNC"
   description: ""
   filePath: "dance/"
+  carbonizerSupport: false
 - magicBytes: "DSL"
   description: "Haiku"
   filePath: "etc/senryu_defs"
+  carbonizerSupport: true
 - magicBytes: "DTX"
   url: "/fftechwiki/file-formats/DTX"
   description: "Text"
   filePath: "text/"
+  carbonizerSupport: true
 - magicBytes: "ECS"
   description: "Miscellaneous data"
   filePath: "etc/excavate_defs"
+  carbonizerSupport: true
 - magicBytes: "GRD"
-  description: ""
+  description: "Map data"
   location: "<code>map/c/</code>, <code>map/e/</code>, <code>map/g/</code>, <code>map/r/</code>"
+  carbonizerSupport: true
 - magicBytes: "HML"
   description: "Masks"
   filePath: "etc/headmask_defs"
+  carbonizerSupport: true
 - magicBytes: "KIL"
   description: "Key items"
   filePath: "etc/keyitem_defs"
+  carbonizerSupport: false
 - magicBytes: "KPS"
-  description: ""
+  description: "FP"
   filePath: "etc/btl_kp_defs"
+  carbonizerSupport: true
 - magicBytes: "MAP"
-  description: ""
+  description: "Maps"
   filePath: "map/m/"
+  carbonizerSupport: true
 - magicBytes: "MAR, MCM"
   description: "Archive format"
   location: "Everywhere!"
+  carbonizerSupport: true
 - magicBytes: "MFS"
   description: "Fonts"
   filePath: "font/"
+  carbonizerSupport: false
 - magicBytes: "MKL"
   filePath: "etc/timemask"
+  carbonizerSupport: false
 - magicBytes: "MM3"
   name: "3D Models"
   description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for 3D models'
   filePath: "model/"
+  carbonizerSupport: true
 - magicBytes: "MMS"
   name: "Sprites"
   description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for sprites'
   filePath: "motion/"
+  carbonizerSupport: true
 - magicBytes: "MPM"
   name: "Images"
   description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for images'
   filePath: "image/"
+  carbonizerSupport: true
 - magicBytes: "RLS"
   url: "/fftechwiki/file-formats/RLS"
   description: "Fossils"
   filePath: "etc/kaseki_defs"
+  carbonizerSupport: true
 - magicBytes: "SHP"
   url: "/fftechwiki/file-formats/SHP"
   description: "Shop"
   filePath: "shop/"
+  carbonizerSupport: true

@@ -14,6 +14,7 @@ layout: default
 			<th>File Format</th>
 			<th>Description</th>
 			<th>Location</th>
+			<th>carbonizer support</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -31,6 +32,11 @@ layout: default
 					<td><code>{{ fileFormat.filePath }}</code></td>
 				{%- else -%}
 					<td>{{ fileFormat.location }}</td>
+				{%- endif -%}
+				{%- if fileFormat.carbonizerSupport -%}
+					<td class="true text-align-center">✓</td>
+				{%- else -%}
+					<td class="false text-align-center">✗</td>
 				{%- endif -%}
 			</tr>
 		{%- endfor -%}

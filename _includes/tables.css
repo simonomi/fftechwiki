@@ -1,3 +1,8 @@
+:root {
+	--true-color: light-dark(#50c878, #50c878);
+	--false-color: #f27464;
+}
+
 table {
 	display: block;
 	width: fit-content;
@@ -23,6 +28,14 @@ table {
 		& > pre,
 		& > p {
 			margin: 0;
+		}
+		
+		&.true {
+			color: var(--true-color);
+		}
+		
+		&.false {
+			color: var(--false-color);
 		}
 	}
 	
