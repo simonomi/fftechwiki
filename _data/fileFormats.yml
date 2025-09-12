@@ -152,7 +152,7 @@
   filePath: "etc/kaseki_defs"
   carbonizerSupport: true
 - magicBytes: "SHP"
-  url: "/fftechwiki/file-formats/SHP"
+  # url: "/fftechwiki/file-formats/SHP"
   description: "Shop"
   filePath: "shop/"
   carbonizerSupport: true
