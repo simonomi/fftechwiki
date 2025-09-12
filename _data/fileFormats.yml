@@ -12,7 +12,7 @@
   carbonizerSupport: false
 - magicBytes: "3CL"
   name: "Vivosaur 3D Models"
-  description: '<a href="/fftechwiki/file-formats/index-files">Index file</a> for vivosaur 3D models'
+  description: '<a href="/fftechwiki/index-files">Index file</a> for vivosaur 3D models'
   filePath: "model/battle/arcdin/0000"
   carbonizerSupport: true
 - magicBytes: "AIS"
@@ -133,17 +133,17 @@
   carbonizerSupport: false
 - magicBytes: "MM3"
   name: "3D Models"
-  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for 3D models'
+  description: '<a href="/fftechwiki/index-files">Index files</a> for 3D models'
   filePath: "model/"
   carbonizerSupport: true
 - magicBytes: "MMS"
   name: "Sprites"
-  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for sprites'
+  description: '<a href="/fftechwiki/index-files">Index files</a> for sprites'
   filePath: "motion/"
   carbonizerSupport: true
 - magicBytes: "MPM"
   name: "Images"
-  description: '<a href="/fftechwiki/file-formats/index-files">Index files</a> for images'
+  description: '<a href="/fftechwiki/index-files">Index files</a> for images'
   filePath: "image/"
   carbonizerSupport: true
 - magicBytes: "RLS"
