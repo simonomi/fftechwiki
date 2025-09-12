@@ -1,0 +1,5 @@
+tr.thick-bottom-border {
+	th, td {
+		border-bottom-width: 3px;
+	}
+}

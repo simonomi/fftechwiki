@@ -11,7 +11,7 @@
 - type: 'fixed-point'
   description: 'A <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">fixed-point</a> number, which can have a fractional component'
 - type: 'flag'
-  description: 'See <a>Flags</a>'
+  description: 'See <a href="/fftechwiki/flags">Flags</a>'
 - type: 'fossil'
   description: 'A particular fossil (see <a href="/fftechwiki/file-formats/RLS">RLS</a>)'
 - type: 'frames'

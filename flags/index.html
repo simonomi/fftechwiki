@@ -1,0 +1,60 @@
+---
+title: Flags
+style: flags
+layout: default
+---
+<p>Flags are used to keep track of tons of different state throughout the game. This includes temporary state, like a dialogue choice or who won a battle, as well as long-lived state, like cleaning upgrades or story progress.</p>
+
+<p>Flags are written like <code><local-value>&lt;<code-number>3 9</code-number>&gt;</local-value></code>, where the first number identifies the flag, and the second is a kind of 'type' (most likely). The main places they're used are in <a href="/fftechwiki/file-formats/DEX">DEX</a> and <a>DEP</a> files.</p>
+
+<h2>Types</h2>
+
+<p>Though we call them "types", it's not entirely clear what they're actually used for. The same ID with two different types <em>seems</em> to refer to the same flag<sup><a class="footnote-link" id="footnote-return:1" href="#footnote:1">1</a></sup>, but then why have the type at all? Meanwhile the <a href="/fftechwiki/file-formats/DEX">DEX</a> and <a>DEP</a> commands that deal with flags usually take the same 1 or 2 types every time, so clearly there's <em>some</em> significance.</p>
+
+<p>It's entirely possible that they aren't actually types at all. In their raw form, a flag looks like <code><local-value>&lt;<code-number>0x3000009</code-number>&gt;</local-value></code>, so it's not completely certain that these are two separate values. It's possible the 'type' is actually more of a 'category', and the usage patterns we see are for organizational reasons, not technical.</p>
+
+<table>
+	<thead>
+		<th>Type</th>
+		<th>Short name</th>
+		<th>Notes</th>
+	</thead>
+	<tbody>
+		{%- for flagType in site.data.flags.types -%}
+			<tr>
+				<td class="text-align-center">{{ flagType.type }}</td>
+				<td>{{ flagType.shortName }}</td>
+				<td>{{ flagType.notes }}</td>
+			</tr>
+		{%- endfor -%}
+	</tbody>
+</table>
+
+<h2>Known flags</h2>
+
+<table>
+	<thead>
+		<th>ID</th>
+		<th>Notes</th>
+	</thead>
+	<tbody>
+		{%- for flag in site.data.flags.flags -%}
+			{%- unless site.data.flags.flags[forloop.index0].type == site.data.flags.flags[forloop.index].type or forloop.last -%}
+				{%- assign isLastOfType = ' class="thick-bottom-border"' -%}
+			{%- else -%}
+				{%- assign isLastOfType = "" -%}
+			{%- endunless -%}
+			
+			<tr {{- isLastOfType -}}>
+				<td><code><local-value>&lt;<code-number>{{ flag.id }} {{ flag.type }}</code-number>&gt;</local-value></code></td>
+				<td>{{ flag.notes }}</td>
+			</tr>
+		{%- endfor -%}
+	</tbody>
+</table>
+
+<hr>
+
+<ol id="footnotes">
+	<li tabindex="-1" id="footnote:1">The most common example of this is dialogue choices, which have a 0-type in the <a href="/fftechwiki/file-formats/DEX">DEX</a> command, but an 8- or 9-type (usually) in the corresponding <a>DEP</a> condition <a class="footnote-return-link" href="#footnote-return:1">⏎</a></li>
+</ol>

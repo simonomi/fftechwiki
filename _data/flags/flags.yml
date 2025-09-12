@@ -1,0 +1,96 @@
+- id: 1
+  type: 7
+  notes: Dropping Mask unlocked
+- id: 2
+  type: 7
+  notes: Hip-Shaker Mask unlocked
+- id: 3
+  type: 7
+  notes: Stone Mask unlocked
+- id: 4
+  type: 7
+  notes: Gold Mask unlocked
+- id: 5
+  type: 7
+  notes: Samurai Mask unlocked
+- id: 6
+  type: 7
+  notes: Completist Mask unlocked
+- id: 7
+  type: 7
+  notes: Green Hero Mask unlocked
+- id: 8
+  type: 7
+  notes: Purple Hero Mask unlocked
+- id: 9
+  type: 7
+  notes: Master Mask unlocked
+- id: 10
+  type: 7
+  notes: Saur Mask unlocked
+- id: 11
+  type: 7
+  notes: Diving Mask unlocked
+- id: 12
+  type: 7
+  notes: Oonga Oonga Mask unlocked
+- id: 13
+  type: 7
+  notes: Officer Mask unlocked
+- id: 14
+  type: 7
+  notes: Mole Mask unlocked
+- id: 15
+  type: 7
+  notes: Digadig Mask unlocked
+- id: 16
+  type: 7
+  notes: Chieftain Mask unlocked
+- id: 17
+  type: 7
+  notes: BB Boy Mask unlocked
+- id: 18
+  type: 7
+  notes: BB Girl Mask unlocked
+- id: 19
+  type: 7
+  notes: Dinaurian Mask unlocked
+- id: 56
+  type: 8
+  notes: Possibly chapter number?
+- id: 59
+  type: 8
+  notes: Something to do with the mask shop
+- id: 62
+  type: 8
+  notes: Number of sonar upgrades left
+- id: 67
+  type: 8
+  notes: Number of cleaning upgrades left
+- id: 68
+  type: 8
+  notes: "Number of case upgrades unlocked (1: 8, 2: 16, 3: 24, 4: 32, 5: 48, presumably 6: 64)"
+- id: 3
+  type: 9
+  notes: Money (G)
+- id: 4
+  type: 9
+  notes: Current mask
+- id: 7
+  type: 9
+  notes: Player variant?
+- id: 9
+  type: 9
+  notes: Possibly number of fossil rocks?
+- id: 19
+  type: 9
+  notes: Donation points
+- id: 30
+  type: 9
+  notes: Sonar monitor upgrade level
+- id: 31
+  type: 9
+  notes: Sonar fossil chip upgrade level
+- id: 32
+  type: 9
+  notes: Sonar fossil filter upgrade level
