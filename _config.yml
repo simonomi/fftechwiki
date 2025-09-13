@@ -8,3 +8,5 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - .jj
+  - README.md
+  - images/readme
