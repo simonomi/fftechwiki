@@ -28,26 +28,51 @@ title: DEX
 	</tbody>
 </table>
 
-<h2>Commands</h2>
+<details open class="unlimited-width">
+	<summary><h2>FF1 Commands</h2></summary>
+	
+	<table>
+		<tbody>
+			{%- for command in site.data.DEX.ff1Commands -%}
+				<tr id="command-{{ command.id }}" class="scroll-margin-top" tabindex="-1">
+					<th>{{ command.id }}</th>
+					<th class="text-align-start"><code><code-keyword>{{ command.command }}</code-keyword></code></th>
+				</tr>
+				{%- assign notes = site.data.DEX.ff1CommandNotes | where: "id", command.id | first -%}
+				{%- if notes -%}
+				<tr>
+					<td colspan="2">
+						{{- notes.notes -}}
+					</td>
+				</tr>
+				{%- endif -%}
+			{%- endfor -%}
+		</tbody>
+	</table>
+</details>
 
-<table>
-	<tbody>
-		{%- for command in site.data.DEX.commands -%}
-			<tr id="command-{{ command.id }}" class="scroll-margin-top" tabindex="-1">
-				<th>{{ command.id }}</th>
-				<th class="text-align-start"><code><code-keyword>{{ command.command }}</code-keyword></code></th>
-			</tr>
-			{%- assign notes = site.data.DEX.commandNotes | where: "id", command.id | first -%}
-			{%- if notes -%}
-			<tr>
-				<td colspan="2">
-					{{- notes.notes -}}
-				</td>
-			</tr>
-			{%- endif -%}
-		{%- endfor -%}
-	</tbody>
-</table>
+<details open class="unlimited-width">
+	<summary><h2>FFC Commands</h2></summary>
+	
+	<table>
+		<tbody>
+			{%- for command in site.data.DEX.ffcCommands -%}
+				<tr id="command-{{ command.id }}" class="scroll-margin-top" tabindex="-1">
+					<th>{{ command.id }}</th>
+					<th class="text-align-start"><code><code-keyword>{{ command.command }}</code-keyword></code></th>
+				</tr>
+				{%- assign notes = site.data.DEX.ffcCommandNotes | where: "id", command.id | first -%}
+				{%- if notes -%}
+				<tr>
+					<td colspan="2">
+						{{- notes.notes -}}
+					</td>
+				</tr>
+				{%- endif -%}
+			{%- endfor -%}
+		</tbody>
+	</table>
+</details>
 
 <hr>
 
