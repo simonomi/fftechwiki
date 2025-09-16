@@ -9,3 +9,10 @@ exclude:
   - LICENSE
   - .jj
   - README.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      permalink: "/:path/:basename/index"
