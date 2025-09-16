@@ -5,6 +5,8 @@ title: DMS
 
 <p>All DMS files are found in <code>etc/</code>, with file names ending with <code>_maxid</code>.</p>
 
+<h2>FF1</h2>
+
 <table>
 	<thead>
 		<tr>
@@ -13,7 +15,26 @@ title: DMS
 		</tr>
 	</thead>
 	<tbody>
-		{%- for maxid in site.data.DMS.maxids -%}
+		{%- for maxid in site.data.DMS.ff1Maxids -%}
+		<tr>
+			<td><code>{{ maxid.file }}</code></td>
+			<td>{{ maxid.number }}</td>
+		</tr>
+		{%- endfor -%}
+	</tbody>
+</table>
+
+<h2>FFC</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>File</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		{%- for maxid in site.data.DMS.ffcMaxids -%}
 		<tr>
 			<td><code>{{ maxid.file }}</code></td>
 			<td>{{ maxid.number }}</td>
