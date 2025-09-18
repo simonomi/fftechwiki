@@ -140,6 +140,12 @@
   filePath: "image/"
   ff1Support: true
   ffcSupport: true
+- magicBytes: "RLS"
+  url: "/fftechwiki/file-formats/RLS"
+  description: "Fossils"
+  filePath: "etc/kaseki_defs"
+  ff1Support: true
+  ffcSupport: true
 - magicBytes: "SHP"
   # url: "/fftechwiki/file-formats/SHP"
   description: "Shop"

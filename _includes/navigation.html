@@ -9,6 +9,7 @@
 	<details open>
 		<summary><a href="/fftechwiki/file-formats">File Formats</a></summary>
 		<ul>
+			<!-- TODO: sort by name, not magic bytes? -->
 			{%- for fileFormat in site.data.fileFormats.both -%}
 				{%- if fileFormat.url -%}
 					<li><a href="{{ fileFormat.url }}">{{ fileFormat.name | default: fileFormat.description }} ({{ fileFormat.magicBytes }})</a></li>
@@ -16,15 +17,25 @@
 			{%- endfor -%}
 		</ul>
 		
-		<hr>
+		<!-- <hr> -->
+		<!---->
+		<!-- <ul> -->
+		<!-- 	{%- for fileFormat in site.data.fileFormats.ff1Only -%} -->
+		<!-- 		{%- if fileFormat.url -%} -->
+		<!-- 			<li><a href="{{ fileFormat.url }}">{{ fileFormat.name | default: fileFormat.description }} ({{ fileFormat.magicBytes }})</a></li> -->
+		<!-- 		{%- endif -%} -->
+		<!-- 	{%- endfor -%} -->
+		<!-- </ul> -->
 		
-		<ul>
-			{%- for fileFormat in site.data.fileFormats.ff1Only -%}
-				{%- if fileFormat.url -%}
-					<li><a href="{{ fileFormat.url }}">{{ fileFormat.name | default: fileFormat.description }} ({{ fileFormat.magicBytes }})</a></li>
-				{%- endif -%}
-			{%- endfor -%}
-		</ul>
+		<!-- <hr> -->
+		<!---->
+		<!-- <ul> -->
+		<!-- 	{%- for fileFormat in site.data.fileFormats.ffcOnly -%} -->
+		<!-- 		{%- if fileFormat.url -%} -->
+		<!-- 			<li><a href="{{ fileFormat.url }}">{{ fileFormat.name | default: fileFormat.description }} ({{ fileFormat.magicBytes }})</a></li> -->
+		<!-- 		{%- endif -%} -->
+		<!-- 	{%- endfor -%} -->
+		<!-- </ul> -->
 	</details>
 	
 	<details open>

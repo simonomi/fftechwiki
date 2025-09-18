@@ -31,9 +31,3 @@
   description: "Miscellaneous data"
   filePath: "etc/excavate_defs"
   ff1Support: true
-- magicBytes: "RLS"
-  url: "/fftechwiki/file-formats/RLS-FF1"
-  name: "FF1 Fossils"
-  description: "Fossils"
-  filePath: "etc/kaseki_defs"
-  ff1Support: true
