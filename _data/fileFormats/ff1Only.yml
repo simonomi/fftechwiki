@@ -19,10 +19,6 @@
   description: ""
   filePath: "auto_battle/auto_battle"
   ff1Support: false
-- magicBytes: "DCL"
-  description: "Vivosaurs"
-  filePath: "etc/creature_defs"
-  ff1Support: true
 - magicBytes: "DNC"
   description: ""
   filePath: "dance/"

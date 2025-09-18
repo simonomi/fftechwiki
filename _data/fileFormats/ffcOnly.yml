@@ -79,7 +79,7 @@
   filePath: "creature_evolution_abilityup_param_defs"
   ffcSupport: false
 - magicBytes: "DCL"
-  description: ""
+  description: "Same magic bytes as <code>creature_defs</code>, unknown if same file type"
   filePath: "donate_creature_defs"
   ffcSupport: false
 - magicBytes: "DCS"

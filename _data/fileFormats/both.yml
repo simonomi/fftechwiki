@@ -44,6 +44,11 @@
   filePath: "btl_tutorial/"
   ff1Support: false
   ffcSupport: false
+- magicBytes: "DCL"
+  description: "Vivosaurs"
+  filePath: "etc/creature_defs"
+  ff1Support: true
+  ffcSupport: false
 - magicBytes: "DEP"
   description: "Cutscene triggers"
   filePath: "episode/"
@@ -64,7 +69,7 @@
 - magicBytes: "DML"
   description: ""
   filePath: "etc/museum_defs"
-  ff1Support: false
+  ff1Support: true
   ffcSupport: false
 - magicBytes: "DMS"
   url: "/fftechwiki/file-formats/DMS"
