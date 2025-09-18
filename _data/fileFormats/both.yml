@@ -13,38 +13,17 @@
   filePath: "model/battle/arcscenecsv.mar/0000"
   ff1Support: false
   ffcSupport: false
-- magicBytes: "3CL"
-  name: "Vivosaur 3D Models"
-  description: '<a href="/fftechwiki/index-files">Index file</a> for vivosaur 3D models'
-  filePath: "model/battle/arcdin/0000"
-  ff1Support: true
-- magicBytes: "AIS"
-  description: ""
-  filePath: "btl_ai/"
-  ff1Support: false
-- magicBytes: "AST"
-  description: ""
-  filePath: "btl_aiset/"
-  ff1Support: false
 - magicBytes: "BBG"
   name: "Kasekiums"
   description: "Kasekiums (fossil battle arenas)"
   filePath: "etc/btl_bg_defs"
   ff1Support: true
   ffcSupport: false
-- magicBytes: "BCO"
-  description: "Unknown—all zeros"
-  filePath: "etc/creature_offset_defs"
-  ff1Support: true
 - magicBytes: "CHR"
   description: "Characters"
   filePath: "chara/"
   ff1Support: true
   ffcSupport: false
-- magicBytes: "DAB"
-  description: ""
-  filePath: "auto_battle/auto_battle"
-  ff1Support: false
 - magicBytes: "DAL"
   description: "Attacks"
   filePath: "etc/attack_defs"
@@ -64,11 +43,6 @@
   description: ""
   filePath: "btl_tutorial/"
   ff1Support: false
-  ffcSupport: false
-- magicBytes: "DCL"
-  description: "Vivosaurs"
-  filePath: "etc/creature_defs"
-  ff1Support: true
   ffcSupport: false
 - magicBytes: "DEP"
   description: "Cutscene triggers"
@@ -98,10 +72,6 @@
   filePath: "etc/*_maxid"
   ff1Support: true
   ffcSupport: true
-- magicBytes: "DNC"
-  description: ""
-  filePath: "dance/"
-  ff1Support: false
 - magicBytes: "DSL"
   description: "Haiku"
   filePath: "etc/senryu_defs"
@@ -113,11 +83,6 @@
   filePath: "text/"
   ff1Support: true
   ffcSupport: true
-- magicBytes: "ECS"
-  description: "Miscellaneous data"
-  filePath: "etc/excavate_defs"
-  ff1Support: true
-  ffcSupport: false
 - magicBytes: "GRD"
   description: "Map data"
   location: "<code>map/c/</code>, <code>map/e/</code>, <code>map/g/</code>, <code>map/r/</code>"
@@ -175,12 +140,6 @@
   filePath: "image/"
   ff1Support: true
   ffcSupport: true
-- magicBytes: "RLS"
-  url: "/fftechwiki/file-formats/RLS"
-  description: "Fossils"
-  filePath: "etc/kaseki_defs"
-  ff1Support: true
-  ffcSupport: false
 - magicBytes: "SHP"
   # url: "/fftechwiki/file-formats/SHP"
   description: "Shop"

@@ -1,6 +1,6 @@
 ---
-title: RLS
-style: RLS
+title: FF1 Fossils (RLS)
+style: RLS-FF1
 ---
 <p>There is only one RLS file, <code>etc/kaseki_defs</code>. It stores the data for every fossil rock in the game. Technically, there are 999 fossil rocks in the game, but 494 of them are blank, so there are really only 505.</p>
 
@@ -41,7 +41,7 @@ style: RLS
 		<th>Drill shockwave resistance</th>
 	</thead>
 	<tbody>
-		{%- assign fossils = site.data.RLS.fossils -%}
+		{%- assign fossils = site.data.RLS-FF1.fossils -%}
 		{%- for fossil in fossils -%}
 			{%- assign previousIndex = forloop.index0 | minus: 1 -%}
 			{%- assign previousFossil = fossils[previousIndex] -%}
@@ -53,12 +53,12 @@ style: RLS
 				{%- assign rockImageNumber = fossil["rock image"] | prepend: "00" | slice: -3, 3 -%}
 				{%- assign fossilImageNumber = fossil["fossil image"] | prepend: "00" | slice: -3, 3 -%}
 				
-				<td><img loading="lazy" src="/fftechwiki/images/RLS/rock-{{ rockImageNumber }}.png"></td>
+				<td><img loading="lazy" src="/fftechwiki/images/RLS-FF1/rock-{{ rockImageNumber }}.png"></td>
 				
 				{%- if fossil["flipped horizontally"] -%}
-					<td><img loading="lazy" class="flipped" src="/fftechwiki/images/RLS/fossil-{{ fossilImageNumber }}.png"></td>
+					<td><img loading="lazy" class="flipped" src="/fftechwiki/images/RLS-FF1/fossil-{{ fossilImageNumber }}.png"></td>
 				{%- else -%}
-					<td><img loading="lazy" src="/fftechwiki/images/RLS/fossil-{{ fossilImageNumber }}.png"></td>
+					<td><img loading="lazy" src="/fftechwiki/images/RLS-FF1/fossil-{{ fossilImageNumber }}.png"></td>
 				{%- endif -%}
 				
 				<td class="{{ fossil.unbreakable }} text-align-center">{{ fossil.unbreakable }}</td>

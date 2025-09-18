@@ -13,7 +13,7 @@
 - type: 'flag'
   description: 'See <a href="/fftechwiki/flags">Flags</a>'
 - type: 'fossil'
-  description: 'A particular fossil (see <a href="/fftechwiki/file-formats/RLS">RLS</a>)'
+  description: 'A particular fossil (see <a href="/fftechwiki/file-formats/RLS-FF1">FF1 Fossils (RLS)</a>)'
 - type: 'frames'
   description: 'A number of frames'
 - type: 'image'

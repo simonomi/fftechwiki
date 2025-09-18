@@ -1,0 +1,39 @@
+- magicBytes: "3CL"
+  name: "Vivosaur 3D Models"
+  description: '<a href="/fftechwiki/index-files">Index file</a> for vivosaur 3D models'
+  filePath: "model/battle/arcdin/0000"
+  ff1Support: true
+- magicBytes: "AIS"
+  description: ""
+  filePath: "btl_ai/"
+  ff1Support: false
+- magicBytes: "AST"
+  description: ""
+  filePath: "btl_aiset/"
+  ff1Support: false
+- magicBytes: "BCO"
+  description: "Unknown—all zeros"
+  filePath: "etc/creature_offset_defs"
+  ff1Support: true
+- magicBytes: "DAB"
+  description: ""
+  filePath: "auto_battle/auto_battle"
+  ff1Support: false
+- magicBytes: "DCL"
+  description: "Vivosaurs"
+  filePath: "etc/creature_defs"
+  ff1Support: true
+- magicBytes: "DNC"
+  description: ""
+  filePath: "dance/"
+  ff1Support: false
+- magicBytes: "ECS"
+  description: "Miscellaneous data"
+  filePath: "etc/excavate_defs"
+  ff1Support: true
+- magicBytes: "RLS"
+  url: "/fftechwiki/file-formats/RLS-FF1"
+  name: "FF1 Fossils"
+  description: "Fossils"
+  filePath: "etc/kaseki_defs"
+  ff1Support: true
