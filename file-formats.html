@@ -33,17 +33,23 @@ title: File Formats
 					<td>{{ fileFormat.location }}</td>
 				{%- endif -%}
 				
-				{%- if fileFormat.ff1Support -%}
-					<td class="true text-align-center">✓</td>
-				{%- else -%}
-					<td class="false text-align-center">✗</td>
-				{%- endif -%}
+				{%- case fileFormat.ff1Support -%}
+					{%- when true -%}
+						<td class="true text-align-center">✓</td>
+					{%- when false -%}
+						<td class="false text-align-center">✗</td>
+					{%- else -%}
+						<td class="secondary text-align-center">n/a</td>
+				{%- endcase -%}
 				
-				{%- if fileFormat.ffcSupport -%}
-					<td class="true text-align-center">✓</td>
-				{%- else -%}
-					<td class="false text-align-center">✗</td>
-				{%- endif -%}
+				{%- case fileFormat.ffcSupport -%}
+					{%- when true -%}
+						<td class="true text-align-center">✓</td>
+					{%- when false -%}
+						<td class="false text-align-center">✗</td>
+					{%- else -%}
+						<td class="secondary text-align-center">n/a</td>
+				{%- endcase -%}
 			</tr>
 		{%- endfor -%}
 	</tbody>

@@ -7,9 +7,12 @@
   description: ""
   filePath: "etc/battle_attack_type"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "3BC"
   description: ""
   filePath: "model/battle/arcscenecsv.mar/0000"
+  ff1Support: false
+  ffcSupport: false
 - magicBytes: "3CL"
   name: "Vivosaur 3D Models"
   description: '<a href="/fftechwiki/index-files">Index file</a> for vivosaur 3D models'
@@ -18,14 +21,17 @@
 - magicBytes: "AIS"
   description: ""
   filePath: "btl_ai/"
+  ff1Support: false
 - magicBytes: "AST"
   description: ""
   filePath: "btl_aiset/"
+  ff1Support: false
 - magicBytes: "BBG"
   name: "Kasekiums"
   description: "Kasekiums (fossil battle arenas)"
   filePath: "etc/btl_bg_defs"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "BCO"
   description: "Unknown—all zeros"
   filePath: "etc/creature_offset_defs"
@@ -34,31 +40,41 @@
   description: "Characters"
   filePath: "chara/"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "DAB"
   description: ""
   filePath: "auto_battle/auto_battle"
+  ff1Support: false
 - magicBytes: "DAL"
   description: "Attacks"
   filePath: "etc/attack_defs"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "DBA"
   description: ""
   filePath: "etc/btl_adjust_defs"
+  ff1Support: false
+  ffcSupport: false
 - magicBytes: "DBS"
   description: "Battles"
   filePath: "battle/"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "DBT"
   description: ""
   filePath: "btl_tutorial/"
+  ff1Support: false
+  ffcSupport: false
 - magicBytes: "DCL"
   description: "Vivosaurs"
   filePath: "etc/creature_defs"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "DEP"
   description: "Cutscene triggers"
   filePath: "episode/"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "DEX"
   url: "/fftechwiki/file-formats/DEX"
   description: "Cutscenes"
@@ -74,6 +90,8 @@
 - magicBytes: "DML"
   description: ""
   filePath: "etc/museum_defs"
+  ff1Support: false
+  ffcSupport: false
 - magicBytes: "DMS"
   url: "/fftechwiki/file-formats/DMS"
   description: "Max IDs"
@@ -83,10 +101,12 @@
 - magicBytes: "DNC"
   description: ""
   filePath: "dance/"
+  ff1Support: false
 - magicBytes: "DSL"
   description: "Haiku"
   filePath: "etc/senryu_defs"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "DTX"
   url: "/fftechwiki/file-formats/DTX"
   description: "Text"
@@ -97,6 +117,7 @@
   description: "Miscellaneous data"
   filePath: "etc/excavate_defs"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "GRD"
   description: "Map data"
   location: "<code>map/c/</code>, <code>map/e/</code>, <code>map/g/</code>, <code>map/r/</code>"
@@ -106,6 +127,7 @@
   description: "Masks"
   filePath: "etc/headmask_defs"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "KIL"
   description: "Key items"
   filePath: "etc/keyitem_defs"
@@ -115,10 +137,12 @@
   description: "FP"
   filePath: "etc/btl_kp_defs"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "MAP"
   description: "Maps"
   filePath: "map/m/"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "MAR, MCM"
   description: "Archive format"
   location: "Everywhere!"
@@ -127,13 +151,18 @@
 - magicBytes: "MFS"
   description: "Fonts"
   filePath: "font/"
+  ff1Support: false
+  ffcSupport: false
 - magicBytes: "MKL"
   filePath: "etc/timemask"
+  ff1Support: false
+  ffcSupport: false
 - magicBytes: "MM3"
   name: "3D Models"
   description: '<a href="/fftechwiki/index-files">Index files</a> for 3D models'
   filePath: "model/"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "MMS"
   name: "Sprites"
   description: '<a href="/fftechwiki/index-files">Index files</a> for sprites'
@@ -151,8 +180,10 @@
   description: "Fossils"
   filePath: "etc/kaseki_defs"
   ff1Support: true
+  ffcSupport: false
 - magicBytes: "SHP"
   # url: "/fftechwiki/file-formats/SHP"
   description: "Shop"
   filePath: "shop/"
   ff1Support: true
+  ffcSupport: false
