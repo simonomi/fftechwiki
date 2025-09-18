@@ -70,6 +70,7 @@
   description: "Dialogue"
   filePath: "msg/"
   ff1Support: true
+  ffcSupport: true
 - magicBytes: "DML"
   description: ""
   filePath: "etc/museum_defs"
@@ -91,6 +92,7 @@
   description: "Text"
   filePath: "text/"
   ff1Support: true
+  ffcSupport: true
 - magicBytes: "ECS"
   description: "Miscellaneous data"
   filePath: "etc/excavate_defs"
@@ -107,6 +109,8 @@
 - magicBytes: "KIL"
   description: "Key items"
   filePath: "etc/keyitem_defs"
+  ff1Support: true
+  ffcSupport: true
 - magicBytes: "KPS"
   description: "FP"
   filePath: "etc/btl_kp_defs"
@@ -141,6 +145,7 @@
   description: '<a href="/fftechwiki/index-files">Index files</a> for images'
   filePath: "image/"
   ff1Support: true
+  ffcSupport: true
 - magicBytes: "RLS"
   url: "/fftechwiki/file-formats/RLS"
   description: "Fossils"
