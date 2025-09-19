@@ -5,7 +5,7 @@ title: Max IDs (DMS)
 
 <p>All DMS files are found in <code>etc/</code>, with file names ending with <code>_maxid</code>.</p>
 
-<h2>FF1</h2>
+<h2 id="ff1">FF1</h2>
 
 <table>
 	<thead>
@@ -16,7 +16,7 @@ title: Max IDs (DMS)
 	</thead>
 	<tbody>
 		{%- for maxid in site.data.DMS.ff1Maxids -%}
-		<tr>
+		<tr id="ff1-{{ maxid.file }}">
 			<td><code>{{ maxid.file }}</code></td>
 			<td>{{ maxid.number }}</td>
 		</tr>
@@ -24,7 +24,7 @@ title: Max IDs (DMS)
 	</tbody>
 </table>
 
-<h2>FFC</h2>
+<h2 id="ffc">FFC</h2>
 
 <table>
 	<thead>
@@ -35,7 +35,7 @@ title: Max IDs (DMS)
 	</thead>
 	<tbody>
 		{%- for maxid in site.data.DMS.ffcMaxids -%}
-		<tr>
+		<tr id="ffc-{{ maxid.file }}">
 			<td><code>{{ maxid.file }}</code></td>
 			<td>{{ maxid.number }}</td>
 		</tr>

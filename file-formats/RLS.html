@@ -46,7 +46,7 @@ style: RLS
 			{%- assign previousIndex = forloop.index0 | minus: 1 -%}
 			{%- assign previousFossil = fossils[previousIndex] -%}
 			{%- if fossil -%}
-			<tr>
+			<tr id="ff1-{{ forloop.index0 }}">
 				<td class="bold text-align-center">{{ forloop.index0 }}</td>
 				<td>{{ fossil._label }}</td>
 				

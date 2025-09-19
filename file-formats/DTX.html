@@ -6,7 +6,7 @@ title: Text (DTX)
 <p>The strings use the same <a href="/fftechwiki/file-formats/DMG#formatting-codes">formatting codes as dialogue files</a>, but only <code>$c#</code> and <code>$p</code>. They also use <a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions">C-style format specifiers</a> for substituting strings and numbers.</p>
 
 <details open class="unlimited-width">
-	<summary><h2>English</h2></summary>
+	<summary><h2 id="english">English</h2></summary>
 	
 	<table>
 		<thead>
@@ -17,7 +17,7 @@ title: Text (DTX)
 		</thead>
 		<tbody>
 			{%- for text in site.data.DTX.englishText -%}
-			<tr>
+			<tr id="english-{{ forloop.index0 }}">
 				<td class="bold text-align-center">{{ forloop.index0 }}</td>
 				<td><pre><code>{{ text }}</code></pre></td>
 			</tr>
@@ -27,7 +27,7 @@ title: Text (DTX)
 </details>
 
 <details class="unlimited-width">
-	<summary><h2>Japanese</h2></summary>
+	<summary><h2 id="japanese">Japanese</h2></summary>
 	
 	<table>
 		<thead>
@@ -38,7 +38,7 @@ title: Text (DTX)
 		</thead>
 		<tbody>
 			{%- for text in site.data.DTX.japaneseText -%}
-			<tr>
+			<tr id="japanese-{{ forloop.index0 }}">
 				<td class="bold text-align-center">{{ forloop.index0 }}</td>
 				<td><pre><code>{{ text }}</code></pre></td>
 			</tr>

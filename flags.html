@@ -6,7 +6,7 @@ style: flags
 
 <p>Flags are written like <code><local-value>&lt;<code-number>3 9</code-number>&gt;</local-value></code>, where the first number identifies the flag, and the second is a kind of 'type' (most likely). The main places they're used are in <a href="/fftechwiki/file-formats/DEX">cutscene (DEX)</a> and <a>cutscene trigger (DEP)</a> files.</p>
 
-<h2>Types</h2>
+<h2 id="types">Types</h2>
 
 <p>Though we call them "types", it's not entirely clear what they're actually used for. The same ID with two different types <em>seems</em> to refer to the same flag<sup><a class="footnote-link" id="footnote-return:1" href="#footnote:1">1</a></sup>, but then why have the type at all? Meanwhile the <a href="/fftechwiki/file-formats/DEX">DEX</a> and <a>DEP</a> commands that deal with flags usually take the same 1 or 2 types every time, so clearly there's <em>some</em> significance.</p>
 
@@ -29,7 +29,7 @@ style: flags
 	</tbody>
 </table>
 
-<h2>Known flags</h2>
+<h2 id="known">Known flags</h2>
 
 <table>
 	<thead>
@@ -44,7 +44,7 @@ style: flags
 				{%- assign isLastOfType = "" -%}
 			{%- endunless -%}
 			
-			<tr {{- isLastOfType -}}>
+			<tr id="{{ flag.id }}-{{ flag.type }}" {{- isLastOfType -}}>
 				<td><code><local-value>&lt;<code-number>{{ flag.id }} {{ flag.type }}</code-number>&gt;</local-value></code></td>
 				<td>{{ flag.notes }}</td>
 			</tr>

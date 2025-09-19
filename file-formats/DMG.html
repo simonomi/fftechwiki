@@ -23,7 +23,7 @@ style: DMG
 	</thead>
 	<tbody>
 		{%- for formatCode in site.data.DMG.formattingCodes -%}
-		<tr>
+		<tr id="format-code-{{ formatCode.id }}">
 			<td><code>{{ formatCode.code }}</code></td>
 			<td>{{ formatCode.description }}</td>
 			<td>
@@ -52,7 +52,7 @@ style: DMG
 	</thead>
 	<tbody>
 		{%- for color in site.data.DMG.colors -%}
-		<tr>
+		<tr id="color-{{ color.code }}">
 			<td><code>$c{{ color.code }}</code></td>
 			<td>
 				{%- if color.rawName -%}
@@ -80,7 +80,7 @@ style: DMG
 	</thead>
 	<tbody>
 		{%- for dialogue in site.data.DMG.dialogue -%}
-		<tr>
+		<tr id="dialogue-{{ dialogue.index }}">
 			<td class="bold text-align-center">{{ dialogue.index }}</td>
 			<td><pre><code>{{ dialogue.string }}</code></pre></td>
 		</tr>

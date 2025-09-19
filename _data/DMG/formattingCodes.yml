@@ -1,23 +1,30 @@
 - code: "$a#" # multi digit int (>1 is on), defaults to 0
+  id: "a"
   description: "Makes the text box automatically close. 0 is off, 1 is on. <code>$a0</code> is used twice, but never at a place where it actually does anything"
   examples: ["$a0", "$a1"]
 - code: "$c#" # 1-digit character
+  id: "c"
   description: 'Changes text color, see <a href="#colors">below</a>'
 - code: "$f" # no args
+  id: "f"
   description: "Breaks one string into multiple dialogue boxes"
   examples: ["$f"]
 - code: "$p"
+  id: "p"
   description: "Replaced with the player's name"
   examples: ["$p"]
 # $N - used for string replacement—only once, captain travers
 - code: "$q#" # multi digit int
+  id: "q"
   description: "Makes the text box shake, a higher number makes the shaking more intense"
   examples: ["$q0", "$q3", "$q10"]
 # %s (%old, %new) - replaced with a string, usually a rock
 - code: "$t#" # multi digit int
+  id: "t"
   description: "Delays for a number of frames before continuing"
   examples: ["$t10", "$t60", "$t97", "$t126"]
 # $V - replaced with a number, multiple places
 - code: "$w#" # full decimal
+  id: "w"
   description: "Sets character display speed. The number is multiplied by 10 to get the characters per second, so 3 is 30 characters per second, 5 is 50, and so on. Decimals work too: <code>$w0.1</code> is 1 character per second. 0 makes text appear instantly"
   examples: ["$w0", "$w0.5", "$w3", "$w10"]

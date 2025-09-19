@@ -7,7 +7,9 @@ title: Cutscenes (DEX)
 
 <p>There are many different commands, and each one takes a different number of arguments. There are multiple types of arguments, such as a character, a line of dialogue, or a sound effect. Each command has an ID number associated with it.</p>
 
-<h2>Argument types</h2>
+<!-- TODO: add some example events -->
+
+<h2 id="argument-types">Argument types</h2>
 
 <!-- TODO: examples -->
 
@@ -20,7 +22,7 @@ title: Cutscenes (DEX)
 	</thead>
 	<tbody>
 		{%- for argument in site.data.DEX.arguments -%}
-			<tr>
+			<tr id="argument-type-{{ argument.type }}">
 				<td><code><foreign-type>&lt;{{ argument.type }}&gt;</foreign-type></code></td>
 				<td>{{ argument.description }}</td>
 			</tr>
@@ -29,7 +31,7 @@ title: Cutscenes (DEX)
 </table>
 
 <details open class="unlimited-width">
-	<summary><h2>FF1 Commands</h2></summary>
+	<summary><h2 id="ff1">FF1 Commands</h2></summary>
 	
 	<table>
 		<tbody>
@@ -52,7 +54,7 @@ title: Cutscenes (DEX)
 </details>
 
 <details open class="unlimited-width">
-	<summary><h2>FFC Commands</h2></summary>
+	<summary><h2 id="ffc">FFC Commands</h2></summary>
 	
 	<table>
 		<tbody>

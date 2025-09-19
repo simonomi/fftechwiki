@@ -7,7 +7,7 @@ title: File Formats
 
 <p>Most (but not all!) Fossil Fighters file formats start with <a href="https://en.wikipedia.org/wiki/List_of_file_signatures">a short code</a> that's used to refer to that format.</p>
 
-<h2>Both games</h2>
+<h2 id="both">Both games</h2>
 
 <table>
 	<thead>
@@ -20,7 +20,7 @@ title: File Formats
 	</thead>
 	<tbody>
 		{%- for fileFormat in site.data.fileFormats.both -%}
-			<tr>
+			<tr id="both-{{ fileFormat.magicBytes }}">
 				<td>
 					<a {% if fileFormat.url -%}
 						href="{{ fileFormat.url }}"
@@ -51,7 +51,7 @@ title: File Formats
 	</tbody>
 </table>
 
-<h2>FF1 only</h2>
+<h2 id="ff1-only">FF1 only</h2>
 
 <table>
 	<thead>
@@ -64,7 +64,7 @@ title: File Formats
 	</thead>
 	<tbody>
 		{%- for fileFormat in site.data.fileFormats.ff1Only -%}
-			<tr>
+			<tr id="ff1-{{ fileFormat.magicBytes }}">
 				<td>
 					<a {% if fileFormat.url -%}
 						href="{{ fileFormat.url }}"
@@ -89,7 +89,7 @@ title: File Formats
 	</tbody>
 </table>
 
-<h2>FFC only</h2>
+<h2 id="ffc-only">FFC only</h2>
 
 <table>
 	<thead>
@@ -102,7 +102,7 @@ title: File Formats
 	</thead>
 	<tbody>
 		{%- for fileFormat in site.data.fileFormats.ffcOnly -%}
-			<tr>
+			<tr id="ffc-{{ fileFormat.magicBytes }}">
 				<td>
 					<a {% if fileFormat.url -%}
 						href="{{ fileFormat.url }}"
