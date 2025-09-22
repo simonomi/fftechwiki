@@ -32,7 +32,7 @@
 - magicBytes: "DBA"
   description: ""
   filePath: "etc/btl_adjust_defs"
-  ff1Support: false
+  ff1Support: true
   ffcSupport: false
 - magicBytes: "DBS"
   description: "Battles"
@@ -42,7 +42,7 @@
 - magicBytes: "DBT"
   description: ""
   filePath: "btl_tutorial/"
-  ff1Support: false
+  ff1Support: true
   ffcSupport: false
 - magicBytes: "DCL"
   description: "Vivosaurs"
