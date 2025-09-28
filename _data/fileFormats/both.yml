@@ -48,7 +48,7 @@
   description: "Vivosaurs"
   filePath: "etc/creature_defs"
   ff1Support: true
-  ffcSupport: false
+  ffcSupport: true
 - magicBytes: "DEP"
   description: "Cutscene triggers"
   filePath: "episode/"

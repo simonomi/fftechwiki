@@ -32,15 +32,15 @@
   ffcSupport: false
 - magicBytes: "CPL"
   description: ""
-  filePath: "creature_palet_defs"
+  filePath: "etc/creature_palet_defs"
   ffcSupport: false
 - magicBytes: "CPLS"
   description: ""
-  filePath: "critical_point_location_defs"
+  filePath: "etc/critical_point_location_defs"
   ffcSupport: false
 - magicBytes: "CRI"
   description: ""
-  filePath: "creature_rankup_interval_defs"
+  filePath: "etc/creature_rankup_interval_defs"
   ffcSupport: false
 - magicBytes: "CWS"
   description: ""
@@ -52,7 +52,7 @@
   ffcSupport: false
 - magicBytes: "D3NNL"
   description: ""
-  filePath: "node_name_table"
+  filePath: "etc/node_name_table"
   ffcSupport: false
 - magicBytes: "DAI"
   description: ""
@@ -68,27 +68,27 @@
   ffcSupport: false
 - magicBytes: "DBG"
   description: ""
-  filePath: "debug_defs"
+  filePath: "etc/debug_defs"
   ffcSupport: false
 - magicBytes: "DBTL"
   description: ""
-  filePath: "donate_battlepoint_defs"
+  filePath: "etc/donate_battlepoint_defs"
   ffcSupport: false
 - magicBytes: "DCEA"
   description: ""
-  filePath: "creature_evolution_abilityup_param_defs"
+  filePath: "etc/creature_evolution_abilityup_param_defs"
   ffcSupport: false
 - magicBytes: "DCL"
   description: "Same magic bytes as <code>creature_defs</code>, unknown if same file type"
-  filePath: "donate_creature_defs"
+  filePath: "etc/donate_creature_defs"
   ffcSupport: false
 - magicBytes: "DCS"
   description: ""
-  filePath: "consol_defs"
+  filePath: "etc/consol_defs"
   ffcSupport: false
 - magicBytes: "DCSL"
   description: ""
-  filePath: "creature_strength_defs"
+  filePath: "etc/creature_strength_defs"
   ffcSupport: false
 - magicBytes: "DDE"
   description: ""
@@ -96,7 +96,7 @@
   ffcSupport: false
 - magicBytes: "DDPL"
   description: ""
-  filePath: "donate_point_defs"
+  filePath: "etc/donate_point_defs"
   ffcSupport: false
 - magicBytes: "DEMO"
   description: ""
@@ -104,35 +104,35 @@
   ffcSupport: false
 - magicBytes: "DKSK"
   description: ""
-  filePath: "donate_kaseki_defs"
+  filePath: "etc/donate_kaseki_defs"
   ffcSupport: false
 - magicBytes: "DMLS"
   description: ""
-  filePath: "manpu_defs"
+  filePath: "etc/manpu_defs"
   ffcSupport: false
 - magicBytes: "DMSK"
   description: ""
-  filePath: "donate_mask_defs"
+  filePath: "etc/donate_mask_defs"
   ffcSupport: false
 - magicBytes: "DPLS"
   description: ""
-  filePath: "pict_defs"
+  filePath: "etc/pict_defs"
   ffcSupport: false
 - magicBytes: "DSES"
   description: ""
-  filePath: "state_effect_defs"
+  filePath: "etc/state_effect_defs"
   ffcSupport: false
 - magicBytes: "DSFG"
   description: ""
-  filePath: "rank_growth_pattern_defs"
+  filePath: "etc/rank_growth_pattern_defs"
   ffcSupport: false
 - magicBytes: "DTLL"
   description: ""
-  filePath: "textloadtiming_defs"
+  filePath: "etc/textloadtiming_defs"
   ffcSupport: false
 - magicBytes: "DTS"
   description: ""
-  filePath: "donate_exchange_defs"
+  filePath: "etc/donate_exchange_defs"
   ffcSupport: false
 - magicBytes: "ECL"
   description: ""
@@ -144,7 +144,7 @@
   ffcSupport: false
 - magicBytes: "EGL"
   description: ""
-  filePath: "informationguild_defs"
+  filePath: "etc/informationguild_defs"
   ffcSupport: false
 - magicBytes: "EMS"
   description: ""
@@ -152,73 +152,73 @@
   ffcSupport: false
 - magicBytes: "EVI"
   description: ""
-  filePath: "shopeventitem_defs"
+  filePath: "etc/shopeventitem_defs"
   ffcSupport: false
 - magicBytes: "FACH"
   description: ""
-  filePath: "facechange_defs"
+  filePath: "etc/facechange_defs"
   ffcSupport: false
 - magicBytes: "FHL"
   description: ""
-  filePath: "fieldhorider_defs"
+  filePath: "etc/fieldhorider_defs"
   ffcSupport: false
 - magicBytes: "GCOL"
   description: ""
-  filePath: "groundcolor_defs"
+  filePath: "etc/groundcolor_defs"
   ffcSupport: false
 - magicBytes: "GEFF"
   description: ""
-  filePath: "groundeffect_defs"
+  filePath: "etc/groundeffect_defs"
   ffcSupport: false
 - magicBytes: "HEXP"
   description: ""
-  filePath: "horider_experience_defs"
+  filePath: "etc/horider_experience_defs"
   ffcSupport: false
 - magicBytes: "JPK"
   description: ""
-  filePath: "jiman_prize_kaseki_defs"
+  filePath: "etc/jiman_prize_kaseki_defs"
   ffcSupport: false
 - magicBytes: "MLS"
   description: ""
-  filePath: "motion_defs"
+  filePath: "etc/motion_defs"
   ffcSupport: false
 - magicBytes: "MPG"
   description: ""
-  filePath: "mapgroup_defs"
+  filePath: "etc/mapgroup_defs"
   ffcSupport: false
 - magicBytes: "OPMV"
   description: ""
-  filePath: "openingmovie_defs"
+  filePath: "etc/openingmovie_defs"
   ffcSupport: false
 - magicBytes: "PCS"
   description: ""
-  filePath: "passconnect_defs"
+  filePath: "etc/passconnect_defs"
   ffcSupport: false
 - magicBytes: "PLYR"
   description: ""
-  filePath: "player_defs"
+  filePath: "etc/player_defs"
   ffcSupport: false
 - magicBytes: "RBBL"
   description: ""
-  filePath: "robobonus_defs"
+  filePath: "etc/robobonus_defs"
   ffcSupport: false
 - magicBytes: "RBL"
   description: ""
-  filePath: "robo_defs"
+  filePath: "etc/robo_defs"
   ffcSupport: false
 - magicBytes: "RLS"
   description: ""
-  filePath: "radarskin_defs"
+  filePath: "etc/radarskin_defs"
   ffcSupport: false
 - magicBytes: "SIL"
   description: ""
-  filePath: "symbolicon_defs"
+  filePath: "etc/symbolicon_defs"
   ffcSupport: false
 - magicBytes: "SKS"
   description: ""
-  filePath: "shopkaseki_defs"
+  filePath: "etc/shopkaseki_defs"
   ffcSupport: false
 - magicBytes: "TPL"
   description: ""
-  filePath: "shoptool_defs"
+  filePath: "etc/shoptool_defs"
   ffcSupport: false
