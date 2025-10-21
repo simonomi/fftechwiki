@@ -45,7 +45,7 @@ style: flags
 			{%- endunless -%}
 			
 			<tr id="{{ flag.id }}-{{ flag.type }}" {{- isLastOfType -}}>
-				<td><code><local-value>&lt;<code-number>{{ flag.id }} {{ flag.type }}</code-number>&gt;</local-value></code></td>
+				<td><code><local-value>&lt;<code-number>{{ flag.id }}&nbsp{{ flag.type }}</code-number>&gt;</local-value></code></td>
 				<td>{{ flag.notes }}</td>
 			</tr>
 		{%- endfor -%}
