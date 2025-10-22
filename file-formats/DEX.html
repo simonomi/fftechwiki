@@ -3,7 +3,7 @@ title: Cutscenes (DEX)
 ---
 <p>DEX files are used to store cutscenes and scripted events. They're found in the <code>episode/</code> folder, specifically the files starting with <code>e</code> (<code>episode/e0001</code>, <code>episode/e0046</code>, etc). They're closely related to <a>DEP</a> files, which control the triggers for cutscenes/scripted events. For each DEX file, there's a matching <a>DEP</a> file with the same name, minus the <code>e</code>.</p>
 
-<p>A DEX file is split up into a number of blocks. Each block is simply a list of commands that run in order. Every block also has an ID number, but it's not stored in the DEX file<sup><a class="footnote-link" id="footnote-return:1" href="#footnote:1">1</a></sup>.</p>
+<p>A DEX file is split up into a number of events. Each event is simply a list of commands that run in order. Every event also has an ID number, but it's not stored in the DEX file<sup><a class="footnote-link" id="footnote-return:1" href="#footnote:1">1</a></sup>.</p>
 
 <p>There are many different commands, and each one takes a different number of arguments. There are multiple types of arguments, such as a character, a line of dialogue, or a sound effect. Each command has an ID number associated with it.</p>
 
@@ -79,5 +79,5 @@ title: Cutscenes (DEX)
 <hr>
 
 <ol id="footnotes">
-	<li tabindex="-1" id="footnote:1">The ID number for a given block is only found in the matching DEP file, which has its own set of matching blocks <a class="footnote-return-link" href="#footnote-return:1">⏎</a></li>
+	<li tabindex="-1" id="footnote:1">The ID number for a given event is only found in the matching DEP file, which has its own set of matching events <a class="footnote-return-link" href="#footnote-return:1">⏎</a></li>
 </ol>
