@@ -10,6 +10,8 @@
 	<summary>Show example</summary>
 	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/centered-dialogue.png">
 </details>'
+- id: 4
+  notes: "Used to wipe data for dialogue answers, and possibly mark events as having not played? i'm not sure what the difference is between this and set false (or set 0)."
 - id: 9
   notes: "There are many 'slots' in various places across the game's maps, which are specific locations a character can be spawned at. For example, the place you stand in the Fossil Stadium lobby after successfully leveling up is one such slot."
 - id: 32
@@ -24,6 +26,8 @@
 	<summary>Show example</summary>
 	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-33-with-choice.png">
 </details>'
+- id: 44
+  notes: "Probably something related to moving or turning the entity."
 - id: 51
   notes: 'Causes the player to control a different character!!! Normally this is used during cutscenes to move the camera''s focus without moving Hunter, but it still works when not in a cutscene >:)'
 - id: 55
@@ -34,10 +38,22 @@
 </details>'
 - id: 56
   notes: 'Simply does nothing for a number of frames. Fossil Fighters runs at 60fps, so delay <code><local-value>&lt;<code-number>60</code-number> frames&gt;</local-value></code> delays for one second.'
+- id: 82
+  notes: "The entity waits a random number of frames within a given range, then walks to a random position within a certain distance of their 'home', which is just wherever they were when this command was executed."
+- id: 86
+  notes: "This is used for Denture Sharks and BB Bandits. They'll start chasing the player when they're within the detection range, but won't run farther than a certain distance before turning back. After they give up on chasing the player, they have a cooldown before they'll start chasing again."
 - id: 107
-  notes: "Fossil rocks given by this command have their names shown in the case"
+  notes: "Fossil rocks given by this command have their names shown in the case. A message is shown to the player that they have recieved a new fossil rock."
 - id: 108
-  notes: 'Fossil rocks given by this command are called "New Fossil Rock" in the case'
+  notes: 'Fossil rocks given by this command are called "New Fossil Rock" in the case.'
+- id: 114
+  notes: "Each entity actually has two models: one for the head, and one for the body. Each model can have multiple variants, like the player character's different outfits, or Dr. Diggins's caveperson outfit."
+- id: 118
+  notes: "This starts whatever the default music is for the current room/area."
+- id: 142
+  notes: "Allows quitting out of the dialog without changing the player's name."
+- id: 143
+  notes: "Requires the player to submit a non-blank name to exit the dialog."
 - id: 144
   notes: '
 <details>
@@ -51,3 +67,5 @@
 	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-145-with-choice.png">
 	<p>Note that the G banner in the corner is unrelated to this command, it''s controlled by commands <a href="#command-202">202</a> and <a href="#command-203">203</a>.</p>
 </details>'
+- id: 180
+  notes: "Command 181 enables the sonar, but its <code><foreign-type>&lt;frames&gt;</foreign-type></code> argument is optional, which carbonizer doesn't support yet, so it's considered 'unknown' for now."
