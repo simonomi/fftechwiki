@@ -13,7 +13,7 @@
 - id: 4
   notes: "Used to wipe data for dialogue answers, and possibly mark events as having not played? i'm not sure what the difference is between this and set false (or set 0)."
 - id: 9
-  notes: "There are many 'slots' in various places across the game's maps, which are specific locations a character can be spawned at. For example, the place you stand in the Fossil Stadium lobby after successfully leveling up is one such slot."
+  notes: "There are many 'slots' in various places across the game's maps, which are specific locations an entity can be spawned at. For example, the place you stand in the Fossil Stadium lobby after successfully leveling up is one such slot."
 - id: 32
   notes: '
 <details>
@@ -29,7 +29,7 @@
 - id: 44
   notes: "Probably something related to moving or turning the entity."
 - id: 51
-  notes: 'Causes the player to control a different character!!! Normally this is used during cutscenes to move the camera''s focus without moving Hunter, but it still works when not in a cutscene >:)'
+  notes: 'Causes the player to control a different entity!!! Normally this is used during cutscenes to move the camera''s focus without moving Hunter, but it still works when not in a cutscene >:)'
 - id: 55
   notes: '
 <details>

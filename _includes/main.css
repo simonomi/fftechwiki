@@ -165,7 +165,7 @@ ul {
 		padding-inline-start: 1.25em;
 	}
 	
-	*:not(:last-child) {
+	& > *:not(:last-child) {
 		margin-bottom: 0.25em;
 	}
 }

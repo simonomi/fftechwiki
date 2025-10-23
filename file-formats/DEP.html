@@ -1,0 +1,67 @@
+---
+title: Cutscene Triggers (DEP)
+---
+<p>DEP files control how and when cutscene events are triggered. Each DEP file matches up with a <a href="/fftechwiki/file-formats/DEX">DEX</a> file, and for each <a href="/fftechwiki/file-formats/DEX#events">event</a>, defines a list of requirements that cause it to run.</p>
+
+<p>An event in a DEP file always starts with the line:</p>
+
+<pre><code><code-keyword>event <foreign-type>&lt;ID&gt;</foreign-type>, requires: <foreign-type>&lt;CRITERIA&gt;</foreign-type>, unknown: <foreign-type>&lt;UNKNOWN&gt;</foreign-type></code-keyword></code></pre>
+
+<p>where:</p>
+
+<ul>
+	<li><code>ID</code> is the ID number of the event</li>
+	<li><code>CRITERIA</code> is either <code>all</code> or <code>any</code></li>
+	<ul>
+		<li><code>all</code> requires that every condition is true for the event to run</li>
+		<li><code>any</code> requires that at least one condition is true for the event to run</li>
+	</ul>
+	<li><code>UNKNOWN</code> is either <code>true</code> or <code>false</code></li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+<h3 id="arguments">Arguments</h3>
+
+<p>Some requirements can take any number of arguments, these are called "variadic", and are indicated like <code><foreign-type>&lt;flag&gt;...</foreign-type></code>. To use a requirement with variadic arguments, simply provide multiple arguments separated by spaces, like so:</p>
+
+<pre><code><code-keyword>all flags true <foreign-type>&lt;<code-number>4006 5</code-number>&gt;</foreign-type> <foreign-type>&lt;<code-number>4001 5</code-number>&gt;</foreign-type> <foreign-type>&lt;<code-number>4013 5</code-number>&gt;</foreign-type></code-keyword></code></pre>
+
+<table>
+	<thead>
+		<tr>
+			<th>Argument type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		{%- for argument in site.data.DEP.arguments -%}
+			<tr id="argument-type-{{ argument.type }}">
+				<td><code><foreign-type>&lt;{{ argument.type }}&gt;</foreign-type></code></td>
+				<td>{{ argument.description }}</td>
+			</tr>
+		{%- endfor -%}
+	</tbody>
+</table>
+
+<!-- <details open class="unlimited-width"> -->
+	<h3 id="ff1">FF1 Requirements</h3>
+	
+	<table>
+		<tbody>
+			{%- for requirement in site.data.DEP.ff1Requirements -%}
+				<tr id="requirement-{{ requirement.id }}" class="scroll-margin-top" tabindex="-1">
+					<th>{{ requirement.id }}</th>
+					<th class="text-align-start"><code><code-keyword>{{ requirement.requirement }}</code-keyword></code></th>
+				</tr>
+				{%- assign notes = site.data.DEX.ff1RequirementNotes | where: "id", requirement.id | first -%}
+				{%- if notes -%}
+				<tr>
+					<td colspan="2">
+						{{- notes.notes -}}
+					</td>
+				</tr>
+				{%- endif -%}
+			{%- endfor -%}
+		</tbody>
+	</table>
+<!-- </details> -->

@@ -50,6 +50,7 @@
   ff1Support: true
   ffcSupport: true
 - magicBytes: "DEP"
+  url: "/fftechwiki/file-formats/DEP"
   description: "Cutscene triggers"
   filePath: "episode/"
   ff1Support: true

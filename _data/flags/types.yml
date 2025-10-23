@@ -1,8 +1,8 @@
 - type: 0
-  notes: Used only in <a href="/fftechwiki/file-formats/DEX">DEX</a> files, usually for the results of dialogue choices. <a>DEP</a> files react to these flags, but never use type 0 (they might use 8? or maybe 9?)
+  notes: Used only in <a href="/fftechwiki/file-formats/DEX">DEX</a> files, usually for the results of dialogue choices. <a href="/fftechwiki/file-formats/DEP">DEP</a> files react to these flags, but never use type 0 (they might use 8? or maybe 9?)
 - type: "2,&nbsp;3"
   shortName: Event
-  notes: Used only in <a>DEP</a> files, specifically for the 'event has (not) played' commands
+  notes: Used only in <a href="/fftechwiki/file-formats/DEP">DEP</a> files, specifically for the 'event has (not) played' commands
 - type: "5,&nbsp;6,&nbsp;10"
   shortName: Boolean
   notes: Used all over for <code><code-keyword>true</code-keyword></code>/<code><code-keyword>false</code-keyword></code> values, like story progress flags or battle win/lose results

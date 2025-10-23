@@ -1,19 +1,35 @@
 ---
 title: Cutscenes (DEX)
 ---
-<p>DEX files are used to store cutscenes and scripted events. They're found in the <code>episode/</code> folder, specifically the files starting with <code>e</code> (<code>episode/e0001</code>, <code>episode/e0046</code>, etc). They're closely related to <a>DEP</a> files, which control the triggers for cutscenes/scripted events. For each DEX file, there's a matching <a>DEP</a> file with the same name, minus the <code>e</code>.</p>
-
-<p>A DEX file is split up into a number of events. Each event is simply a list of commands that run in order. Every event also has an ID number, but it's not stored in the DEX file<sup><a class="footnote-link" id="footnote-return:1" href="#footnote:1">1</a></sup>.</p>
-
-<p>There are many different commands, and each one takes a different number of arguments. There are multiple types of arguments, such as a character, a line of dialogue, or a sound effect. Each command has an ID number associated with it.</p>
+<p>DEX files are used to store cutscenes and scripted events. They're found in the <code>episode/</code> folder, specifically the files starting with <code>e</code> (<code>episode/e0001</code>, <code>episode/e0046</code>, etc). They're closely related to <a href="/fftechwiki/file-formats/DEP">DEP</a> files, which control the triggers for cutscenes/scripted events. For each DEX file, there's a matching <a href="/fftechwiki/file-formats/DEP">DEP</a> file with the same name, minus the <code>e</code>.</p>
 
 <p>Carbonizer exports DEX files as <code>.dex</code> files, which are written in a custom language. If you use <a href="https://notepad-plus-plus.org">Notepad++</a>, you can install <a download filename="DEX.xml" href="/fftechwiki/file-formats/DEX/DEX.xml">this custom syntax highlighting file</a> for it in <code>Language > User Defined Language > Define your language... > Import...</code>. From then on, it'll show up in the <code>Language</code> menu for you to use.</p>
 
+<h2 id="events">Events</h2>
+
+<p>A DEX file is split up into a number of events. Each event is simply a list of commands that run in order, from start to end. Each event also has an ID number, stored in the matching <a href="fftechwiki/file-formats/DEP">DEP</a> file.</p>
+
+<p>Events are the building blocks that make up cutscenes. They can be as short as a single command, or as long as an entire cutscene. Cutscenes are usually made up of more than one event though, because an event <em>always</em> plays from start to finish. If a cutscene has a dialogue choice, or a different line of dialogue depending on a condition, it needs to be broken up into multiple events, for each possible case.</p>
+
+<p>An example of this is fossil battles. When a Fighter challenges you to a battle, there are 5 different events involved:</p>
+
+<ul>
+	<li>A Fighter challenges you</li>
+	<li>You accept, and a battle is triggered</li>
+	<li>You win the battle</li>
+	<li>You lose the battle</li>
+	<li>You decline the challenge</li>
+</ul>
+
 <!-- TODO: add some example events -->
 
-<h2 id="argument-types">Argument types</h2>
+<h2>Commands</h2>
+
+<p>There are many different commands, each one having an ID number and a list of arguments. Each command does something unique, like showing a line of dialogue, moving a character, or triggering a battle.</p>
 
 <!-- TODO: examples -->
+
+<h3 id="argument-types">Argument types</h3>
 
 <table>
 	<thead>
@@ -33,7 +49,7 @@ title: Cutscenes (DEX)
 </table>
 
 <details open class="unlimited-width">
-	<summary><h2 id="ff1">FF1 Commands</h2></summary>
+	<summary><h3 id="ff1">FF1 Commands</h3></summary>
 	
 	<table>
 		<tbody>
@@ -56,7 +72,7 @@ title: Cutscenes (DEX)
 </details>
 
 <details open class="unlimited-width">
-	<summary><h2 id="ffc">FFC Commands</h2></summary>
+	<summary><h3 id="ffc">FFC Commands</h3></summary>
 	
 	<table>
 		<tbody>
@@ -77,9 +93,3 @@ title: Cutscenes (DEX)
 		</tbody>
 	</table>
 </details>
-
-<hr>
-
-<ol id="footnotes">
-	<li tabindex="-1" id="footnote:1">The ID number for a given event is only found in the matching DEP file, which has its own set of matching events <a class="footnote-return-link" href="#footnote-return:1">⏎</a></li>
-</ol>
