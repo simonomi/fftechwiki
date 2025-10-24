@@ -1,5 +1,5 @@
 - type: 'boolean'
-  description: 'Either <code><local-value>&lt;<code-keyword>true</code-keyword>&gt;</local-value></code> or <code><local-value>&lt;<code-keyword>false</code-keyword>&gt;</local-value></code>'
+  description: 'Either <code><local-value>&lt;true&gt;</local-value></code> or <code><local-value>&lt;false&gt;</local-value></code>'
 - type: 'degrees'
   description: 'An angle. <code><local-value>&lt;<code-number>0</code-number> degrees&gt;</local-value></code> is facing right and <code><local-value>&lt;<code-number>90</code-number> degrees&gt;</local-value></code> is facing down'
 - type: 'dialogue'
