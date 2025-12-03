@@ -197,7 +197,15 @@ button {
 	}
 }
 
-/* 24px is the normal font size of an h2, this makes the summary arrow the right size */
+/* the default marker size is a little bigger than i'd like */ 
+summary:not(:has(h2)):not(:has(h3))::marker {
+	font-size: 0.75rem;
+}
+
+summary:has(h2)::marker {
+	font-size: 1.25rem;
+}
+
 /* 0.83em is the normal margins for h2, this moves them to the details to let them collapse with any previous margin */
 details:has(summary > h2) {
 	margin-block-start: 0.83em;
@@ -207,14 +215,22 @@ details:has(summary > h2) {
 		margin-block-end: 0.83em;
 	}
 	
-	& > summary:has(h2) {
-		font-size: 24px;
-		
-		& > h2 {
-			font-size: 24px;
-			margin: 0;
-			display: inline-block; /* fix rendering error on chrome */
-		}
+	& > summary > h2 {
+		display: inline;
+	}
+}
+
+/* 1em is the normal margins for h3, this moves them to the details to let them collapse with any previous margin */
+details:has(summary > h3) {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	
+	&[open] > summary {
+		margin-block-end: 1em;
+	}
+	
+	& > summary > h3 {
+		display: inline;
 	}
 }
 
