@@ -12,8 +12,10 @@
 </details>'
 - id: 4
   notes: "Used to wipe data for dialogue answers, and possibly mark events as having not played? i'm not sure what the difference is between this and set false (or set 0)."
-- id: 9
-  notes: "There are many 'slots' in various places across the game's maps, which are specific locations an entity can be spawned at. For example, the place you stand in the Fossil Stadium lobby after successfully leveling up is one such slot."
+- id: 8
+  notes: "The map files define a bunch of 'regions' where an entity can spawn at. For example, the place you stand in the Fossil Stadium lobby after successfully leveling up is one such region."
+- id: 26
+  notes: "Each episode file is enabled or disabled individually. When a new save is created, only episode 1 is enabled, and it has to enable whatever other files it wants to run."
 - id: 32
   notes: '
 <details>
