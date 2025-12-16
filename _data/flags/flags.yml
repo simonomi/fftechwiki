@@ -63,10 +63,10 @@
   notes: Something to do with the mask shop
 - id: 62
   type: 8
-  notes: Number of sonar upgrades left
+  notes: Number of sonar upgrades left?
 - id: 67
   type: 8
-  notes: Number of cleaning upgrades left
+  notes: Number of cleaning upgrades left?
 - id: 68
   type: 8
   notes: "Number of case upgrades unlocked (1: 8, 2: 16, 3: 24, 4: 32, 5: 48, presumably 6: 64)"
@@ -85,6 +85,9 @@
 - id: 19
   type: 9
   notes: Donation points
+- id: 25
+  type: 9
+  notes: Number of fossils cleaned?
 - id: 30
   type: 9
   notes: Sonar monitor upgrade level
@@ -94,3 +97,12 @@
 - id: 32
   type: 9
   notes: Sonar fossil filter upgrade level
+- id: 30
+  type: 10
+  notes: Multiplayer unlocked
+- id: 33
+  type: 10
+  notes: Super Drill unlocked
+- id: 34
+  type: 10
+  notes: Hyper Hammer unlocked

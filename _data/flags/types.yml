@@ -3,9 +3,12 @@
 - type: "2,&nbsp;3"
   shortName: Event
   notes: Used only in <a href="/fftechwiki/file-formats/DEP">DEP</a> files, specifically for the 'event has (not) played' commands
-- type: "5,&nbsp;6,&nbsp;10"
+- type: "5"
   shortName: Boolean
   notes: Used all over for <code><code-keyword>true</code-keyword></code>/<code><code-keyword>false</code-keyword></code> values, like story progress flags or battle win/lose results
+- type: 6
+  shortName: Boolean
+  notes: "Whether the player currently has a particular key item"
 - type: 7
   shortName: Boolean
   notes: Whether the player has a particular mask unlocked
@@ -15,3 +18,6 @@
 - type: 9
   shortName: Integer
   notes: Same as 8, but seems to be used for player data, like money or current mask
+- type: 10
+  shortName: Boolean
+  notes: "Whether the player has a certain feature unlocked"
