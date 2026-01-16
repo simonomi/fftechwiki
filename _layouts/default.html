@@ -36,7 +36,8 @@
 				<img id="close-navigation-menu" src="/fftechwiki/images/close.svg">
 			</summary>
 			
-			<nav>{%- render "navigation.html" -%}</nav>
+			<!-- FIXME: https://github.com/cobalt-org/liquid-rust/issues/602 -->
+			<nav>{%- render "navigation.html", site: site, page: page -%}</nav>
 			
 			<hr id="navigation-separator">
 		</details>
