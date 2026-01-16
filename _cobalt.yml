@@ -1,0 +1,15 @@
+template_extensions:
+  - html
+  - css
+
+ignore:
+  - LICENSE
+
+site:
+  base_url: "https://simonomi.dev/"
+
+syntax_highlight:
+  enabled: false
+
+default:
+  layout: default.html

@@ -7,7 +7,7 @@ Because the site is hosted on [GitHub Pages](https://docs.github.com/en/pages), 
 #### Resources
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
 - [Jekyll](https://jekyllrb.com/docs/pages/)
-- [Liquid](https://shopify.github.io/liquid/) (those `{{ }}` and `{% %}` things)
+- [Liquid](https://shopify.github.io/liquid/) (those `{{- -}}` and `{%- -%}` things)
 - [MathML](https://developer.mozilla.org/en-US/docs/Web/MathML/Tutorials/For_beginners/Getting_started) (how to write math formulas in HTML)
 
 ### Simple

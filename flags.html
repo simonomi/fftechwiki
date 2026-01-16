@@ -1,6 +1,7 @@
 ---
 title: Flags
-style: flags
+data:
+  style: flags
 ---
 <p>Flags are used to keep track of tons of different state throughout the game. This includes temporary state, like a dialogue choice or who won a battle, as well as long-lived state, like cleaning upgrades or story progress.</p>
 
@@ -22,7 +23,13 @@ style: flags
 		{%- for flagType in site.data.flags.types -%}
 			<tr>
 				<td class="text-align-center">{{ flagType.type }}</td>
-				<td>{{ flagType.shortName }}</td>
+				
+				{%- if flagType.shortName -%}
+					<td>{{ flagType.shortName }}</td>
+				{%- else -%}
+					<td></td>
+				{%- endif -%}
+				
 				<td>{{ flagType.notes }}</td>
 			</tr>
 		{%- endfor -%}
@@ -38,7 +45,7 @@ style: flags
 	</thead>
 	<tbody>
 		{%- for flag in site.data.flags.flags -%}
-			{%- unless site.data.flags.flags[forloop.index0].type == site.data.flags.flags[forloop.index].type or forloop.last -%}
+			{%- unless forloop.last or site.data.flags.flags[forloop.index0].type == site.data.flags.flags[forloop.index].type -%}
 				{%- assign isLastOfType = ' class="thick-bottom-border"' -%}
 			{%- else -%}
 				{%- assign isLastOfType = "" -%}

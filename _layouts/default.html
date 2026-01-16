@@ -7,47 +7,41 @@
 		<title>{{ page.title }}</title>
 		<link rel="icon" href="/fftechwiki/images/stamp.png">
 		
-		{%- if page.description -%}
+		{%- if page.description and page.description != "" -%}
 			<meta name="description" content="{{ page.description }}">
 		{%- endif -%}
 		
 		<style>
-			{%- capture maincss -%}
-				{%- include main.css -%}
-			{%- endcapture -%}
-			{{- maincss | normalize_whitespace -}}
+			{%- render "main.css" -%}
 			
-			{%- capture wikicss -%}
-				{%- include wiki.css -%}
-			{%- endcapture -%}
-			{{- wikicss | normalize_whitespace -}}
+			{%- render "wiki.css" -%}
 			
-			{%- if page.style -%}
-				{%- capture pagecss -%}
-					{%- include {{ page.style }}.css -%}
-				{%- endcapture -%}
-				{{- pagecss | normalize_whitespace -}}
+			{%- if page.data.style -%}
+				{%- assign styleFile = page.data.style | append: ".css" -%}
+				{%- render styleFile -%}
 			{%- endif -%}
 		</style>
 		
-		{%- if page.script -%}
+		{%- if page.data.script -%}
 			<script>
-				{%- include {{ page.script }}.js -%}
+				{%- assign scriptFile = page.data.script | append: ".js" -%}
+				{%- render scriptFile -%}
 			</script>
 		{%- endif -%}
 	</head>
 	<body>
 		<navigation-sidebar>
-			{%- include navigation.html -%}
+			{%- render "navigation.html" -%}
 		</navigation-sidebar>
 		
+		<!-- TODO: this needs to be completely redesigned -->
 		<details id="navigation-details">
 			<summary>
 				<img id="open-navigation-menu" src="/fftechwiki/images/menu.svg">
 				<img id="close-navigation-menu" src="/fftechwiki/images/close.svg">
 			</summary>
 			
-			{%- include navigation.html -%}
+			{%- render "navigation.html" -%}
 		</details>
 		
 		<page-content>
@@ -55,11 +49,11 @@
 				<h1>{{ page.title }}</h1>
 			</hgroup>
 			
-			{{- content -}}
+			{{- page.content -}}
 			
-			{%- unless page.nofooter -%}
+			{%- unless page.data.nofooter -%}
 				<footer>
-					<p><a href="https://github.com/simonomi/fftechwiki/blob/main/{{ page.path }}">Edit this page</a> or <a href="https://github.com/simonomi/fftechwiki/issues">report an issue</a></p>
+					<p><a href="https://github.com/simonomi/fftechwiki/blob/main/{{ page.file.permalink }}">Edit this page</a> or <a href="https://github.com/simonomi/fftechwiki/issues">report an issue</a></p>
 					<small>© <time>{{ "now" | date: "%Y" }}</time> alice pellerin</small>
 				</footer>
 			{%- endunless -%}

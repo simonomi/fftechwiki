@@ -274,6 +274,6 @@ footer {
 	margin-bottom: 2rem;
 }
 
-{% include code.css %}
-{% include tables.css %}
-{% include footnotes.css %}
+{%- include "code.css" -%}
+{%- include "tables.css" -%}
+{%- include "footnotes.css" -%}

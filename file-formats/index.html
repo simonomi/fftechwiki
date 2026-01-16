@@ -25,10 +25,16 @@ title: File Formats
 					<a {% if fileFormat.url -%}
 						href="{{ fileFormat.url }}"
 					{%- endif -%}>
-						{{ fileFormat.magicBytes }}
+						{{- fileFormat.magicBytes -}}
 					</a>
 				</td>
-				<td>{{ fileFormat.description }}</td>
+				
+				{%- if fileFormat.description -%}
+					<td>{{ fileFormat.description }}</td>
+				{%- else -%}
+					<td></td>
+				{%- endif -%}
+				
 				{%- if fileFormat.filePath -%}
 					<td><code>{{ fileFormat.filePath }}</code></td>
 				{%- else -%}
@@ -69,7 +75,7 @@ title: File Formats
 					<a {% if fileFormat.url -%}
 						href="{{ fileFormat.url }}"
 					{%- endif -%}>
-						{{ fileFormat.magicBytes }}
+						{{- fileFormat.magicBytes -}}
 					</a>
 				</td>
 				<td>{{ fileFormat.description }}</td>
@@ -107,7 +113,7 @@ title: File Formats
 					<a {% if fileFormat.url -%}
 						href="{{ fileFormat.url }}"
 					{%- endif -%}>
-						{{ fileFormat.magicBytes }}
+						{{- fileFormat.magicBytes -}}
 					</a>
 				</td>
 				<td>{{ fileFormat.description }}</td>

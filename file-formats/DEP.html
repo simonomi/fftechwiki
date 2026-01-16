@@ -53,7 +53,7 @@ title: Cutscene Triggers (DEP)
 					<th>{{ requirement.id }}</th>
 					<th class="text-align-start"><code><code-keyword>{{ requirement.requirement }}</code-keyword></code></th>
 				</tr>
-				{%- assign notes = site.data.DEX.ff1RequirementNotes | where: "id", requirement.id | first -%}
+				{%- assign notes = site.data.DEP.ff1RequirementNotes | where: "id", requirement.id | first -%}
 				{%- if notes -%}
 				<tr>
 					<td colspan="2">

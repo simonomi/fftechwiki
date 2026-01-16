@@ -1,6 +1,7 @@
 ---
 title: Fossils (RLS)
-style: RLS
+data:
+  style: RLS
 ---
 <p>There is only one RLS file per game, <code>etc/kaseki_defs</code>. It stores the data for every single fossil rock. Technically, there are 999 fossil rocks in each game, but in FF1, 494 are blank, so really it only has 505. FFC is presumably similar.</p>
 
@@ -86,20 +87,21 @@ style: RLS
 			{%- elsif forloop.first or previousFossil -%}
 				<tr>
 					<td class="bold text-align-center nowrap">
-						{%- assign nilCount = 0 -%}
-						{%- for nilFossil in fossils offset:forloop.index -%}
-							{%- if nilFossil -%}
+						<!-- a name starting with nil or null breaks for some reason (bug?) -->
+						{%- assign nnilCount = 0 -%}
+						{%- for nnilFossil in fossils offset:forloop.index -%}
+							{%- if nnilFossil -%}
 								{%- break -%}
 							{%- endif -%}
-							{%- assign nilCount = nilCount | plus: 1 -%}
-						{% endfor -%}
+							{%- assign nnilCount = nnilCount | plus: 1 -%}
+						{%- endfor -%}
 						
-						{%- assign endNilsIndex = forloop.index0 | plus: nilCount -%}
+						{%- assign endNilsIndex = forloop.index0 | plus: nnilCount -%}
 						
 						{%- if forloop.index0 == endNilsIndex -%}
-							{{ forloop.index0 }}
+							{{- forloop.index0 -}}
 						{%- else -%}
-							{{ forloop.index0 }}–{{ endNilsIndex}}
+							{{- forloop.index0 }}–{{ endNilsIndex -}}
 						{%- endif -%}
 					</td>
 					<td></td>
