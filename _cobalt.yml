@@ -4,6 +4,7 @@ template_extensions:
 
 ignore:
   - LICENSE
+  - README.md
 
 site:
   base_url: "https://simonomi.dev/"
