@@ -30,18 +30,15 @@
 		{%- endif -%}
 	</head>
 	<body>
-		<navigation-sidebar>
-			{%- render "navigation.html" -%}
-		</navigation-sidebar>
-		
-		<!-- TODO: this needs to be completely redesigned -->
 		<details id="navigation-details">
 			<summary>
 				<img id="open-navigation-menu" src="/fftechwiki/images/menu.svg">
 				<img id="close-navigation-menu" src="/fftechwiki/images/close.svg">
 			</summary>
 			
-			{%- render "navigation.html" -%}
+			<nav>{%- render "navigation.html" -%}</nav>
+			
+			<hr id="navigation-separator">
 		</details>
 		
 		<page-content>

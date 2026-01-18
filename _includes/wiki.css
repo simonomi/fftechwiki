@@ -44,7 +44,7 @@ nav {
 	}
 }
 
-@media screen and (width > 700px) {
+@media screen and (width > 90rch) {
 	body {
 		display: grid;
 		grid-template-columns: 1fr min-content 1rem auto 1fr;
@@ -53,12 +53,16 @@ nav {
 		margin: 1rem;
 	}
 	
-	navigation-sidebar {
-		grid-column: 2;
-	}
-	
 	#navigation-details {
-		display: none;
+		grid-column: 2;
+		
+		&::details-content {
+			content-visibility: visible;
+		}
+		
+		& > summary, & > hr {
+			display: none;
+		}
 	}
 	
 	page-content {
@@ -77,62 +81,51 @@ nav {
 	}
 }
 
-@media screen and (width <= 700px) {
-	html {
-		position: relative; /* this allows the navigation-details to expand to full size, otherwise it doesn't have a proper container to be absolutely filling */
-	}
-	
-	navigation-sidebar {
-		display: none;
-	}
-	
+@media screen and (width <= 90rch) {
 	#navigation-details {
-		position: absolute;
-		inset: 0;
-		
 		& > summary {
 			display: block;
-			position: fixed;
-			bottom: 1rem;
-			right: 1rem;
-			z-index: 1;
-			width: 4rem;
-			height: 4rem;
-			background-color: var(--button-color);
-			border-radius: 50%;
-			
-			&:active {
-				background-color: var(--button-pressed-color);
-			}
+			width: 2rem;
+			height: 2rem;
 			
 			img {
 				width: 2rem;
 				height: 2rem;
-				margin: 1rem;
+			}
+			
+			&:active {
+				filter: opacity(85%);
 			}
 		}
 		
 		nav {
-			padding: 1rem; /* margin doesn't show up in overflow */
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 		}
 		
 		&[open] {
-			background-color: var(--background-color);
+			position: relative; /* what the summary is positioned relative to */
+			
+			& > summary {
+				/* when open, we don't want to affect the navigation content, so don't float */
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
 			
 			#open-navigation-menu {
-				display: none
+				display: none;
 			}
 		}
 		
 		&:not([open]) {
-			pointer-events: none;
-			
 			& > summary {
-				pointer-events: all;
+				float: right;
+				margin-top: 1rem;
 			}
 			
 			#close-navigation-menu {
-				display: none
+				display: none;
 			}
 		}
 	}
