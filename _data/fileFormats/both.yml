@@ -151,7 +151,7 @@
   description: "Fossils"
   filePath: "etc/kaseki_defs"
   ff1Support: true
-  ffcSupport: true
+  ffcSupport: false
 - magicBytes: "SHP"
   # url: "/fftechwiki/file-formats/SHP"
   description: "Shop"

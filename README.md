@@ -4,12 +4,6 @@ A site for technical Fossil Fighters documentation
 ## Contributing
 Because the site is hosted on [GitHub Pages](https://docs.github.com/en/pages), there's no built-in page editor.
 
-#### Resources
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
-- [Jekyll](https://jekyllrb.com/docs/pages/)
-- [Liquid](https://shopify.github.io/liquid/) (those `{{- -}}` and `{%- -%}` things)
-- [MathML](https://developer.mozilla.org/en-US/docs/Web/MathML/Tutorials/For_beginners/Getting_started) (how to write math formulas in HTML)
-
 ### Simple
 1. Go to the page you want to edit
 1. At the bottom, click the "Edit this page" link
@@ -24,5 +18,25 @@ Because the site is hosted on [GitHub Pages](https://docs.github.com/en/pages), 
 	1. Fill out the description if your change should have one
 	1. Press "Create pull request"
 
+#### Resources
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
+- [Liquid](https://shopify.github.io/liquid/) (those `{{ }}` and `{%- -%}` things)
+- [Cobalt](https://cobalt-org.github.io/docs/)
+- [MathML](https://developer.mozilla.org/en-US/docs/Web/MathML/Tutorials/For_beginners/Getting_started) (how to write math formulas in HTML)
+
+If you're getting started, I recommend looking at the code for existing pages. If you don't know how to do something, find a page that does what you want and copy how it does it.
+
+#### Creating a new page
+If you add a page, you should start with the template below. Make sure to change both the title and permalink.
+
+```
+---
+title: New Page
+permalink: /new-page-url/
+---
+
+<p>Hello, world!</p>
+```
+
 ### Advanced
-If you want to preview your changes before you submit them, you'll need to [clone the repository locally](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository), [install Jekyll](https://jekyllrb.com/docs/installation/), and run `jekyll serve -o`. This is not advised unless you're already familiar with git, as you'll need to commit, push, and make a pull request for your changes manually.
+If you want to preview your changes before you submit them, you'll need to [clone the repository locally](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository), [install Cobalt](https://cobalt-org.github.io/getting-started/), and run the terminal command `cobalt serve --open`. This is not advised unless you're already familiar with git, as you'll need to commit, push, and make a pull request for your changes manually.

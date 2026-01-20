@@ -16,6 +16,11 @@ nav {
 		}
 	}
 	
+	ul {
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+	}
+	
 	details {
 		background-color: light-dark(#f0f0f0, #202020);
 		border-radius: 0.5rem;
