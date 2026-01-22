@@ -29,7 +29,7 @@ If you're getting started, I recommend looking at the code for existing pages. I
 #### Creating a new page
 If you add a page, you should start with the template below. Make sure to change both the title and permalink.
 
-```
+```liquid
 ---
 title: New Page
 permalink: /new-page-url/
