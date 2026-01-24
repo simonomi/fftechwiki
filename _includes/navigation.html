@@ -12,7 +12,11 @@
 	<ul>
 		{%- for fileFormat in site.data.fileFormats.both -%}
 			{%- if fileFormat.url -%}
-				<li><a href="{{ fileFormat.url }}">{{ fileFormat.name | default: fileFormat.description }} ({{ fileFormat.magicBytes }})</a></li>
+				{%- if fileFormat.name -%}
+					<li><a href="{{ fileFormat.url }}">{{ fileFormat.name }} ({{ fileFormat.magicBytes }})</a></li>
+				{%- else -%}
+					<li><a href="{{ fileFormat.url }}">{{ fileFormat.description }} ({{ fileFormat.magicBytes }})</a></li>
+				{%- endif -%}
 			{%- endif -%}
 		{%- endfor -%}
 	</ul>
