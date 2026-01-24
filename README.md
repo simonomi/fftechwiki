@@ -7,7 +7,8 @@ Because the site is hosted on [GitHub Pages](https://docs.github.com/en/pages), 
 ### Simple
 1. Go to the page you want to edit
 1. At the bottom, click the "Edit this page" link
-1. Click the "Edit this file" button, and fork the repository if you need to
+1. Sign in to GitHub (create an account if you don't already have one)
+1. If it appears, click the "Fork this repository" button (this should only happen once)
 1. Edit the file to your satisfaction
 1. Commit your changes
 	1. Press the "Commit changes..." button
