@@ -1,0 +1,31 @@
+---
+title: FP (KPS)
+permalink: /file-formats/KPS/
+---
+
+<p>There's one KPS file per game, <code>etc/btl_kp_defs</code>. It has one entry for each fighter level, used for both the player and enemies. Note that enemies' levels are set per-battle, and can be different from the player's current level. The player can only reach level 7, but Dynal and the Samurai each have battles at level 8. The entry for level 9 appears to be for debug purposes, as no battle has an enemy at that level.</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Level</th>
+			<th>Max FP</th>
+			<th>Recharge</th>
+			<th>Vivosaur death FP</th>
+			<th>Starting FP</th>
+			<th>Unknown</th>
+		</tr>
+	</thead>
+	<tbody>
+		{%- for fpLevel in site.data.KPS.fpLevels -%}
+			<tr>
+				<td class="bold text-align-center">{{ fpLevel.level }}</td>
+				<td>{{ fpLevel.maxFP }}</td>
+				<td>{{ fpLevel.rechargePerTurn }}</td>
+				<td>{{ fpLevel.vivosaurDeathFP }}</td>
+				<td>{{ fpLevel.startingFP }}</td>
+				<td>{{ fpLevel.unknown }}</td>
+			</tr>
+		{%- endfor -%}
+	</tbody>
+</table>

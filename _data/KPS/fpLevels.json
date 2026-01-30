@@ -1,0 +1,82 @@
+[
+  {
+    "level" : 1,
+    "maxFP" : 180,
+    "rechargePerTurn" : 70,
+    "startingFP" : 0,
+    "unknown" : 70,
+    "vivosaurDeathFP" : 100
+  },
+  {
+    "level" : 2,
+    "maxFP" : 220,
+    "rechargePerTurn" : 80,
+    "startingFP" : 0,
+    "unknown" : 80,
+    "vivosaurDeathFP" : 160
+  },
+  {
+    "level" : 3,
+    "maxFP" : 250,
+    "rechargePerTurn" : 90,
+    "startingFP" : 0,
+    "unknown" : 90,
+    "vivosaurDeathFP" : 180
+  },
+  {
+    "level" : 4,
+    "maxFP" : 280,
+    "rechargePerTurn" : 100,
+    "startingFP" : 0,
+    "unknown" : 100,
+    "vivosaurDeathFP" : 200
+  },
+  {
+    "level" : 5,
+    "maxFP" : 330,
+    "rechargePerTurn" : 120,
+    "startingFP" : 0,
+    "unknown" : 120,
+    "vivosaurDeathFP" : 240
+  },
+  {
+    "level" : 6,
+    "maxFP" : 400,
+    "rechargePerTurn" : 140,
+    "startingFP" : 0,
+    "unknown" : 140,
+    "vivosaurDeathFP" : 280
+  },
+  {
+    "level" : 7,
+    "maxFP" : 500,
+    "rechargePerTurn" : 180,
+    "startingFP" : 0,
+    "unknown" : 180,
+    "vivosaurDeathFP" : 360
+  },
+  {
+    "level" : 8,
+    "maxFP" : 600,
+    "rechargePerTurn" : 220,
+    "startingFP" : 0,
+    "unknown" : 220,
+    "vivosaurDeathFP" : 440
+  },
+  {
+    "level" : 9,
+    "maxFP" : 999,
+    "rechargePerTurn" : 0,
+    "startingFP" : 999,
+    "unknown" : 999,
+    "vivosaurDeathFP" : 999
+  },
+  {
+    "level" : 0,
+    "maxFP" : 0,
+    "rechargePerTurn" : 0,
+    "startingFP" : 0,
+    "unknown" : 0,
+    "vivosaurDeathFP" : 0
+  }
+]

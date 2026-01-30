@@ -105,6 +105,7 @@
   ff1Support: true
   ffcSupport: true
 - magicBytes: "KPS"
+  url: "/fftechwiki/file-formats/KPS"
   description: "FP"
   filePath: "etc/btl_kp_defs"
   ff1Support: true
