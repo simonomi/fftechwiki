@@ -96,6 +96,10 @@ nav {
 			img {
 				width: 2rem;
 				height: 2rem;
+				
+				@media (prefers-color-scheme: light) {
+					filter: invert();
+				}
 			}
 			
 			&:active {
