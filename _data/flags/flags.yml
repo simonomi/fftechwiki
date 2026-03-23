@@ -76,9 +76,12 @@
 - id: 4
   type: 9
   notes: Current mask
+- id: 6
+  type: 9
+  notes: "Profile background color (0: red, 1: blue, 2: yellow)"
 - id: 7
   type: 9
-  notes: Player variant?
+  notes: Player variant
 - id: 9
   type: 9
   notes: Possibly number of fossil rocks?

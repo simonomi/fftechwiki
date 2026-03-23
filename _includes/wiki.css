@@ -129,7 +129,7 @@ nav {
 		
 		&:not([open]) {
 			& > summary {
-				float: right;
+				float: inline-end;
 				margin-top: 1rem;
 			}
 			

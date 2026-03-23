@@ -1,3 +1,12 @@
+- magicBytes: "3CM"
+  name: "FFC Vivosaur 3D Models"
+  description: '<a href="/fftechwiki/index-files">Index file</a> for vivosaur 3D models'
+  filePath: "model/battle/arcdin"
+  ffcSupport: false
+- magicBytes: "3CN"
+  description: "Vivosaur model count"
+  filePath: "model/battle/arcdin/0000"
+  ffcSupport: false
 - magicBytes: "ACL"
   description: ""
   filePath: "etc/add_contents_defs"

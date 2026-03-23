@@ -134,7 +134,7 @@
   description: '<a href="/fftechwiki/index-files">Index files</a> for 3D models'
   filePath: "model/"
   ff1Support: true
-  ffcSupport: false
+  ffcSupport: true
 - magicBytes: "MMS"
   name: "Sprites"
   description: '<a href="/fftechwiki/index-files">Index files</a> for sprites'

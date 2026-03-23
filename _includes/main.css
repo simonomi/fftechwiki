@@ -88,6 +88,8 @@ img {
 .ds-screenshot {
 	max-width: 384px; /* 1.5x the size of the DS screen (256x192) */
 	aspect-ratio: 4 / 3;
+	border-radius: 0.25rem;
+	image-rendering: crisp-edges;
 }
 
 a {
@@ -152,10 +154,6 @@ sup {
 	scroll-margin-top: 30vh;
 }
 
-summary {
-	cursor: pointer;
-}
-
 ul {
 	list-style-type: initial; /* every level of indentation should be the same */
 	
@@ -195,6 +193,10 @@ button {
 	}
 }
 
+summary {
+	cursor: pointer;
+}
+
 /* the default marker size is a little bigger than i'd like */ 
 summary:not(:has(h2)):not(:has(h3))::marker {
 	font-size: 0.75rem;
@@ -202,6 +204,10 @@ summary:not(:has(h2)):not(:has(h3))::marker {
 
 summary:has(h2)::marker {
 	font-size: 1.25rem;
+}
+
+summary + img {
+	margin-top: 0.25rem;
 }
 
 /* 0.83em is the normal margins for h2, this moves them to the details to let them collapse with any previous margin */
@@ -235,7 +241,7 @@ details:has(summary > h3) {
 icon-links {
 	display: flex;
 	gap: var(--icon-link-spacing);
-	float: right;
+	float: inline-end;
 	margin-left: var(--icon-link-spacing);
 	
 	a {
