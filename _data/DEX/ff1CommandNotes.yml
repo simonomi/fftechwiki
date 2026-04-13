@@ -39,7 +39,7 @@
 	<img loading="lazy" class="ds-screenshot" srcset="/fftechwiki/images/DEX/dialogue-55-with-choice.png">
 </details>'
 - id: 56
-  notes: 'Simply does nothing for a number of frames. Fossil Fighters runs at 60fps, so delay <code><local-value>&lt;<code-number>60</code-number> frames&gt;</local-value></code> delays for one second.'
+  notes: 'Simply does nothing for a number of frames. Fossil Fighters runs at 60fps, so delay <code><foreign-type>&lt;<code-number>60</code-number> frames&gt;</foreign-type></code> delays for one second.'
 - id: 82
   notes: "The entity waits a random number of frames within a given range, then walks to a random position within a certain distance of their 'home', which is just wherever they were when this command was executed."
 - id: 86

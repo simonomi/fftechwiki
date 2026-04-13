@@ -22,13 +22,29 @@ permalink: /file-formats/DEX/
 	<li>You decline the challenge</li>
 </ul>
 
-<!-- TODO: add some example events -->
+<p>When carbonizer exports DEX files, each command gets its own line, and events are separated by empty lines, like so:</p>
+
+<!-- TODO: DEX syntax highlighting -->
+<pre><code><code-comment>// event 26</code-comment>
+<code-keyword>set flag <foreign-type>&lt;<code-number>2</code-number> <code-number>8</code-number>&gt;</foreign-type> to <foreign-type>&lt;<code-number>0</code-number>&gt;</foreign-type>
+open fossil rock buying shop
+
+<code-comment>// event 27</code-comment>
+set flag <foreign-type>&lt;<code-number>2</code-number> <code-number>8</code-number>&gt;</foreign-type> to <foreign-type>&lt;<code-number>0</code-number>&gt;</foreign-type>
+open fossil rock selling shop
+
+<code-comment>// event 28</code-comment>
+set flag <foreign-type>&lt;<code-number>2</code-number> <code-number>8</code-number>&gt;</foreign-type> to <foreign-type>&lt;<code-number>0</code-number>&gt;</foreign-type>
+open mask buying shop
+
+<code-comment>// event 29</code-comment>
+set flag <foreign-type>&lt;<code-number>2</code-number> <code-number>8</code-number>&gt;</foreign-type> to <foreign-type>&lt;<code-number>0</code-number>&gt;</foreign-type>
+set flag <foreign-type>&lt;<code-number>3</code-number> <code-number>5</code-number>&gt;</foreign-type> to false
+set flag <foreign-type>&lt;<code-number>2</code-number> <code-number>6</code-number>&gt;</foreign-type> to true</code-keyword></code></pre>
 
 <h2>Commands</h2>
 
 <p>There are many different commands, each one having an ID number and a list of arguments. Each command does something unique, like showing a line of dialogue, moving a character, or triggering a battle.</p>
-
-<!-- TODO: examples -->
 
 <h3 id="argument-types">Argument types</h3>
 

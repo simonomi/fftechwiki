@@ -1,36 +1,36 @@
-- type: 'boolean'
-  description: 'Either <code><local-value>&lt;true&gt;</local-value></code> or <code><local-value>&lt;false&gt;</local-value></code>'
-- type: 'degrees'
-  description: 'An angle. <code><local-value>&lt;<code-number>0</code-number> degrees&gt;</local-value></code> is facing right and <code><local-value>&lt;<code-number>90</code-number> degrees&gt;</local-value></code> is facing down'
-- type: 'dialogue'
-  description: 'A line of dialogue'
-- type: 'effect'
+- type: "boolean"
+  description: "Either <code><foreign-type>&lt;true&gt;</foreign-type></code> or <code><foreign-type>&lt;false&gt;</foreign-type></code>"
+- type: "degrees"
+  description: "An angle. <code><foreign-type>&lt;<code-number>0</code-number> degrees&gt;</foreign-type></code> is facing right and <code><foreign-type>&lt;<code-number>90</code-number> degrees&gt;</foreign-type></code> is facing down"
+- type: "dialogue"
+  description: "A line of dialogue"
+- type: "effect"
   description: 'An animated effect that pops up on an entity, like "haha" or "ugh"'
-- type: 'entity'
-  description: 'An entity'
-- type: 'fixed-point'
+- type: "entity"
+  description: "An entity"
+- type: "fixed-point"
   description: 'A <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic">fixed-point</a> number, which can have a fractional component'
-- type: 'flag'
+- type: "flag"
   description: 'See <a href="/fftechwiki/flags">Flags</a>'
-- type: 'fossil'
+- type: "fossil"
   description: 'A particular fossil (see <a href="/fftechwiki/file-formats/RLS">Fossils</a>)'
-- type: 'frames'
-  description: 'A number of frames'
-- type: 'image'
-  description: 'An image'
-- type: 'integer'
-  description: 'A whole number'
-- type: 'map'
-  description: 'An area of the world, like a room or digsite'
-- type: 'movement'
-  description: 'An animated motion an entity can make, like spinning around or falling over'
-- type: 'music'
-  description: 'A music track'
-- type: 'sound&nbsp;effect'
-  description: 'A sound effect, like a chime or ding'
-- type: 'unknown'
-  description: 'An argument whose type is unknown'
-- type: 'vector'
-  description: 'This is techncally two arguments, but they make a pair together, like coordinates (for example, <code><local-value>&lt;<code-number>50</code-number>, <code-number>181</code-number>&gt;</local-value></code>)'
-- type: 'vivosaur'
-  description: 'A vivosaur'
+- type: "frames"
+  description: "A number of frames"
+- type: "image"
+  description: "An image"
+- type: "integer"
+  description: "A whole number"
+- type: "map"
+  description: "An area of the world, like a room or digsite"
+- type: "movement"
+  description: "An animated motion an entity can make, like spinning around or falling over"
+- type: "music"
+  description: "A music track"
+- type: "sound&nbsp;effect"
+  description: "A sound effect, like a chime or ding"
+- type: "unknown"
+  description: "An argument whose type is unknown"
+- type: "vector"
+  description: "This is techncally two arguments, but they make a pair together, like coordinates (for example, <code><foreign-type>&lt;<code-number>50</code-number>, <code-number>181</code-number>&gt;</foreign-type></code>)"
+- type: "vivosaur"
+  description: "A vivosaur"
