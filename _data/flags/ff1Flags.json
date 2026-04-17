@@ -1,0 +1,271 @@
+[
+  {
+    "flags" : [
+      {
+        "description" : "give Nick Nack dropping fossils dialogue result 0",
+        "id" : "80"
+      },
+      {
+        "description" : "Greenhorn Plains pay-to-dig dialogue result 0",
+        "id" : "256"
+      },
+      {
+        "description" : "Rivet Ravine pay-to-dig dialogue result 0",
+        "id" : "257"
+      }
+    ],
+    "type" : "0"
+  },
+  {
+    "flags" : [
+      {
+        "description" : "has given Nick Nack the sandal fossil",
+        "id" : "1008"
+      },
+      {
+        "description" : "pay-to-dig area purchased",
+        "id" : "4031"
+      },
+      {
+        "description" : "talking to Greenhorn Plains pay-to-dig attendent",
+        "id" : "5503"
+      },
+      {
+        "description" : "talking to Rivet Ravine pay-to-dig attendent",
+        "id" : "9037"
+      },
+      {
+        "description" : "talking to Nick Nack",
+        "id" : "11150"
+      },
+      {
+        "description" : "Nick Nack asking for dropping fossils",
+        "id" : "11151"
+      },
+      {
+        "description" : "gave Nick Nack dropping fossils",
+        "id" : "11152"
+      },
+      {
+        "description" : "getting a reward from Nick Nack",
+        "id" : "11153"
+      },
+      {
+        "description" : "has Oasis Seed 1",
+        "id" : "11501"
+      },
+      {
+        "description" : "has Oasis Seed 2",
+        "id" : "11502"
+      },
+      {
+        "description" : "has Oasis Seed 3",
+        "id" : "11503"
+      },
+      {
+        "description" : "has Oasis Seed 4",
+        "id" : "11504"
+      },
+      {
+        "description" : "oasis 1 grown",
+        "id" : "11505"
+      },
+      {
+        "description" : "oasis 2 grown",
+        "id" : "11506"
+      },
+      {
+        "description" : "oasis 3 grown",
+        "id" : "11507"
+      },
+      {
+        "description" : "oasis 4 grown",
+        "id" : "11508"
+      },
+      {
+        "description" : "oasis quest complete",
+        "id" : "11509"
+      },
+      {
+        "description" : "shop has an Oasis Seed",
+        "id" : "11510"
+      },
+      {
+        "description" : "player is in Parchment Desert",
+        "id" : "11511"
+      }
+    ],
+    "type" : "5"
+  },
+  {
+    "flags" : [
+      {
+        "description" : "chapter number",
+        "id" : "56"
+      },
+      {
+        "description" : "case upgrade level",
+        "id" : "68"
+      },
+      {
+        "description" : "left over dropping fossils",
+        "id" : "77"
+      },
+      {
+        "description" : "dropping fossils given to Nick Nack",
+        "id" : "78"
+      },
+      {
+        "description" : "give Nick Nack dropping fossils dialogue result",
+        "id" : "80"
+      },
+      {
+        "description" : "Greenhorn Plains pay-to-dig dialogue result",
+        "id" : "256"
+      },
+      {
+        "description" : "Rivet Ravine pay-to-dig dialogue result",
+        "id" : "257"
+      }
+    ],
+    "type" : "8"
+  },
+  {
+    "flags" : [
+      {
+        "description" : "money",
+        "id" : "3"
+      },
+      {
+        "description" : "current mask",
+        "id" : "4"
+      },
+      {
+        "description" : "profile background",
+        "id" : "6"
+      },
+      {
+        "description" : "player variant",
+        "id" : "7"
+      },
+      {
+        "description" : "fossil rocks",
+        "id" : "8"
+      },
+      {
+        "description" : "colored fossil rocks",
+        "id" : "9"
+      },
+      {
+        "description" : "jewels",
+        "id" : "11"
+      },
+      {
+        "description" : "dropping fossils",
+        "id" : "12"
+      },
+      {
+        "description" : "fossils just integrated by KL-33N",
+        "id" : "14"
+      },
+      {
+        "description" : "fossils just donated by KL-33N",
+        "id" : "15"
+      },
+      {
+        "description" : "points on fossil just cleaned",
+        "id" : "17"
+      },
+      {
+        "description" : "points of a previously-cleaned fossil",
+        "id" : "18"
+      },
+      {
+        "description" : "donation points",
+        "id" : "19"
+      },
+      {
+        "description" : "fossil rocks dropped off for cleaning",
+        "id" : "20"
+      },
+      {
+        "description" : "KL-33N level",
+        "id" : "21"
+      },
+      {
+        "description" : "KL-33N max cleaning score",
+        "id" : "22"
+      },
+      {
+        "description" : "cleanings until KL-33N levels up",
+        "id" : "23"
+      },
+      {
+        "description" : "fossils in storage",
+        "id" : "24"
+      },
+      {
+        "description" : "successful cleanings",
+        "id" : "25"
+      },
+      {
+        "description" : "oasis growth timer",
+        "id" : "26"
+      },
+      {
+        "description" : "gems cleaned by KL-33N",
+        "id" : "28"
+      },
+      {
+        "description" : "gem sell value by KL-33N",
+        "id" : "29"
+      },
+      {
+        "description" : "sonar monitor upgrade level",
+        "id" : "30"
+      },
+      {
+        "description" : "sonar fossil chip upgrade level",
+        "id" : "31"
+      },
+      {
+        "description" : "sonar fossil filter upgrade level",
+        "id" : "32"
+      },
+      {
+        "description" : "cleaning time bonus",
+        "id" : "39"
+      },
+      {
+        "description" : "donation points just added",
+        "id" : "46"
+      }
+    ],
+    "type" : "9"
+  },
+  {
+    "flags" : [
+      {
+        "description" : "status menu unlocked",
+        "id" : "28"
+      },
+      {
+        "description" : "multiplayer unlocked",
+        "id" : "30"
+      },
+      {
+        "description" : "Dino Medal screen unlocked",
+        "id" : "32"
+      },
+      {
+        "description" : "super drill unlocked",
+        "id" : "33"
+      },
+      {
+        "description" : "hyper hammer unlocked",
+        "id" : "34"
+      }
+    ],
+    "type" : "10"
+  }
+]

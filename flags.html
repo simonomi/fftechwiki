@@ -37,25 +37,31 @@ data:
 	</tbody>
 </table>
 
-<h2 id="known">Known flags</h2>
+<h2 id="ff1-flags">FF1 Flags</h2>
 
 <table>
-	<thead>
-		<th>ID</th>
-		<th>Notes</th>
-	</thead>
 	<tbody>
-		{%- for flag in site.data.flags.flags -%}
-			{%- unless forloop.last or site.data.flags.flags[forloop.index0].type == site.data.flags.flags[forloop.index].type -%}
-				{%- assign isLastOfType = ' class="thick-bottom-border"' -%}
-			{%- else -%}
-				{%- assign isLastOfType = "" -%}
-			{%- endunless -%}
+		{%- for type in site.data.flags.ff1Flags -%}
+			{%- assign typeIsLast = forloop.last -%}
 			
-			<tr id="{{ flag.id }}-{{ flag.type }}" {{- isLastOfType -}}>
-				<td><code><foreign-type>&lt;<code-number>{{ flag.id }}&nbsp{{ flag.type }}</code-number>&gt;</foreign-type></code></td>
-				<td>{{ flag.notes }}</td>
-			</tr>
+			{%- for flag in type.flags -%}
+				{%- assign isLastOfType = "" -%}
+				{%- if forloop.last -%}
+					{%- unless typeIsLast -%}
+						{%- assign isLastOfType = ' class="thick-bottom-border"' -%}
+					{%- endunless -%}
+				{%- endif -%}
+				
+				<tr id="{{ flag.id }}-{{ type.type }}" {{- isLastOfType -}}>
+					<th><code><foreign-type>&lt;<code-number>{{ flag.id }}&nbsp{{ type.type }}</code-number>&gt;</foreign-type></code></th>
+					<th class="text-align-start"><code><foreign-type>&lt;{{ flag.description }}&gt;</foreign-type></code></th>
+				</tr>
+				
+				{%- assign notes = site.data.flags.ff1FlagNotes | where: "type", type.type | where: "id", flag.id | first -%}
+				{%- if notes -%}
+					<tr><td colspan="2">{{- notes.notes -}}</td></tr>
+				{%- endif -%}
+			{%- endfor -%}
 		{%- endfor -%}
 	</tbody>
 </table>

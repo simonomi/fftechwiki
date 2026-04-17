@@ -1,1 +1,10 @@
-[{"command":"dialogue <foreign-type>&lt;dialogue&gt;<\/foreign-type>","id":71},{"command":"unowned dialogue <foreign-type>&lt;dialogue&gt;<\/foreign-type>","id":107}]
+[
+  {
+    "command" : "dialogue <foreign-type>&lt;dialogue&gt;<\/foreign-type>",
+    "id" : 71
+  },
+  {
+    "command" : "unowned dialogue <foreign-type>&lt;dialogue&gt;<\/foreign-type>",
+    "id" : 107
+  }
+]
