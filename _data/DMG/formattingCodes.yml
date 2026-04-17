@@ -24,6 +24,14 @@
   description: "Delays for a number of frames before continuing"
   examples: ["$t10", "$t60", "$t97", "$t126"]
 # $V - replaced with a number, multiple places
+- code: "$v#" # multi digit int
+  id: "v"
+  description: 'Replaced with the <a href="/fftechwiki/flags">flag</a> <code><foreign-type>&lt;<code-number># 8</code-number>&gt;</foreign-type></code>'
+  examples: ["$v78", "$v79"]
+- code: "$V#" # multi digit int
+  id: "V"
+  description: 'Replaced with the <a href="/fftechwiki/flags">flag</a> <code><foreign-type>&lt;<code-number># 9</code-number>&gt;</foreign-type></code>'
+  examples: ["$V12", "$V22"]
 - code: "$w#" # full decimal
   id: "w"
   description: "Sets character display speed. The number is multiplied by 10 to get the characters per second, so 3 is 30 characters per second, 5 is 50, and so on. Decimals work too: <code>$w0.1</code> is 1 character per second. 0 makes text appear instantly"

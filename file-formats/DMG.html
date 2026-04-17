@@ -62,9 +62,7 @@ data:
 				{%- if color.rawName -%}
 					{{- color.rawName -}}
 				{%- else -%}
-					<pre><code><dialogue-{{ color.name | replace: " ", "-" }}>
-						{{- color.name -}}
-					</dialogue-{{ color.name | replace: " ", "-" }}></code></pre>
+					<pre><code><dialogue-{{ color.name | replace: " ", "-" }}>{{- color.name -}}</dialogue-{{ color.name | replace: " ", "-" }}></code></pre>
 				{%- endif -%}
 			</td>
 		</tr>
