@@ -217,7 +217,7 @@
         "id" : "28"
       },
       {
-        "description" : "gem sell value by KL-33N",
+        "description" : "value of gems just sold by KL-33N",
         "id" : "29"
       },
       {
@@ -258,11 +258,11 @@
         "id" : "32"
       },
       {
-        "description" : "super drill unlocked",
+        "description" : "Super Drill unlocked",
         "id" : "33"
       },
       {
-        "description" : "hyper hammer unlocked",
+        "description" : "Hyper Hammer unlocked",
         "id" : "34"
       }
     ],
