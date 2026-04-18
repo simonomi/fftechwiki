@@ -2,6 +2,18 @@
   {
     "flags" : [
       {
+        "description" : "shop dialogue result 0",
+        "id" : "58"
+      },
+      {
+        "description" : "buy today's special or exchange DP dialogue result 0",
+        "id" : "60"
+      },
+      {
+        "description" : "tool upgrade dialogue results 0",
+        "id" : "69"
+      },
+      {
         "description" : "give Nick Nack dropping fossils dialogue result 0",
         "id" : "80"
       },
@@ -19,6 +31,18 @@
   {
     "flags" : [
       {
+        "description" : "fossil chip is level 0",
+        "id" : "111"
+      },
+      {
+        "description" : "fossil chip is level 1",
+        "id" : "112"
+      },
+      {
+        "description" : "fossil chip is level 2",
+        "id" : "113"
+      },
+      {
         "description" : "has given Nick Nack the sandal fossil",
         "id" : "1008"
       },
@@ -31,8 +55,52 @@
         "id" : "5503"
       },
       {
+        "description" : "sonar monitor upgrade 1 unlocked",
+        "id" : "8045"
+      },
+      {
+        "description" : "sonar monitor upgrade 2 unlocked",
+        "id" : "8046"
+      },
+      {
+        "description" : "sonar fossil filter 1 unlocked",
+        "id" : "8047"
+      },
+      {
+        "description" : "sonar fossil filter 2 unlocked",
+        "id" : "8048"
+      },
+      {
+        "description" : "sonar fossil chip 1 unlocked",
+        "id" : "8049"
+      },
+      {
+        "description" : "sonar fossil chip 2 unlocked",
+        "id" : "8050"
+      },
+      {
+        "description" : "Super Drill unlocked 5",
+        "id" : "8051"
+      },
+      {
+        "description" : "Hyper Hammer unlocked 5",
+        "id" : "8052"
+      },
+      {
+        "description" : "asking which tool upgrade",
+        "id" : "8058"
+      },
+      {
         "description" : "talking to Rivet Ravine pay-to-dig attendent",
         "id" : "9037"
+      },
+      {
+        "description" : "shop has Dino Cakes",
+        "id" : "11006"
+      },
+      {
+        "description" : "chose to sell items at shop",
+        "id" : "11016"
       },
       {
         "description" : "talking to Nick Nack",
@@ -93,6 +161,10 @@
       {
         "description" : "player is in Parchment Desert",
         "id" : "11511"
+      },
+      {
+        "description" : "shop has Snowberries",
+        "id" : "11711"
       }
     ],
     "type" : "5"
@@ -104,8 +176,40 @@
         "id" : "56"
       },
       {
+        "description" : "shop dialogue result",
+        "id" : "58"
+      },
+      {
+        "description" : "buy today's special or exchange DP dialogue result",
+        "id" : "60"
+      },
+      {
+        "description" : "sonar upgrade digitmask",
+        "id" : "62"
+      },
+      {
+        "description" : "sonar monitor upgrade digitmask",
+        "id" : "63"
+      },
+      {
+        "description" : "sonar fossil filter digitmask",
+        "id" : "64"
+      },
+      {
+        "description" : "sonar fossil chip digitmask",
+        "id" : "65"
+      },
+      {
+        "description" : "cleaning upgrades left bitmsk",
+        "id" : "67"
+      },
+      {
         "description" : "case upgrade level",
         "id" : "68"
+      },
+      {
+        "description" : "tool upgrade dialogue results",
+        "id" : "69"
       },
       {
         "description" : "left over dropping fossils",
@@ -126,12 +230,20 @@
       {
         "description" : "Rivet Ravine pay-to-dig dialogue result",
         "id" : "257"
+      },
+      {
+        "description" : "sellable items",
+        "id" : "342"
       }
     ],
     "type" : "8"
   },
   {
     "flags" : [
+      {
+        "description" : "case size in pages",
+        "id" : "2"
+      },
       {
         "description" : "money",
         "id" : "3"
@@ -246,6 +358,10 @@
   {
     "flags" : [
       {
+        "description" : "case is full",
+        "id" : "4"
+      },
+      {
         "description" : "status menu unlocked",
         "id" : "28"
       },
@@ -264,6 +380,10 @@
       {
         "description" : "Hyper Hammer unlocked",
         "id" : "34"
+      },
+      {
+        "description" : "shop is sold out",
+        "id" : "41"
       }
     ],
     "type" : "10"

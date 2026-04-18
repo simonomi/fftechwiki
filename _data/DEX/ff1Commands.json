@@ -148,7 +148,7 @@
     "id" : 51
   },
   {
-    "command" : "dialogue <foreign-type>&lt;dialogue&gt;<\/foreign-type> with choice, storing result at <foreign-type>&lt;flag&gt;<\/foreign-type>, unknown: <foreign-type>&lt;unknown&gt;<\/foreign-type>",
+    "command" : "dialogue <foreign-type>&lt;dialogue&gt;<\/foreign-type> with choice, storing result at <foreign-type>&lt;flag&gt;<\/foreign-type>, unknown: <foreign-type>&lt;flag&gt;<\/foreign-type>",
     "id" : 55
   },
   {
