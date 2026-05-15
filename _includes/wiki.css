@@ -103,7 +103,7 @@ nav {
 			}
 			
 			&:active {
-				filter: opacity(85%);
+				opacity: 75%;
 			}
 		}
 		

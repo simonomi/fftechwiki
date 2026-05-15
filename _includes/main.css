@@ -248,8 +248,6 @@ icon-links {
 		height: var(--icon-link-height);
 		margin-top: 0.25em;
 		object-fit: contain;
-		transition-property: opacity;
-		transition-duration: 0.2s;
 		
 		/* TODO: use multiple sources instead? */
 		@media (prefers-color-scheme: light) {
@@ -257,12 +255,7 @@ icon-links {
 		}
 		
 		&:hover {
-			filter: opacity(85%);
-			
-			/* TODO: use multiple sources instead? */
-			@media (prefers-color-scheme: light) {
-				filter: opacity(75%) invert();
-			}
+			opacity: 75%;
 		}
 	}
 }
