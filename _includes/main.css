@@ -71,14 +71,9 @@ body {
 	max-width: min(100vw - 2rem, 90rch);
 }
 
-hgroup {
+h1 {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	
-	* {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
 }
 
 img {

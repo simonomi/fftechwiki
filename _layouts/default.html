@@ -47,16 +47,14 @@
 		</details>
 		
 		<page-content>
-			<hgroup>
-				<h1>{{ page.title }}</h1>
-			</hgroup>
+			<h1>{{ page.title }}</h1>
 			
 			{{- page.content -}}
 			
 			{%- unless page.data.nofooter -%}
 				<footer>
 					<p><a href="https://github.com/simonomi/fftechwiki/edit/main/{{ page.file.permalink }}">Edit this page</a> or <a href="https://github.com/simonomi/fftechwiki/issues">report an issue</a></p>
-					<small>© <time>{{ "now" | date: "%Y" }}</time> alice pellerin</small>
+					<small>© <time datetime="{{ "now" | date: "%Y" }}">{{ "now" | date: "%Y" }}</time> alice pellerin</small>
 				</footer>
 			{%- endunless -%}
 		</page-content>
