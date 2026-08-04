@@ -362,6 +362,50 @@
         "id" : "4"
       },
       {
+        "description" : "Greenhorn Plains unlocked",
+        "id" : "13"
+      },
+      {
+        "description" : "Knotwood Forest unlocked",
+        "id" : "14"
+      },
+      {
+        "description" : "Rivet Ravine unlocked",
+        "id" : "15"
+      },
+      {
+        "description" : "Bottomsup Bay unlocked",
+        "id" : "16"
+      },
+      {
+        "description" : "BB Base unlocked",
+        "id" : "17"
+      },
+      {
+        "description" : "Mt. Lavaflow unlocked",
+        "id" : "18"
+      },
+      {
+        "description" : "unused dinaurian ship digsite unlocked",
+        "id" : "19"
+      },
+      {
+        "description" : "Parchment Desert unlocked",
+        "id" : "20"
+      },
+      {
+        "description" : "Secret Island unlocked",
+        "id" : "21"
+      },
+      {
+        "description" : "Coldfeet Glacier unlocked",
+        "id" : "22"
+      },
+      {
+        "description" : "swap screens",
+        "id" : "24"
+      },
+      {
         "description" : "status menu unlocked",
         "id" : "28"
       },
@@ -380,6 +424,18 @@
       {
         "description" : "Hyper Hammer unlocked",
         "id" : "34"
+      },
+      {
+        "description" : "revived all vivosaurs",
+        "id" : "35"
+      },
+      {
+        "description" : "all vivosaurs max rank",
+        "id" : "36"
+      },
+      {
+        "description" : "team skills unlocked",
+        "id" : "40"
       },
       {
         "description" : "shop is sold out",
