@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - name: install Cobalt
       run: |
         curl -LSfs https://raw.githubusercontent.com/crate-ci/gh-install/master/v1/install.sh | \
@@ -26,7 +26,7 @@ jobs:
     - name: minify
       run: ~/minhtml --minify-css --minify-js --keep-html-and-head-opening-tags --keep-closing-tags $(find _site/ -type f -name "*.html")
     - name: upload static files as artifact
-      uses: actions/upload-pages-artifact@v4
+      uses: actions/upload-pages-artifact@v5
       with:
         path: _site/
   deploy:
@@ -41,4 +41,4 @@ jobs:
     steps:
     - name: deploy
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5
